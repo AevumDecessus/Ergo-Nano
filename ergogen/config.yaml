@@ -98,6 +98,34 @@ points:
       rows:
         near:
         far:
+    mount_top_left:
+      anchor:
+        ref: matrix_outer_num
+        shift: [half_kx, -half_ky]
+    mount_top_center:
+      anchor:
+        ref: matrix_middle_num
+        shift: [-half_kx, -half_ky]
+    mount_top_right:
+      anchor:
+        ref: matrix_inner_num
+        shift: [half_kx, -half_ky]
+    mount_bottom_left:
+      anchor:
+        ref: matrix_outer_mod
+        shift: [half_kx, half_ky]
+    mount_center_bottom:
+      anchor:
+        ref: matrix_middle_mod
+        shift: [half_kx, -half_ky]
+    mount_thumbs_right_center:
+      anchor:
+        ref: thumbs_bottom_near
+        shift: [-half_kx, half_ky]
+    mount_bottom_right:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [half_kx, half_ky]
 outlines:
   board:
     - what: polygon
@@ -163,7 +191,7 @@ pcbs:
     footprints:
       mx:
         what: ceoloide/switch_mx
-        where: true
+        where: /^(matrix|thumbs)_/
         params:
           hotswap: true
           hotswap_pads_same_side: true
@@ -172,7 +200,7 @@ pcbs:
           to: "{{colrow}}"
       diode:
         what: ceoloide/diode_tht_sod123
-        where: true
+        where: /^(matrix|thumbs)_/
         params:
           reversible: true
           include_tht: true
@@ -211,65 +239,9 @@ pcbs:
           shift: [1.25kx,0.25ky]
         params:
           reversible: true
-      top_left_mount:
+      board_mounting_holes:
         what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_outer_num]
-          shift: [half_kx, -half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      top_center_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_middle_num]
-          shift: [-half_kx, -half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      top_right_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_inner_num]
-          shift: [half_kx, -half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      bottom_left_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_outer_mod]
-          shift: [half_kx, half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      center_bottom_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_middle_mod]
-          shift: [half_kx, -half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      thumbs_right_center_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [thumbs_bottom_near]
-          shift: [-half_kx, half_ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      bottom_right_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [matrix_inner_bottom]
-          shift: [half_kx, half_ky]
+        where: /^mount_/
         params:
           hole_size: m3
           hole_drill: m3
