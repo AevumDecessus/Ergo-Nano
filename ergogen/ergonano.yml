@@ -20,27 +20,45 @@ points:
         shift: [50, -125]
       columns:
         outer:
+          key:
+            column_net: COL0
         pinky:
+          key:
+            column_net: COL1
         ring:
           key:
+            column_net: COL2
             stagger: 5
         middle:
           key:
+            column_net: COL3
             stagger: 5
         index:
           key:
+            column_net: COL4
             stagger: -5
           rows.mod.skip: true
         inner:
           key:
+            column_net: COL5
             stagger: -5
           rows.mod.skip: true
       rows:
         mod:
+          key:
+            row_net: ROW4
         bottom:
+          key:
+            row_net: ROW3
         home:
+          key:
+            row_net: ROW2
         top:
+          key:
+            row_net: ROW1
         num:
+          key:
+            row_net: ROW0
     thumbs:
       key:
         padding: 1kx
@@ -52,11 +70,21 @@ points:
       columns:
         top:
           key:
+            column_net: COL6
             height: 2ky
             shift: [0, 0.5ky]
           rows.far.skip: true
+          rows.near.row_net: ROW0
         middle:
+          key:
+            column_net: COL6
+          rows.near.row_net: ROW4
+          rows.far.row_net: ROW1
         bottom:
+          key:
+            column_net: COL6
+          rows.near.row_net: ROW3
+          rows.far.row_net: ROW2
       rows:
         near:
         far:
