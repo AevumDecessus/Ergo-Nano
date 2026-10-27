@@ -45,20 +45,15 @@ points:
           rows.mod.skip: true
       rows:
         mod:
-          key:
-            row_net: ROW4
+          row_net: ROW4
         bottom:
-          key:
-            row_net: ROW3
+          row_net: ROW3
         home:
-          key:
-            row_net: ROW2
+          row_net: ROW2
         top:
-          key:
-            row_net: ROW1
+          row_net: ROW1
         num:
-          key:
-            row_net: ROW0
+          row_net: ROW0
     thumbs:
       key:
         padding: 1kx
