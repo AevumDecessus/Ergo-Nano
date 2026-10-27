@@ -16,6 +16,8 @@ units:
 points:
   zones:
     matrix:
+      anchor:
+        shift: [50, -125]
       columns:
         outer:
         pinky:
@@ -73,6 +75,10 @@ outlines:
           shift: [half_x,half_y]
         - ref: matrix_inner_num
           shift: [half_x,half_y]
+        - ref: matrix_inner_num # top right space for the MCU
+          shift: [1.25px, half_y]
+        - ref: matrix_inner_top # bottom right space for the MCU
+          shift: [1.25px, -half_y]
         - ref: matrix_inner_bottom
           shift: [half_x,-half_y]
         - ref: thumbs_middle_far
