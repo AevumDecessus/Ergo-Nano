@@ -1,0 +1,102 @@
+meta:
+  engine: 4.1.0
+units:
+  # Web View Resizing
+  $default_width: U
+  $default_height: U
+  # Proxy Spacing Variables
+  kx: U
+  ky: U
+  # Padding Variables
+  padding: 10
+  px: kx + padding
+  py: ky + padding
+  half_x: 0.5px
+  half_y: 0.5py
+points:
+  zones:
+    matrix:
+      columns:
+        outer:
+        pinky:
+        ring:
+          key:
+            stagger: 5
+        middle:
+          key:
+            stagger: 5
+        index:
+          key:
+            stagger: -5
+          rows.mod.skip: true
+        inner:
+          key:
+            stagger: -5
+          rows.mod.skip: true
+      rows:
+        mod:
+        bottom:
+        home:
+        top:
+        num:
+    thumbs:
+      key:
+        padding: 1kx
+        spread: 1ky
+      anchor:
+        ref: matrix_middle_mod
+        shift: [0.5kx,-1.5ky]
+        rotate: -50
+      columns:
+        top:
+          key:
+            height: 2ky
+            shift: [0, 0.5ky]
+          rows.far.skip: true
+        middle:
+        bottom:
+      rows:
+        near:
+        far:
+outlines:
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_num
+          shift: [-half_x,half_y]
+        - ref: matrix_ring_num
+          shift: [-half_x,half_y]
+        - ref: matrix_middle_num
+          shift: [-half_x,half_y]
+        - ref: matrix_middle_num
+          shift: [half_x,half_y]
+        - ref: matrix_inner_num
+          shift: [half_x,half_y]
+        - ref: matrix_inner_bottom
+          shift: [half_x,-half_y]
+        - ref: thumbs_middle_far
+          shift: [half_x,half_y]
+        - ref: thumbs_bottom_far
+          shift: [half_x,half_y]
+        - ref: thumbs_bottom_near
+          shift: [half_x,-half_y]
+        - ref: thumbs_middle_near
+          shift: [-half_x,-half_y]
+        - ref: matrix_ring_mod
+          shift: [half_x,-half_y]
+        - ref: matrix_pinky_mod
+          shift: [half_x, -half_y]
+        - ref: matrix_outer_mod
+          shift: [-half_x,-half_y]
+      fillet: 5
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5, ky-0.5]
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+cases:
