@@ -17,6 +17,8 @@ units:
   half_py: 0.5py
   dpx: 2px
   dpy: 2py
+  # Tolerances
+  board_tolerance: 0.1 #Leave this much space around the board in the case
   # Mounting holes
   m2: 2.2
   m3: 3.2
@@ -136,10 +138,14 @@ outlines:
     - what: outline
       name: board
       expand: 0.5padding
+  _board_tolerance:
+    - what: outline
+      name: board
+      expand: board_tolerance
   _board_wall: # a wall of only 0.5 padding bigger than the board
     - name: _board_with_border
     - operation: subtract
-      name: board
+      name: _board_tolerance
   keys:
     - what: rectangle
       where: true
@@ -282,4 +288,3 @@ cases:
     - what: case
       name: _wall
       operation: add
-
