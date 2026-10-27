@@ -7,12 +7,16 @@ units:
   # Proxy Spacing Variables
   kx: U
   ky: U
+  half_kx: 0.5kx
+  half_ky: 0.5ky
   # Padding Variables
-  padding: 10
+  padding: 5
   px: kx + padding
   py: ky + padding
-  half_x: 0.5px
-  half_y: 0.5py
+  half_px: 0.5px
+  half_py: 0.5py
+  dpx: 2px
+  dpy: 2py
   # Mounting holes
   m2: 2.2
   m3: 3.2
@@ -64,14 +68,14 @@ points:
         spread: 1ky
       anchor:
         ref: matrix_middle_mod
-        shift: [0.5kx,-1.5ky]
+        shift: [half_kx,-1.5ky]
         rotate: -50
       columns:
         top:
           key:
             column_net: COL6
             height: 2ky
-            shift: [0, 0.5ky]
+            shift: [0, half_ky]
           rows.far.skip: true
           rows.near.row_net: ROW0
         middle:
@@ -93,35 +97,35 @@ outlines:
       operation: stack
       points:
         - ref: matrix_outer_num
-          shift: [-half_x,half_y]
+          shift: [-half_px,half_py]
         - ref: matrix_ring_num
-          shift: [-half_x,half_y]
+          shift: [-half_px,half_py]
         - ref: matrix_middle_num
-          shift: [-half_x,half_y]
+          shift: [-half_px,half_py]
         - ref: matrix_middle_num
-          shift: [half_x,half_y]
+          shift: [half_px,half_py]
         - ref: matrix_inner_num
-          shift: [half_x,half_y]
+          shift: [half_px,half_py]
         - ref: matrix_inner_num # top right space for the MCU
-          shift: [1.25px, half_y]
+          shift: [1.25px, half_py]
         - ref: matrix_inner_top # bottom right space for the MCU
-          shift: [1.25px, -half_y]
+          shift: [1.25px, -half_py]
         - ref: matrix_inner_bottom
-          shift: [half_x,-half_y]
+          shift: [half_px,-half_py]
         - ref: thumbs_middle_far
-          shift: [half_x,half_y]
+          shift: [half_px,half_py]
         - ref: thumbs_bottom_far
-          shift: [half_x,half_y]
+          shift: [half_px,half_py]
         - ref: thumbs_bottom_near
-          shift: [half_x,-half_y]
+          shift: [half_px,-half_py]
         - ref: thumbs_middle_near
-          shift: [-half_x,-half_y]
+          shift: [-half_px,-half_py]
         - ref: matrix_ring_mod
-          shift: [half_x,-half_y]
+          shift: [half_px,-half_py]
         - ref: matrix_pinky_mod
-          shift: [half_x, -half_y]
+          shift: [half_px, -half_py]
         - ref: matrix_outer_mod
-          shift: [-half_x,-half_y]
+          shift: [-half_px,-half_py]
       fillet: 5
   keys:
     - what: rectangle
@@ -156,7 +160,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [-7, -5]
+          shift: [-6, -7]
           rotate: 90
       nice-nano:
         what: ceoloide/mcu_nice_nano
@@ -180,7 +184,7 @@ pcbs:
           P10: COL6
         where:
           ref: matrix_inner_top
-          shift: [1.25kx,0.5ky]
+          shift: [1.25kx,half_ky]
       nice-view:
         what: ceoloide/display_nice_view
         where:
@@ -192,7 +196,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_outer_num]
-          shift: [-0.5kx, 0.5ky]
+          shift: [half_kx, -half_ky]
         params:
           hole_size: m3
           hole_drill: m3
@@ -201,7 +205,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_middle_num]
-          shift: [0, 0.5ky]
+          shift: [-half_kx, -half_ky]
         params:
           hole_size: m3
           hole_drill: m3
@@ -210,7 +214,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_inner_num]
-          shift: [0.5kx, 0.5ky]
+          shift: [half_kx, -half_ky]
         params:
           hole_size: m3
           hole_drill: m3
@@ -219,7 +223,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_outer_mod]
-          shift: [-0.6kx, -0.5ky]
+          shift: [half_kx, half_ky]
         params:
           hole_size: m3
           hole_drill: m3
@@ -228,25 +232,16 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_middle_mod]
-          shift: [0.5kx, -0.5ky]
+          shift: [half_kx, -half_ky]
         params:
           hole_size: m3
           hole_drill: m3
           designator: 'MH'
-      thumbs_right_bottom_mount:
+      thumbs_right_center_mount:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [thumbs_bottom_near]
-          shift: [0.5kx, -0.5ky]
-        params:
-          hole_size: m3
-          hole_drill: m3
-          designator: 'MH'
-      thumbs_right_top_mount:
-        what: ceoloide/mounting_hole_npth
-        where:
-          ref: [thumbs_bottom_far]
-          shift: [0.5kx, 0.5ky]
+          shift: [-half_kx, half_ky]
         params:
           hole_size: m3
           hole_drill: m3
@@ -255,9 +250,13 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_inner_bottom]
-          shift: [0.5kx, -0.5ky]
+          shift: [half_kx, half_ky]
         params:
           hole_size: m3
           hole_drill: m3
           designator: 'MH'
 cases:
+  bottom:
+    - name: board
+      extrude: 1
+
