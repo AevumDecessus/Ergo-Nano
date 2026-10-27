@@ -158,4 +158,34 @@ pcbs:
         adjust:
           shift: [-7, -5]
           rotate: 90
+      nice-nano:
+        what: ceoloide/mcu_nice_nano
+        params:
+          reverse_mount: true
+          reversible: true
+          P1: CS
+          P2: MOSI
+          P3: SCK
+          P5: ROW0
+          P6: ROW1
+          P7: ROW2
+          P8: ROW3
+          P9: ROW4
+          P20: COL0
+          P19: COL1
+          P18: COL2
+          P15: COL3
+          P14: COL4
+          P16: COL5
+          P10: COL6
+        where:
+          ref: matrix_inner_top
+          shift: [1.25kx,0.5ky]
+      nice-view:
+        what: ceoloide/display_nice_view
+        where:
+          ref: matrix_inner_top
+          shift: [1.25kx,0.25ky]
+        params:
+          reversible: true
 cases:
