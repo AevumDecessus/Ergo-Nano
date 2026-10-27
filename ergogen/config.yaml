@@ -99,30 +99,51 @@ points:
         near:
         far:
     mount_top_left:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_outer_num
         shift: [half_kx, -half_ky]
     mount_top_center:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_middle_num
         shift: [-half_kx, -half_ky]
     mount_top_right:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_inner_num
         shift: [half_kx, -half_ky]
     mount_bottom_left:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
     mount_center_bottom:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_middle_mod
         shift: [half_kx, -half_ky]
     mount_thumbs_right_center:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: thumbs_bottom_near
         shift: [-half_kx, half_ky]
     mount_bottom_right:
+      key:
+        height: 0
+        width: 0
       anchor:
         ref: matrix_inner_bottom
         shift: [half_kx, half_ky]
@@ -176,7 +197,7 @@ outlines:
       name: _board_tolerance
   keys:
     - what: rectangle
-      where: true
+      where: /^(matrix|thumbs)_/
       size: [kx-0.5, ky-0.5]
   combo:
     - name: board
