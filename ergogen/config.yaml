@@ -20,7 +20,12 @@ units:
   # Mounting holes
   m2: 2.2
   m3: 3.2
-  m3_heatset: 4
+  m3_heatset: 4.5
+  m3_heatset_height: 4
+  # plate sizes
+  plate_thickness: 1.6
+  wall_height: m3_heatset_height
+  # Total height, not added to plate_thickness
 points:
   zones:
     matrix:
@@ -127,6 +132,14 @@ outlines:
         - ref: matrix_outer_mod
           shift: [-half_px,-half_py]
       fillet: 5
+  _board_with_border: # 0.5 padding bigger than board
+    - what: outline
+      name: board
+      expand: 0.5padding
+  _board_wall: # a wall of only 0.5 padding bigger than the board
+    - name: _board_with_border
+    - operation: subtract
+      name: board
   keys:
     - what: rectangle
       where: true
@@ -256,7 +269,17 @@ pcbs:
           hole_drill: m3
           designator: 'MH'
 cases:
-  bottom:
-    - name: board
-      extrude: 1
+  _xl_bottom:
+    - name: _board_with_border
+      extrude: plate_thickness
+  _wall:
+    - name: _board_wall
+      extrude: wall_height
+  case:
+    - what: case
+      name: _xl_bottom
+      operation: add
+    - what: case
+      name: _wall
+      operation: add
 
