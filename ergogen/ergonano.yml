@@ -13,6 +13,10 @@ units:
   py: ky + padding
   half_x: 0.5px
   half_y: 0.5py
+  # Mounting holes
+  m2: 2.2
+  m3: 3.2
+  m3_heatset: 4
 points:
   zones:
     matrix:
@@ -128,4 +132,30 @@ outlines:
     - operation: subtract
       name: keys
 pcbs:
+  board:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      mx:
+        what: ceoloide/switch_mx
+        where: true
+        params:
+          hotswap: true
+          hotswap_pads_same_side: true
+          reversible: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: ceoloide/diode_tht_sod123
+        where: true
+        params:
+          reversible: true
+          include_tht: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [-7, -5]
+          rotate: 90
 cases:
