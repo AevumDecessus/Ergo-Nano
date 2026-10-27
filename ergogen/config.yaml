@@ -22,12 +22,13 @@ units:
   # Mounting holes
   m2: 2.2
   m3: 3.2
-  m3_heatset: 4.5
+  m3_heatset_hole: 4.5
   m3_heatset_height: 4
+  standoff_size: m3_heatset_hole + (padding / 2)
   # plate sizes
   plate_thickness: 1.6
-  wall_height: m3_heatset_height
-  # Total height, not added to plate_thickness
+  wall_height: m3_heatset_height + plate_thickness
+  # Extrudes the walls to be level with the top of the PCB
 points:
   zones:
     matrix:
@@ -195,6 +196,14 @@ outlines:
     - name: _board_with_border
     - operation: subtract
       name: _board_tolerance
+  _standoffs:
+    - what: circle
+      radius: standoff_size / 2
+      where: /^mount_/
+  _standoff_holes:
+    - what: circle
+      radius: m3_heatset_hole / 2
+      where: /^mount_/
   keys:
     - what: rectangle
       where: /^(matrix|thumbs)_/
@@ -274,6 +283,12 @@ cases:
   _wall:
     - name: _board_wall
       extrude: wall_height
+  _case_standoffs:
+    - name: _standoffs
+      extrude: m3_heatset_height
+  _case_standoff_holes:
+    - name: _standoff_holes
+      extrude: m3_heatset_height
   case:
     - what: case
       name: _xl_bottom
@@ -281,3 +296,9 @@ cases:
     - what: case
       name: _wall
       operation: add
+    - what: case
+      name: _case_standoffs
+      operation: add
+    - what: case
+      name: _case_standoff_holes
+      operation: subtract
