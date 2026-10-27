@@ -188,4 +188,76 @@ pcbs:
           shift: [1.25kx,0.25ky]
         params:
           reversible: true
+      top_left_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_outer_num]
+          shift: [-0.5kx, 0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      top_center_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_middle_num]
+          shift: [0, 0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      top_right_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_inner_num]
+          shift: [0.5kx, 0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      bottom_left_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_outer_mod]
+          shift: [-0.6kx, -0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      center_bottom_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_middle_mod]
+          shift: [0.5kx, -0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      thumbs_right_bottom_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_bottom_near]
+          shift: [0.5kx, -0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      thumbs_right_top_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_bottom_far]
+          shift: [0.5kx, 0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
+      bottom_right_mount:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [matrix_inner_bottom]
+          shift: [0.5kx, -0.5ky]
+        params:
+          hole_size: m3
+          hole_drill: m3
+          designator: 'MH'
 cases:
