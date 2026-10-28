@@ -53,11 +53,14 @@ points:
           key:
             column_net: COL4
             stagger: -5
-          rows.mod.skip: true
         inner:
           key:
             column_net: COL5
             stagger: -5
+          rows.mod.skip: true
+        inner_mod:
+          key: 
+            column_net: COL6
           rows.mod.skip: true
       rows:
         mod:
@@ -75,25 +78,25 @@ points:
         padding: 1kx
         spread: 1ky
       anchor:
-        ref: matrix_middle_mod
-        shift: [half_kx,-1.5ky]
+        ref: matrix_index_mod
+        shift: [half_kx,-1.25ky]
         rotate: -50
       columns:
         top:
           key:
-            column_net: COL6
+            column_net: COL7
             height: 2ky
             shift: [0, half_ky]
           rows.far.skip: true
           rows.near.row_net: ROW0
         middle:
           key:
-            column_net: COL6
+            column_net: COL7
           rows.near.row_net: ROW4
           rows.far.row_net: ROW1
         bottom:
           key:
-            column_net: COL6
+            column_net: COL7
           rows.near.row_net: ROW3
           rows.far.row_net: ROW2
       rows:
@@ -161,16 +164,16 @@ outlines:
           shift: [-half_px,half_py]
         - ref: matrix_middle_num
           shift: [half_px,half_py]
-        - ref: matrix_inner_num
+        - ref: matrix_inner_mod_num
           shift: [half_px,half_py]
-        - ref: matrix_inner_num # top right space for the MCU
-          shift: [1.5px, half_py]
-        - ref: matrix_inner_top # bottom right space for the MCU
-          shift: [1.5px, -half_py]
-        - ref: matrix_inner_bottom
+        - ref: matrix_inner_mod_num # top right space for the MCU
+          shift: [2kx, half_py]
+        - ref: matrix_inner_mod_top # bottom right space for the MCU
+          shift: [2kx, -half_py]
+        - ref: matrix_inner_mod_bottom
           shift: [half_px,-half_py]
         - ref: thumbs_middle_far
-          shift: [half_px,half_py]
+          shift: [-half_px,half_py]
         - ref: thumbs_bottom_far
           shift: [half_px,half_py]
         - ref: thumbs_bottom_near
@@ -252,20 +255,21 @@ pcbs:
           P7: ROW2
           P8: ROW3
           P9: ROW4
-          P20: COL0
-          P19: COL1
-          P18: COL2
-          P15: COL3
-          P14: COL4
-          P16: COL5
-          P10: COL6
+          P21: COL0
+          P20: COL1
+          P19: COL2
+          P18: COL3
+          P15: COL4
+          P14: COL5
+          P16: COL6
+          P10: COL7
         where:
-          ref: matrix_inner_top
+          ref: matrix_inner_mod_top
           shift: [1.25kx,half_ky]
       nice-view:
         what: ceoloide/display_nice_view
         where:
-          ref: matrix_inner_top
+          ref: matrix_inner_mod_top
           shift: [1.25kx,0.25ky]
         params:
           reversible: true
