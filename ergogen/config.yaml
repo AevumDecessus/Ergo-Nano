@@ -7,8 +7,12 @@ units:
   # Proxy Spacing Variables
   kx: U
   ky: U
+  ks: 19 # horizontal space between columns (default: 19)
+  kp: 19 # vertical padding between keys (deafult: 19)
   half_kx: 0.5kx
   half_ky: 0.5ky
+  kcow: 14 #key cutout hole width
+  kcoh: 14 #key cutout hole height
   # Padding Variables
   padding: 7
   px: kx + padding
@@ -51,6 +55,11 @@ units:
 points:
   zones:
     matrix:
+      key:
+        padding: kp
+        tags:
+          - key
+          - matrix_key
       anchor:
         shift: [50, -125]
       columns:
@@ -97,8 +106,11 @@ points:
           row_net: RW0
     thumbs:
       key:
-        padding: 1kx
+        padding: 1kp
         spread: 1ky
+        tags:
+          - key
+          - thumb_cluster
       anchor:
         ref: matrix_index_mod
         shift: [half_kx,-1.25ky]
@@ -126,57 +138,65 @@ points:
         far:
     mount_top_left:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_outer_num
         shift: [half_kx, -half_ky]
     mount_top_center:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_middle_num
         shift: [half_kx, -half_ky]
     mount_top_right:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_innermod_num
         shift: [0.75kx, -half_ky]
     mount_bottom_left:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
     mount_center:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_middle_home
         shift: [half_kx, -half_ky]
     mount_center_bottom:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_middle_mod
         shift: [half_kx, -half_ky]
     mount_thumbs_right_center:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: thumbs_t_col2_near
         shift: [-half_kx, half_ky]
     mount_bottom_right:
       key:
-        height: 0
-        width: 0
+        tags:
+          - helper
+          - screws
       anchor:
         ref: matrix_innermod_bottom
         shift: [half_kx, half_ky]
@@ -218,6 +238,28 @@ outlines:
         - ref: matrix_outer_mod
           shift: [-half_px,-half_py]
       fillet: 5
+  _standoffs:
+    - what: circle
+      radius: standoff_size / 2
+      where: /screw/
+  _standoff_holes:
+    - what: circle
+      radius: m3_heatset_hole / 2
+      where: /screw/
+  _switch_cutouts:
+    - what: rectangle
+      fillet: 2
+      where: /key/
+      size: [kcow, kcoh]
+  switch_plate:
+    - what: outline
+      name: board
+    - what: outline
+      name: _standoff_holes
+      operation: subtract
+    - what: outline
+      name: _switch_cutouts
+      operation: subtract
   _board_with_border: # 0.5 padding bigger than board
     - what: outline
       name: board
@@ -230,17 +272,9 @@ outlines:
     - name: _board_with_border
     - operation: subtract
       name: _board_tolerance
-  _standoffs:
-    - what: circle
-      radius: standoff_size / 2
-      where: /^mount_/
-  _standoff_holes:
-    - what: circle
-      radius: m3_heatset_hole / 2
-      where: /^mount_/
   keys:
     - what: rectangle
-      where: /^(matrix|thumbs)_/
+      where: /key/
       size: [kx-0.5, ky-0.5]
   combo:
     - name: board
@@ -255,7 +289,7 @@ pcbs:
     footprints:
       mx:
         what: ceoloide/switch_mx
-        where: /^(matrix|thumbs)_/
+        where: /key/
         params:
           hotswap: true
           hotswap_pads_same_side: true
@@ -264,7 +298,7 @@ pcbs:
           to: "{{colrow}}"
       diode:
         what: ceoloide/diode_tht_sod123
-        where: /^(matrix|thumbs)_/
+        where: /key/
         params:
           reversible: true
           include_tht: true
@@ -390,14 +424,14 @@ pcbs:
           text: Right Hand
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
-        where: /^mount_/
+        where: /screw/
         params:
           hole_size: m3
           hole_drill: m3
           designator: 'MH'
       key_diode_routes:
         what: ceoloide/utility_router
-        where: /^(matrix|thumbs)_/
+        where: /key/
         params:
           net: "{{colrow}}"
           route: "f(-7.75,-5)(-9,-4)(-9,-1)(-6,3)"
