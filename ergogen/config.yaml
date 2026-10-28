@@ -21,6 +21,9 @@ units:
   half_py: 0.5py
   dpx: 2px
   dpy: 2py
+  # MCU
+  mcu_width: 18.3
+  mcu_height: 34.1
   # Relative column staggers
   st_outer: 0
   st_pinky: 0
@@ -40,8 +43,11 @@ units:
   y_middle_to_index: start_y + st_index
   y_index_to_inner: start_y + st_inner
   y_inner_to_innermod: start_y + st_innermod
+  # kicad shifts
+  kicad_shift_x: 50
+  kicad_shift_y: -125
   # Tolerances
-  board_tolerance: 0.1 #Leave this much space around the board in the case
+  board_tolerance: 0.3 #Leave this much space around the board in the case
   # Mounting holes
   m3: 3.2
   m3_heatset_hole: 4.5
@@ -60,7 +66,7 @@ points:
           - key
           - matrix_key
       anchor:
-        shift: [50, -125]
+        shift: [kicad_shift_x, kicad_shift_y]
       columns:
         outer:
           key:
@@ -135,7 +141,7 @@ points:
       rows:
         near:
         far:
-    mount_top_left:
+    screw_top_left:
       key:
         tags:
           - helper
@@ -143,7 +149,7 @@ points:
       anchor:
         ref: matrix_outer_num
         shift: [half_kx, -half_ky]
-    mount_top_center:
+    screw_top_center:
       key:
         tags:
           - helper
@@ -151,7 +157,7 @@ points:
       anchor:
         ref: matrix_index_num
         shift: [half_kx, half_ky]
-    mount_top_right:
+    screw_top_right:
       key:
         tags:
           - helper
@@ -159,7 +165,7 @@ points:
       anchor:
         ref: matrix_innermod_num
         shift: [half_kx, -half_ky]
-    mount_bottom_left:
+    screw_bottom_left:
       key:
         tags:
           - helper
@@ -167,7 +173,7 @@ points:
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
-    mount_center:
+    screw_center:
       key:
         tags:
           - helper
@@ -175,7 +181,7 @@ points:
       anchor:
         ref: matrix_index_mod
         shift: [half_kx, -half_ky]
-    mount_center_bottom:
+    screw_center_bottom:
       key:
         tags:
           - helper
@@ -183,7 +189,7 @@ points:
       anchor:
         ref: matrix_ring_mod
         shift: [half_kx, -half_ky]
-    mount_thumbs_right_center:
+    screw_thumbs_right_center:
       key:
         tags:
           - helper
@@ -191,7 +197,7 @@ points:
       anchor:
         ref: thumbs_t_col2_near
         shift: [-half_kx, half_ky]
-    mount_bottom_right:
+    screw_bottom_right:
       key:
         tags:
           - helper
@@ -199,8 +205,36 @@ points:
       anchor:
         ref: matrix_innermod_bottom
         shift: [half_kx, half_ky]
+    mcu_cover_top_left:
+      key.tags:
+        - helper
+        - mcu
+      anchor:
+        - ref: matrix_innermod_num
+          shift: [kx,5]
+    mcu_cover_top_right:
+      key.tags:
+        - helper
+        - mcu
+      anchor:
+        - ref: mcu_cover_top_left
+          shift: [mcu_width,0]
+    mcu_cover_bottom_right:
+      key.tags:
+        - helper
+        - mcu
+      anchor:
+        - ref: mcu_cover_top_right
+          shift: [0,-mcu_height]
+    mcu_cover_bottom_left:
+      key.tags:
+        - helper
+        - mcu
+      anchor:
+        - ref: mcu_cover_top_left
+          shift: [0,-mcu_height]
 outlines:
-  board:
+  _matrix_outline:
     - what: polygon
       operation: stack
       points:
@@ -214,14 +248,8 @@ outlines:
           shift: [half_px,half_py]
         - ref: matrix_innermod_num
           shift: [half_px,half_py]
-        - ref: matrix_innermod_num # top right space for the MCU
-          shift: [2.25kx, half_py]
-        - ref: matrix_innermod_top # bottom right space for the MCU
-          shift: [2.25kx, -half_py]
         - ref: matrix_innermod_bottom
           shift: [half_px,-half_py]
-        - ref: thumbs_t_col1_far
-          shift: [-half_px,half_py]
         - ref: thumbs_t_col2_far
           shift: [half_px,half_py]
         - ref: thumbs_t_col2_near
@@ -236,7 +264,40 @@ outlines:
           shift: [half_px, -half_py]
         - ref: matrix_outer_mod
           shift: [-half_px,-half_py]
-      fillet: 5
+      fillet: 2
+  _mcu_outline:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: mcu_cover_top_left
+          shift: [-padding, padding]
+        - ref: mcu_cover_top_right # bottom right space for the MCU
+          shift: [padding, padding]
+        - ref: mcu_cover_bottom_right
+          shift: [padding, -padding]
+        - ref: mcu_cover_bottom_left
+          shift: [-padding, -padding]
+      fillet: 2
+  _pcb_outline:
+    - what: outline
+      name: _mcu_outline
+    - what: outline
+      name: _matrix_outline
+      operation: add
+      fillet: 2
+  _mcu_tight:
+    - what: polygon
+      operation: stack
+      points:
+        - mcu_cover_top_left
+        - mcu_cover_top_right
+        - mcu_cover_bottom_right
+        - mcu_cover_bottom_left
+  _mcu_tolerance:
+    - what: outline
+      name: _mcu_tight
+      expand: board_tolerance
+      fillet: 2
   _standoffs:
     - what: circle
       radius: standoff_size / 2
@@ -252,39 +313,37 @@ outlines:
       size: [kcow, kcoh]
   switch_plate:
     - what: outline
-      name: board
+      name: _matrix_outline
     - what: outline
       name: _standoff_holes
       operation: subtract
     - what: outline
       name: _switch_cutouts
       operation: subtract
-  _board_with_border: # 0.5 padding bigger than board
+  _pcb_with_border: # 0.5 padding bigger than board
     - what: outline
-      name: board
+      name: _pcb_outline
       expand: 0.5padding
-  _board_tolerance:
+  _pcb_tolerance:
     - what: outline
-      name: board
+      name: _pcb_outline
       expand: board_tolerance
-  _board_wall: # a wall of only 0.5 padding bigger than the board
-    - name: _board_with_border
+  _case_wall: # a wall of only 0.5 padding bigger than the board
+    - name: _pcb_with_border
     - operation: subtract
-      name: _board_tolerance
-  keys:
-    - what: rectangle
-      where: /key/
-      size: [kx-0.5, ky-0.5]
+      name: _pcb_tolerance
   combo:
-    - name: board
+    - name: _pcb_outline
     - operation: subtract
-      name: keys
+      name: _switch_cutouts
+    - operation: subtract
+      name: _mcu_tight
 pcbs:
   board:
     template: kicad8
     outlines:
       main:
-        outline: board
+        outline: _pcb_outline
     footprints:
       mx:
         what: ceoloide/switch_mx
@@ -293,6 +352,9 @@ pcbs:
           hotswap: true
           hotswap_pads_same_side: true
           reversible: true
+          include_silkscreen: true
+          include_corner_marks: true
+          locked_traces_vias: true
           from: "{{column_net}}"
           to: "{{colrow}}"
       diode:
@@ -328,13 +390,13 @@ pcbs:
           P16: CL6
           P10: CL7
         where:
-          ref: matrix_innermod_top
-          shift: [1.5kx,half_ky]
+          ref: mcu_cover_top_left
+          shift: [(mcu_width / 2), -(mcu_height / 2)]
       nice-view:
         what: ceoloide/display_nice_view
         where:
-          ref: matrix_innermod_top
-          shift: [1.5kx,0.25ky]
+          ref: mcu_cover_top_left
+          shift: [(mcu_width / 2), -(mcu_height / 2)]
         params:
           reversible: true
       battery_jst:
@@ -350,7 +412,7 @@ pcbs:
         what: ceoloide/power_switch_smd_side
         where:
           ref: matrix_innermod_num
-          shift: [0.75kx,0.4py]
+          shift: [.75kx,0.35py]
           rotate: 90
         params:
           reversible: true
@@ -444,10 +506,10 @@ pcbs:
           locked: true
 cases:
   _xl_bottom:
-    - name: _board_with_border
+    - name: _pcb_with_border
       extrude: plate_thickness
   _wall:
-    - name: _board_wall
+    - name: _case_wall
       extrude: wall_height
   _case_standoffs:
     - name: _standoffs
