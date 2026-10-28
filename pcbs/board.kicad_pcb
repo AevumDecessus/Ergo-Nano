@@ -9097,7 +9097,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 116.525 48.525 0)
+    (at 135.525 34.475 0)
     (property "Reference" "MH2"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -9115,7 +9115,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 178.2875 58.525 0)
+    (at 173.525 58.525 0)
     (property "Reference" "MH3"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -9151,7 +9151,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 116.525 86.525 0)
+    (at 135.525 129.525 0)
     (property "Reference" "MH5"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -9169,7 +9169,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 116.525 124.525 0)
+    (at 97.525 129.525 0)
     (property "Reference" "MH6"
       (at 0 2.55 0)
       (layer "F.SilkS")
