@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "gen": "ergogen ergogen/"
+    },
+    "dependencies": {
+        "ergogen": "github:ergogen/ergogen"
+   }
+}
