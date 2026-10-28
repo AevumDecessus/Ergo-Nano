@@ -115,13 +115,13 @@ points:
         width: 0
       anchor:
         ref: matrix_middle_num
-        shift: [-half_kx, -half_ky]
+        shift: [half_kx, -half_ky]
     mount_top_right:
       key:
         height: 0
         width: 0
       anchor:
-        ref: matrix_inner_num
+        ref: matrix_inner_mod_num
         shift: [half_kx, -half_ky]
     mount_bottom_left:
       key:
@@ -130,6 +130,13 @@ points:
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
+    mount_center:
+      key:
+        height: 0
+        width: 0
+      anchor:
+        ref: matrix_middle_home
+        shift: [half_kx, -half_ky]
     mount_center_bottom:
       key:
         height: 0
@@ -149,7 +156,7 @@ points:
         height: 0
         width: 0
       anchor:
-        ref: matrix_inner_bottom
+        ref: matrix_inner_mod_bottom
         shift: [half_kx, half_ky]
 outlines:
   board:
