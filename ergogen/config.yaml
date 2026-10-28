@@ -37,42 +37,42 @@ points:
       columns:
         outer:
           key:
-            column_net: COL0
+            column_net: CL0
         pinky:
           key:
-            column_net: COL1
+            column_net: CL1
         ring:
           key:
-            column_net: COL2
+            column_net: CL2
             stagger: 5
         middle:
           key:
-            column_net: COL3
+            column_net: CL3
             stagger: 5
         index:
           key:
-            column_net: COL4
+            column_net: CL4
             stagger: -5
         inner:
           key:
-            column_net: COL5
+            column_net: CL5
             stagger: -5
           rows.mod.skip: true
         inner_mod:
           key: 
-            column_net: COL6
+            column_net: CL6
           rows.mod.skip: true
       rows:
         mod:
-          row_net: ROW4
+          row_net: RW4
         bottom:
-          row_net: ROW3
+          row_net: RW3
         home:
-          row_net: ROW2
+          row_net: RW2
         top:
-          row_net: ROW1
+          row_net: RW1
         num:
-          row_net: ROW0
+          row_net: RW0
     thumbs:
       key:
         padding: 1kx
@@ -84,21 +84,21 @@ points:
       columns:
         top:
           key:
-            column_net: COL7
+            column_net: CL7
             height: 2ky
             shift: [0, half_ky]
           rows.far.skip: true
-          rows.near.row_net: ROW0
+          rows.near.row_net: RW0
         middle:
           key:
-            column_net: COL7
-          rows.near.row_net: ROW4
-          rows.far.row_net: ROW1
+            column_net: CL7
+          rows.near.row_net: RW4
+          rows.far.row_net: RW1
         bottom:
           key:
-            column_net: COL7
-          rows.near.row_net: ROW3
-          rows.far.row_net: ROW2
+            column_net: CL7
+          rows.near.row_net: RW3
+          rows.far.row_net: RW2
       rows:
         near:
         far:
@@ -255,21 +255,21 @@ pcbs:
           reverse_mount: true
           reversible: true
           P1: CS
-          P2: MOSI
+          P2: MOS
           P3: SCK
-          P5: ROW0
-          P6: ROW1
-          P7: ROW2
-          P8: ROW3
-          P9: ROW4
-          P21: COL0
-          P20: COL1
-          P19: COL2
-          P18: COL3
-          P15: COL4
-          P14: COL5
-          P16: COL6
-          P10: COL7
+          P5: RW0
+          P6: RW1
+          P7: RW2
+          P8: RW3
+          P9: RW4
+          P21: CL0
+          P20: CL1
+          P19: CL2
+          P18: CL3
+          P15: CL4
+          P14: CL5
+          P16: CL6
+          P10: CL7
         where:
           ref: matrix_inner_mod_top
           shift: [1.25kx,half_ky]
