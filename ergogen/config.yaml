@@ -122,7 +122,7 @@ points:
         width: 0
       anchor:
         ref: matrix_inner_mod_num
-        shift: [half_kx, -half_ky]
+        shift: [0.75kx, -half_ky]
     mount_bottom_left:
       key:
         height: 0
@@ -174,9 +174,9 @@ outlines:
         - ref: matrix_inner_mod_num
           shift: [half_px,half_py]
         - ref: matrix_inner_mod_num # top right space for the MCU
-          shift: [2kx, half_py]
+          shift: [2.25kx, half_py]
         - ref: matrix_inner_mod_top # bottom right space for the MCU
-          shift: [2kx, -half_py]
+          shift: [2.25kx, -half_py]
         - ref: matrix_inner_mod_bottom
           shift: [half_px,-half_py]
         - ref: thumbs_middle_far
@@ -272,12 +272,39 @@ pcbs:
           P10: CL7
         where:
           ref: matrix_inner_mod_top
-          shift: [1.25kx,half_ky]
+          shift: [1.5kx,half_ky]
       nice-view:
         what: ceoloide/display_nice_view
         where:
           ref: matrix_inner_mod_top
-          shift: [1.25kx,0.25ky]
+          shift: [1.5kx,0.25ky]
+        params:
+          reversible: true
+      battery_jst:
+        what: ceoloide/battery_connector_jst_ph_2
+        where:
+          ref: matrix_inner_mod_num
+          shift: [0.75kx,-0.25ky]
+          rotate: 180
+        params:
+          reversible: true
+          include_traces: true
+      power_switch:
+        what: ceoloide/power_switch_smd_side
+        where:
+          ref: matrix_inner_mod_num
+          shift: [0.75kx,0.4py]
+          rotate: 90
+        params:
+          reversible: true
+          from: BAT_P
+          to: VCC
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where:
+          ref: matrix_inner_mod_top
+          shift: [0.75kx, 0]
+          rotate: 90
         params:
           reversible: true
       board_mounting_holes:
