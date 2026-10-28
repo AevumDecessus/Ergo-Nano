@@ -422,7 +422,7 @@ cases:
   _case_standoff_holes:
     - name: _standoff_holes
       extrude: m3_heatset_height
-  case:
+  bottom_case:
     - what: case
       name: _xl_bottom
       operation: add

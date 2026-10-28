@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "gen": "ergogen ./ergogen/ --output ./ --clear"
+        "gen": "ergogen ./ergogen/ --output ./ --clear && npx @jscad/cli cases/bottom_case.jscad"
     },
     "dependencies": {
         "ergogen": "github:ergogen/ergogen#develop",
