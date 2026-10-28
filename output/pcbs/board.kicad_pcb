@@ -121,10 +121,10 @@
 (net 37 "inner_top")
 (net 38 "inner_num")
 (net 39 "CL6")
-(net 40 "inner_mod_bottom")
-(net 41 "inner_mod_home")
-(net 42 "inner_mod_top")
-(net 43 "inner_mod_num")
+(net 40 "innermod_bottom")
+(net 41 "innermod_home")
+(net 42 "innermod_top")
+(net 43 "innermod_num")
 (net 44 "CL7")
 (net 45 "t_col0_near")
 (net 46 "t_col1_near")
@@ -4196,7 +4196,7 @@
 			(roundrect_rratio 0)
 			(chamfer_ratio 0.2)
 			(chamfer bottom_right)
-      (net 40 "inner_mod_bottom")
+      (net 40 "innermod_bottom")
     )
     
 		(pad "" np_thru_hole circle (at 2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
@@ -4205,7 +4205,7 @@
       (at -7.085 -2.54 0)
       (size 2.55 2.5)
       (layers "B.Cu" "B.Paste" "B.Mask")
-      (net 40 "inner_mod_bottom")
+      (net 40 "innermod_bottom")
     )
 		(pad "2" smd roundrect
       (at 5.842 -5.08 0)
@@ -4333,7 +4333,7 @@
 			(roundrect_rratio 0)
 			(chamfer_ratio 0.2)
 			(chamfer bottom_right)
-      (net 41 "inner_mod_home")
+      (net 41 "innermod_home")
     )
     
 		(pad "" np_thru_hole circle (at 2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
@@ -4342,7 +4342,7 @@
       (at -7.085 -2.54 0)
       (size 2.55 2.5)
       (layers "B.Cu" "B.Paste" "B.Mask")
-      (net 41 "inner_mod_home")
+      (net 41 "innermod_home")
     )
 		(pad "2" smd roundrect
       (at 5.842 -5.08 0)
@@ -4470,7 +4470,7 @@
 			(roundrect_rratio 0)
 			(chamfer_ratio 0.2)
 			(chamfer bottom_right)
-      (net 42 "inner_mod_top")
+      (net 42 "innermod_top")
     )
     
 		(pad "" np_thru_hole circle (at 2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
@@ -4479,7 +4479,7 @@
       (at -7.085 -2.54 0)
       (size 2.55 2.5)
       (layers "B.Cu" "B.Paste" "B.Mask")
-      (net 42 "inner_mod_top")
+      (net 42 "innermod_top")
     )
 		(pad "2" smd roundrect
       (at 5.842 -5.08 0)
@@ -4607,7 +4607,7 @@
 			(roundrect_rratio 0)
 			(chamfer_ratio 0.2)
 			(chamfer bottom_right)
-      (net 43 "inner_mod_num")
+      (net 43 "innermod_num")
     )
     
 		(pad "" np_thru_hole circle (at 2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
@@ -4616,7 +4616,7 @@
       (at -7.085 -2.54 0)
       (size 2.55 2.5)
       (layers "B.Cu" "B.Paste" "B.Mask")
-      (net 43 "inner_mod_num")
+      (net 43 "innermod_num")
     )
 		(pad "2" smd roundrect
       (at 5.842 -5.08 0)
@@ -6508,7 +6508,7 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "RW3"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 40 "inner_mod_bottom"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 40 "innermod_bottom"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -6519,10 +6519,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "RW3"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "inner_mod_bottom"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "innermod_bottom"))
         
       (pad "1" thru_hole rect (at -3.81 0 90) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 51 "RW3"))
-      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 40 "inner_mod_bottom"))
+      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 40 "innermod_bottom"))
         
     )
         
@@ -6546,7 +6546,7 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "RW2"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 41 "inner_mod_home"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 41 "innermod_home"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -6557,10 +6557,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 52 "RW2"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "inner_mod_home"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "innermod_home"))
         
       (pad "1" thru_hole rect (at -3.81 0 90) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 52 "RW2"))
-      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 41 "inner_mod_home"))
+      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 41 "innermod_home"))
         
     )
         
@@ -6584,7 +6584,7 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 53 "RW1"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 42 "inner_mod_top"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 42 "innermod_top"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -6595,10 +6595,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "RW1"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 42 "inner_mod_top"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 42 "innermod_top"))
         
       (pad "1" thru_hole rect (at -3.81 0 90) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 53 "RW1"))
-      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 42 "inner_mod_top"))
+      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 42 "innermod_top"))
         
     )
         
@@ -6622,7 +6622,7 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 54 "RW0"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 43 "inner_mod_num"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 43 "innermod_num"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -6633,10 +6633,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 54 "RW0"))
-      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 43 "inner_mod_num"))
+      (pad "2" smd rect (at 1.65 0 90) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 43 "innermod_num"))
         
       (pad "1" thru_hole rect (at -3.81 0 90) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 54 "RW0"))
-      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 43 "inner_mod_num"))
+      (pad "2" thru_hole circle (at 3.81 0 90) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 43 "innermod_num"))
         
     )
         
@@ -10165,6 +10165,1202 @@
     (locked no)
     (layer F.Cu)
     (net 49)
+  )
+
+
+  (segment
+    (start 57.75 120) 
+    (end 57.75 118)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 118) 
+    (end 57 118)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 118) 
+    (end 57 105)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 105) 
+    (end 57.75 105)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 105) 
+    (end 57.75 101)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 57.75 101) 
+    (end 57.75 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 99) 
+    (end 57 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 99) 
+    (end 57 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 86) 
+    (end 57.75 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 86) 
+    (end 57.75 82)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 57.75 82) 
+    (end 57.75 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 80) 
+    (end 57 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 80) 
+    (end 57 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 67) 
+    (end 57.75 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 67) 
+    (end 57.75 63)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 57.75 63) 
+    (end 57.75 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 61) 
+    (end 57 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 61) 
+    (end 57 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57 48) 
+    (end 57.75 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 57.75 48) 
+    (end 57.75 44)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 76.75 120) 
+    (end 76.75 118)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 118) 
+    (end 76 118)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 118) 
+    (end 76 105)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 105) 
+    (end 76.75 105)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 105) 
+    (end 76.75 101)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 76.75 101) 
+    (end 76.75 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 99) 
+    (end 76 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 99) 
+    (end 76 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 86) 
+    (end 76.75 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 86) 
+    (end 76.75 82)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 76.75 82) 
+    (end 76.75 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 80) 
+    (end 76 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 80) 
+    (end 76 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 67) 
+    (end 76.75 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 67) 
+    (end 76.75 63)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 76.75 63) 
+    (end 76.75 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 61) 
+    (end 76 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 61) 
+    (end 76 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76 48) 
+    (end 76.75 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 76.75 48) 
+    (end 76.75 44)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 95.75 115) 
+    (end 95.75 113)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 113) 
+    (end 95 113)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 113) 
+    (end 95 100)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 100) 
+    (end 95.75 100)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 100) 
+    (end 95.75 96)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 95.75 96) 
+    (end 95.75 94)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 94) 
+    (end 95 94)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 94) 
+    (end 95 81)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 81) 
+    (end 95.75 81)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 81) 
+    (end 95.75 77)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 95.75 77) 
+    (end 95.75 75)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 75) 
+    (end 95 75)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 75) 
+    (end 95 62)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 62) 
+    (end 95.75 62)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 62) 
+    (end 95.75 58)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 95.75 58) 
+    (end 95.75 56)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 56) 
+    (end 95 56)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 56) 
+    (end 95 43)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95 43) 
+    (end 95.75 43)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 95.75 43) 
+    (end 95.75 39)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 114.75 110) 
+    (end 114.75 108)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 108) 
+    (end 114 108)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 108) 
+    (end 114 95)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 95) 
+    (end 114.75 95)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 95) 
+    (end 114.75 91)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 114.75 91) 
+    (end 114.75 89)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 89) 
+    (end 114 89)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 89) 
+    (end 114 76)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 76) 
+    (end 114.75 76)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 76) 
+    (end 114.75 72)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 114.75 72) 
+    (end 114.75 70)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 70) 
+    (end 114 70)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 70) 
+    (end 114 57)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 57) 
+    (end 114.75 57)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 57) 
+    (end 114.75 53)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 114.75 53) 
+    (end 114.75 51)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 51) 
+    (end 114 51)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 51) 
+    (end 114 38)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114 38) 
+    (end 114.75 38)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 114.75 38) 
+    (end 114.75 34)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 133.75 115) 
+    (end 133.75 113)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 113) 
+    (end 133 113)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 113) 
+    (end 133 100)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 100) 
+    (end 133.75 100)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 100) 
+    (end 133.75 96)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 133.75 96) 
+    (end 133.75 94)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 94) 
+    (end 133 94)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 94) 
+    (end 133 81)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 81) 
+    (end 133.75 81)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 81) 
+    (end 133.75 77)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 133.75 77) 
+    (end 133.75 75)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 75) 
+    (end 133 75)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 75) 
+    (end 133 62)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 62) 
+    (end 133.75 62)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 62) 
+    (end 133.75 58)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 133.75 58) 
+    (end 133.75 56)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 56) 
+    (end 133 56)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 56) 
+    (end 133 43)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133 43) 
+    (end 133.75 43)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 133.75 43) 
+    (end 133.75 39)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 152.75 101) 
+    (end 152.75 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 99) 
+    (end 152 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 99) 
+    (end 152 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 86) 
+    (end 152.75 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 86) 
+    (end 152.75 82)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 152.75 82) 
+    (end 152.75 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 80) 
+    (end 152 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 80) 
+    (end 152 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 67) 
+    (end 152.75 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 67) 
+    (end 152.75 63)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 152.75 63) 
+    (end 152.75 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 61) 
+    (end 152 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 61) 
+    (end 152 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152 48) 
+    (end 152.75 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 152.75 48) 
+    (end 152.75 44)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 171.75 101) 
+    (end 171.75 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 99) 
+    (end 171 99)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 99) 
+    (end 171 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 86) 
+    (end 171.75 86)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 86) 
+    (end 171.75 82)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 171.75 82) 
+    (end 171.75 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 80) 
+    (end 171 80)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 80) 
+    (end 171 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 67) 
+    (end 171.75 67)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 67) 
+    (end 171.75 63)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 171.75 63) 
+    (end 171.75 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 61) 
+    (end 171 61)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 61) 
+    (end 171 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171 48) 
+    (end 171.75 48)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
+  )
+
+  (segment
+    (start 171.75 48) 
+    (end 171.75 44)
+    (width 0.25)
+    (locked no)
+    (layer B.Cu)
+    (net 0)
   )
 
   (gr_line (start 36.975 133.025) (end 36.975 40.36020210526316) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

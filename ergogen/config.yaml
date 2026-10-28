@@ -58,7 +58,7 @@ points:
             column_net: CL5
             stagger: -5
           rows.mod.skip: true
-        inner_mod:
+        innermod:
           key: 
             column_net: CL6
           rows.mod.skip: true
@@ -121,7 +121,7 @@ points:
         height: 0
         width: 0
       anchor:
-        ref: matrix_inner_mod_num
+        ref: matrix_innermod_num
         shift: [0.75kx, -half_ky]
     mount_bottom_left:
       key:
@@ -156,7 +156,7 @@ points:
         height: 0
         width: 0
       anchor:
-        ref: matrix_inner_mod_bottom
+        ref: matrix_innermod_bottom
         shift: [half_kx, half_ky]
 outlines:
   board:
@@ -171,13 +171,13 @@ outlines:
           shift: [-half_px,half_py]
         - ref: matrix_middle_num
           shift: [half_px,half_py]
-        - ref: matrix_inner_mod_num
+        - ref: matrix_innermod_num
           shift: [half_px,half_py]
-        - ref: matrix_inner_mod_num # top right space for the MCU
+        - ref: matrix_innermod_num # top right space for the MCU
           shift: [2.25kx, half_py]
-        - ref: matrix_inner_mod_top # bottom right space for the MCU
+        - ref: matrix_innermod_top # bottom right space for the MCU
           shift: [2.25kx, -half_py]
-        - ref: matrix_inner_mod_bottom
+        - ref: matrix_innermod_bottom
           shift: [half_px,-half_py]
         - ref: thumbs_t_col1_far
           shift: [-half_px,half_py]
@@ -273,19 +273,19 @@ pcbs:
           P16: CL6
           P10: CL7
         where:
-          ref: matrix_inner_mod_top
+          ref: matrix_innermod_top
           shift: [1.5kx,half_ky]
       nice-view:
         what: ceoloide/display_nice_view
         where:
-          ref: matrix_inner_mod_top
+          ref: matrix_innermod_top
           shift: [1.5kx,0.25ky]
         params:
           reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          ref: matrix_inner_mod_num
+          ref: matrix_innermod_num
           shift: [0.75kx,-0.25ky]
           rotate: 180
         params:
@@ -294,7 +294,7 @@ pcbs:
       power_switch:
         what: ceoloide/power_switch_smd_side
         where:
-          ref: matrix_inner_mod_num
+          ref: matrix_innermod_num
           shift: [0.75kx,0.4py]
           rotate: 90
         params:
@@ -304,7 +304,7 @@ pcbs:
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where:
-          ref: matrix_inner_mod_top
+          ref: matrix_innermod_top
           shift: [0.75kx, 0]
           rotate: 90
         params:
@@ -316,12 +316,18 @@ pcbs:
           hole_size: m3
           hole_drill: m3
           designator: 'MH'
-      key_routes:
+      key_diode_routes:
         what: ceoloide/utility_router
         where: /^(matrix|thumbs)_/
         params:
           net: "{{colrow}}"
           route: "f(-7.75,-5)(-9,-5)(-9,-1)(-6,3)"
+      col_routes:
+        what: ceoloide/utility_router
+        where: /^matrix_.*_(?!num)/
+        params:
+          net: "{{col_net}}"
+          route: "b(7.75,-5)(7.75,-7)(7,-7)(7,-20)(7.75,-20)(7.75,-24)"
 cases:
   _xl_bottom:
     - name: _board_with_border
