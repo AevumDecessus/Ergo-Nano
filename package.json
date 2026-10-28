@@ -3,6 +3,7 @@
         "gen": "ergogen ./ergogen/ --output ./ --clear"
     },
     "dependencies": {
-        "ergogen": "github:ergogen/ergogen"
+        "ergogen": "github:ergogen/ergogen#develop",
+        "@jscad/cli": "1.10.0"
    }
 }
