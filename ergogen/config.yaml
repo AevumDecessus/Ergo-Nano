@@ -10,7 +10,7 @@ units:
   half_kx: 0.5kx
   half_ky: 0.5ky
   # Padding Variables
-  padding: 5
+  padding: 7
   px: kx + padding
   py: ky + padding
   half_px: 0.5px
