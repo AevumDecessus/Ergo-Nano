@@ -82,19 +82,19 @@ points:
         shift: [half_kx,-1.25ky]
         rotate: -50
       columns:
-        top:
+        t_col0:
           key:
             column_net: CL7
             height: 2ky
             shift: [0, half_ky]
           rows.far.skip: true
           rows.near.row_net: RW0
-        middle:
+        t_col1:
           key:
             column_net: CL7
           rows.near.row_net: RW4
           rows.far.row_net: RW1
-        bottom:
+        t_col2:
           key:
             column_net: CL7
           rows.near.row_net: RW3
@@ -149,7 +149,7 @@ points:
         height: 0
         width: 0
       anchor:
-        ref: thumbs_bottom_near
+        ref: thumbs_t_col2_near
         shift: [-half_kx, half_ky]
     mount_bottom_right:
       key:
@@ -179,16 +179,18 @@ outlines:
           shift: [2.25kx, -half_py]
         - ref: matrix_inner_mod_bottom
           shift: [half_px,-half_py]
-        - ref: thumbs_middle_far
+        - ref: thumbs_t_col1_far
           shift: [-half_px,half_py]
-        - ref: thumbs_bottom_far
+        - ref: thumbs_t_col2_far
           shift: [half_px,half_py]
-        - ref: thumbs_bottom_near
+        - ref: thumbs_t_col2_near
           shift: [half_px,-half_py]
-        - ref: thumbs_middle_near
+        - ref: thumbs_t_col1_near
+          shift: [-half_px,-half_py]
+        - ref: matrix_index_mod
           shift: [-half_px,-half_py]
         - ref: matrix_ring_mod
-          shift: [half_px,-half_py]
+          shift: [half_px, -half_py]
         - ref: matrix_pinky_mod
           shift: [half_px, -half_py]
         - ref: matrix_outer_mod
