@@ -388,7 +388,6 @@ pcbs:
           height: 3
           width: 3
           text: Right Hand
-
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
         where: /^mount_/
@@ -401,14 +400,14 @@ pcbs:
         where: /^(matrix|thumbs)_/
         params:
           net: "{{colrow}}"
-          route: "f(-7.75,-5)(-9,-5)(-9,-1)(-6,3)"
+          route: "f(-7.75,-5)(-9,-4)(-9,-1)(-6,3)"
           locked: true
       col_routes:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{col_net}}"
-          route: "b(7.75,-5)(7.75,-7)(7,-7)(7,-20)(7.75,-20)(7.75,-24)"
+          route: "b(7.75,-5)(7.75,-7)(7,-8)(7,-19)(7.75,-20)(7.75,-24)"
           locked: true
 cases:
   _xl_bottom:

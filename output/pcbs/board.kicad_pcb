@@ -9223,7 +9223,7 @@
 
   (segment
     (start 42.25 120) 
-    (end 41 120)
+    (end 41 121)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9231,7 +9231,7 @@
   )
 
   (segment
-    (start 41 120) 
+    (start 41 121) 
     (end 41 124)
     (width 0.25)
     (locked yes)
@@ -9251,7 +9251,7 @@
 
   (segment
     (start 42.25 101) 
-    (end 41 101)
+    (end 41 102)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9259,7 +9259,7 @@
   )
 
   (segment
-    (start 41 101) 
+    (start 41 102) 
     (end 41 105)
     (width 0.25)
     (locked yes)
@@ -9279,7 +9279,7 @@
 
   (segment
     (start 42.25 82) 
-    (end 41 82)
+    (end 41 83)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9287,7 +9287,7 @@
   )
 
   (segment
-    (start 41 82) 
+    (start 41 83) 
     (end 41 86)
     (width 0.25)
     (locked yes)
@@ -9307,7 +9307,7 @@
 
   (segment
     (start 42.25 63) 
-    (end 41 63)
+    (end 41 64)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9315,7 +9315,7 @@
   )
 
   (segment
-    (start 41 63) 
+    (start 41 64) 
     (end 41 67)
     (width 0.25)
     (locked yes)
@@ -9335,7 +9335,7 @@
 
   (segment
     (start 42.25 44) 
-    (end 41 44)
+    (end 41 45)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9343,7 +9343,7 @@
   )
 
   (segment
-    (start 41 44) 
+    (start 41 45) 
     (end 41 48)
     (width 0.25)
     (locked yes)
@@ -9363,7 +9363,7 @@
 
   (segment
     (start 61.25 120) 
-    (end 60 120)
+    (end 60 121)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9371,7 +9371,7 @@
   )
 
   (segment
-    (start 60 120) 
+    (start 60 121) 
     (end 60 124)
     (width 0.25)
     (locked yes)
@@ -9391,7 +9391,7 @@
 
   (segment
     (start 61.25 101) 
-    (end 60 101)
+    (end 60 102)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9399,7 +9399,7 @@
   )
 
   (segment
-    (start 60 101) 
+    (start 60 102) 
     (end 60 105)
     (width 0.25)
     (locked yes)
@@ -9419,7 +9419,7 @@
 
   (segment
     (start 61.25 82) 
-    (end 60 82)
+    (end 60 83)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9427,7 +9427,7 @@
   )
 
   (segment
-    (start 60 82) 
+    (start 60 83) 
     (end 60 86)
     (width 0.25)
     (locked yes)
@@ -9447,7 +9447,7 @@
 
   (segment
     (start 61.25 63) 
-    (end 60 63)
+    (end 60 64)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9455,7 +9455,7 @@
   )
 
   (segment
-    (start 60 63) 
+    (start 60 64) 
     (end 60 67)
     (width 0.25)
     (locked yes)
@@ -9475,7 +9475,7 @@
 
   (segment
     (start 61.25 44) 
-    (end 60 44)
+    (end 60 45)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9483,7 +9483,7 @@
   )
 
   (segment
-    (start 60 44) 
+    (start 60 45) 
     (end 60 48)
     (width 0.25)
     (locked yes)
@@ -9503,7 +9503,7 @@
 
   (segment
     (start 80.25 115) 
-    (end 79 115)
+    (end 79 116)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9511,7 +9511,7 @@
   )
 
   (segment
-    (start 79 115) 
+    (start 79 116) 
     (end 79 119)
     (width 0.25)
     (locked yes)
@@ -9531,7 +9531,7 @@
 
   (segment
     (start 80.25 96) 
-    (end 79 96)
+    (end 79 97)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9539,7 +9539,7 @@
   )
 
   (segment
-    (start 79 96) 
+    (start 79 97) 
     (end 79 100)
     (width 0.25)
     (locked yes)
@@ -9559,7 +9559,7 @@
 
   (segment
     (start 80.25 77) 
-    (end 79 77)
+    (end 79 78)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9567,7 +9567,7 @@
   )
 
   (segment
-    (start 79 77) 
+    (start 79 78) 
     (end 79 81)
     (width 0.25)
     (locked yes)
@@ -9587,7 +9587,7 @@
 
   (segment
     (start 80.25 58) 
-    (end 79 58)
+    (end 79 59)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9595,7 +9595,7 @@
   )
 
   (segment
-    (start 79 58) 
+    (start 79 59) 
     (end 79 62)
     (width 0.25)
     (locked yes)
@@ -9615,7 +9615,7 @@
 
   (segment
     (start 80.25 39) 
-    (end 79 39)
+    (end 79 40)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9623,7 +9623,7 @@
   )
 
   (segment
-    (start 79 39) 
+    (start 79 40) 
     (end 79 43)
     (width 0.25)
     (locked yes)
@@ -9643,7 +9643,7 @@
 
   (segment
     (start 99.25 110) 
-    (end 98 110)
+    (end 98 111)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9651,7 +9651,7 @@
   )
 
   (segment
-    (start 98 110) 
+    (start 98 111) 
     (end 98 114)
     (width 0.25)
     (locked yes)
@@ -9671,7 +9671,7 @@
 
   (segment
     (start 99.25 91) 
-    (end 98 91)
+    (end 98 92)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9679,7 +9679,7 @@
   )
 
   (segment
-    (start 98 91) 
+    (start 98 92) 
     (end 98 95)
     (width 0.25)
     (locked yes)
@@ -9699,7 +9699,7 @@
 
   (segment
     (start 99.25 72) 
-    (end 98 72)
+    (end 98 73)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9707,7 +9707,7 @@
   )
 
   (segment
-    (start 98 72) 
+    (start 98 73) 
     (end 98 76)
     (width 0.25)
     (locked yes)
@@ -9727,7 +9727,7 @@
 
   (segment
     (start 99.25 53) 
-    (end 98 53)
+    (end 98 54)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9735,7 +9735,7 @@
   )
 
   (segment
-    (start 98 53) 
+    (start 98 54) 
     (end 98 57)
     (width 0.25)
     (locked yes)
@@ -9755,7 +9755,7 @@
 
   (segment
     (start 99.25 34) 
-    (end 98 34)
+    (end 98 35)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9763,7 +9763,7 @@
   )
 
   (segment
-    (start 98 34) 
+    (start 98 35) 
     (end 98 38)
     (width 0.25)
     (locked yes)
@@ -9783,7 +9783,7 @@
 
   (segment
     (start 118.25 115) 
-    (end 117 115)
+    (end 117 116)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9791,7 +9791,7 @@
   )
 
   (segment
-    (start 117 115) 
+    (start 117 116) 
     (end 117 119)
     (width 0.25)
     (locked yes)
@@ -9811,7 +9811,7 @@
 
   (segment
     (start 118.25 96) 
-    (end 117 96)
+    (end 117 97)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9819,7 +9819,7 @@
   )
 
   (segment
-    (start 117 96) 
+    (start 117 97) 
     (end 117 100)
     (width 0.25)
     (locked yes)
@@ -9839,7 +9839,7 @@
 
   (segment
     (start 118.25 77) 
-    (end 117 77)
+    (end 117 78)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9847,7 +9847,7 @@
   )
 
   (segment
-    (start 117 77) 
+    (start 117 78) 
     (end 117 81)
     (width 0.25)
     (locked yes)
@@ -9867,7 +9867,7 @@
 
   (segment
     (start 118.25 58) 
-    (end 117 58)
+    (end 117 59)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9875,7 +9875,7 @@
   )
 
   (segment
-    (start 117 58) 
+    (start 117 59) 
     (end 117 62)
     (width 0.25)
     (locked yes)
@@ -9895,7 +9895,7 @@
 
   (segment
     (start 118.25 39) 
-    (end 117 39)
+    (end 117 40)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9903,7 +9903,7 @@
   )
 
   (segment
-    (start 117 39) 
+    (start 117 40) 
     (end 117 43)
     (width 0.25)
     (locked yes)
@@ -9923,7 +9923,7 @@
 
   (segment
     (start 137.25 101) 
-    (end 136 101)
+    (end 136 102)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9931,7 +9931,7 @@
   )
 
   (segment
-    (start 136 101) 
+    (start 136 102) 
     (end 136 105)
     (width 0.25)
     (locked yes)
@@ -9951,7 +9951,7 @@
 
   (segment
     (start 137.25 82) 
-    (end 136 82)
+    (end 136 83)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9959,7 +9959,7 @@
   )
 
   (segment
-    (start 136 82) 
+    (start 136 83) 
     (end 136 86)
     (width 0.25)
     (locked yes)
@@ -9979,7 +9979,7 @@
 
   (segment
     (start 137.25 63) 
-    (end 136 63)
+    (end 136 64)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -9987,7 +9987,7 @@
   )
 
   (segment
-    (start 136 63) 
+    (start 136 64) 
     (end 136 67)
     (width 0.25)
     (locked yes)
@@ -10007,7 +10007,7 @@
 
   (segment
     (start 137.25 44) 
-    (end 136 44)
+    (end 136 45)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10015,7 +10015,7 @@
   )
 
   (segment
-    (start 136 44) 
+    (start 136 45) 
     (end 136 48)
     (width 0.25)
     (locked yes)
@@ -10035,7 +10035,7 @@
 
   (segment
     (start 156.25 101) 
-    (end 155 101)
+    (end 155 102)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10043,7 +10043,7 @@
   )
 
   (segment
-    (start 155 101) 
+    (start 155 102) 
     (end 155 105)
     (width 0.25)
     (locked yes)
@@ -10063,7 +10063,7 @@
 
   (segment
     (start 156.25 82) 
-    (end 155 82)
+    (end 155 83)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10071,7 +10071,7 @@
   )
 
   (segment
-    (start 155 82) 
+    (start 155 83) 
     (end 155 86)
     (width 0.25)
     (locked yes)
@@ -10091,7 +10091,7 @@
 
   (segment
     (start 156.25 63) 
-    (end 155 63)
+    (end 155 64)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10099,7 +10099,7 @@
   )
 
   (segment
-    (start 155 63) 
+    (start 155 64) 
     (end 155 67)
     (width 0.25)
     (locked yes)
@@ -10119,7 +10119,7 @@
 
   (segment
     (start 156.25 44) 
-    (end 155 44)
+    (end 155 45)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10127,7 +10127,7 @@
   )
 
   (segment
-    (start 155 44) 
+    (start 155 45) 
     (end 155 48)
     (width 0.25)
     (locked yes)
@@ -10147,7 +10147,7 @@
 
   (segment
     (start 141.67019150000002 128.5391655) 
-    (end 140.86670700000002 127.58160999999998)
+    (end 140.10066260000002 128.22439759999997)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10155,7 +10155,7 @@
   )
 
   (segment
-    (start 140.86670700000002 127.58160999999998) 
+    (start 140.10066260000002 128.22439759999997) 
     (end 137.8025293 130.15276039999998)
     (width 0.25)
     (locked yes)
@@ -10175,7 +10175,7 @@
 
   (segment
     (start 146.6187222 149.25486410000002) 
-    (end 145.8152377 148.2973086)
+    (end 145.0491933 148.9400962)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10183,7 +10183,7 @@
   )
 
   (segment
-    (start 145.8152377 148.2973086) 
+    (start 145.0491933 148.9400962) 
     (end 142.75106 150.868459)
     (width 0.25)
     (locked yes)
@@ -10203,7 +10203,7 @@
 
   (segment
     (start 161.21186880000002 137.00976010000002) 
-    (end 160.40838430000002 136.0522046)
+    (end 159.64233990000002 136.6949922)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10211,7 +10211,7 @@
   )
 
   (segment
-    (start 160.40838430000002 136.0522046) 
+    (start 159.64233990000002 136.6949922) 
     (end 157.3442066 138.623355)
     (width 0.25)
     (locked yes)
@@ -10231,7 +10231,7 @@
 
   (segment
     (start 158.8638261 163.8480108) 
-    (end 158.06034160000002 162.89045529999999)
+    (end 157.29429720000002 163.53324289999998)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10239,7 +10239,7 @@
   )
 
   (segment
-    (start 158.06034160000002 162.89045529999999) 
+    (start 157.29429720000002 163.53324289999998) 
     (end 154.9961639 165.46160569999998)
     (width 0.25)
     (locked yes)
@@ -10259,7 +10259,7 @@
 
   (segment
     (start 173.45697270000002 151.6029068) 
-    (end 172.65348820000003 150.6453513)
+    (end 171.88744380000003 151.28813889999998)
     (width 0.25)
     (locked yes)
     (layer F.Cu)
@@ -10267,7 +10267,7 @@
   )
 
   (segment
-    (start 172.65348820000003 150.6453513) 
+    (start 171.88744380000003 151.28813889999998) 
     (end 169.5893105 153.21650169999998)
     (width 0.25)
     (locked yes)
@@ -10296,7 +10296,7 @@
 
   (segment
     (start 57.75 118) 
-    (end 57 118)
+    (end 57 117)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10304,8 +10304,8 @@
   )
 
   (segment
-    (start 57 118) 
-    (end 57 105)
+    (start 57 117) 
+    (end 57 106)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10313,7 +10313,7 @@
   )
 
   (segment
-    (start 57 105) 
+    (start 57 106) 
     (end 57.75 105)
     (width 0.25)
     (locked yes)
@@ -10342,7 +10342,7 @@
 
   (segment
     (start 57.75 99) 
-    (end 57 99)
+    (end 57 98)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10350,8 +10350,8 @@
   )
 
   (segment
-    (start 57 99) 
-    (end 57 86)
+    (start 57 98) 
+    (end 57 87)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10359,7 +10359,7 @@
   )
 
   (segment
-    (start 57 86) 
+    (start 57 87) 
     (end 57.75 86)
     (width 0.25)
     (locked yes)
@@ -10388,7 +10388,7 @@
 
   (segment
     (start 57.75 80) 
-    (end 57 80)
+    (end 57 79)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10396,8 +10396,8 @@
   )
 
   (segment
-    (start 57 80) 
-    (end 57 67)
+    (start 57 79) 
+    (end 57 68)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10405,7 +10405,7 @@
   )
 
   (segment
-    (start 57 67) 
+    (start 57 68) 
     (end 57.75 67)
     (width 0.25)
     (locked yes)
@@ -10434,7 +10434,7 @@
 
   (segment
     (start 57.75 61) 
-    (end 57 61)
+    (end 57 60)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10442,8 +10442,8 @@
   )
 
   (segment
-    (start 57 61) 
-    (end 57 48)
+    (start 57 60) 
+    (end 57 49)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10451,7 +10451,7 @@
   )
 
   (segment
-    (start 57 48) 
+    (start 57 49) 
     (end 57.75 48)
     (width 0.25)
     (locked yes)
@@ -10480,7 +10480,7 @@
 
   (segment
     (start 76.75 118) 
-    (end 76 118)
+    (end 76 117)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10488,8 +10488,8 @@
   )
 
   (segment
-    (start 76 118) 
-    (end 76 105)
+    (start 76 117) 
+    (end 76 106)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10497,7 +10497,7 @@
   )
 
   (segment
-    (start 76 105) 
+    (start 76 106) 
     (end 76.75 105)
     (width 0.25)
     (locked yes)
@@ -10526,7 +10526,7 @@
 
   (segment
     (start 76.75 99) 
-    (end 76 99)
+    (end 76 98)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10534,8 +10534,8 @@
   )
 
   (segment
-    (start 76 99) 
-    (end 76 86)
+    (start 76 98) 
+    (end 76 87)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10543,7 +10543,7 @@
   )
 
   (segment
-    (start 76 86) 
+    (start 76 87) 
     (end 76.75 86)
     (width 0.25)
     (locked yes)
@@ -10572,7 +10572,7 @@
 
   (segment
     (start 76.75 80) 
-    (end 76 80)
+    (end 76 79)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10580,8 +10580,8 @@
   )
 
   (segment
-    (start 76 80) 
-    (end 76 67)
+    (start 76 79) 
+    (end 76 68)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10589,7 +10589,7 @@
   )
 
   (segment
-    (start 76 67) 
+    (start 76 68) 
     (end 76.75 67)
     (width 0.25)
     (locked yes)
@@ -10618,7 +10618,7 @@
 
   (segment
     (start 76.75 61) 
-    (end 76 61)
+    (end 76 60)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10626,8 +10626,8 @@
   )
 
   (segment
-    (start 76 61) 
-    (end 76 48)
+    (start 76 60) 
+    (end 76 49)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10635,7 +10635,7 @@
   )
 
   (segment
-    (start 76 48) 
+    (start 76 49) 
     (end 76.75 48)
     (width 0.25)
     (locked yes)
@@ -10664,7 +10664,7 @@
 
   (segment
     (start 95.75 113) 
-    (end 95 113)
+    (end 95 112)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10672,8 +10672,8 @@
   )
 
   (segment
-    (start 95 113) 
-    (end 95 100)
+    (start 95 112) 
+    (end 95 101)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10681,7 +10681,7 @@
   )
 
   (segment
-    (start 95 100) 
+    (start 95 101) 
     (end 95.75 100)
     (width 0.25)
     (locked yes)
@@ -10710,7 +10710,7 @@
 
   (segment
     (start 95.75 94) 
-    (end 95 94)
+    (end 95 93)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10718,8 +10718,8 @@
   )
 
   (segment
-    (start 95 94) 
-    (end 95 81)
+    (start 95 93) 
+    (end 95 82)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10727,7 +10727,7 @@
   )
 
   (segment
-    (start 95 81) 
+    (start 95 82) 
     (end 95.75 81)
     (width 0.25)
     (locked yes)
@@ -10756,7 +10756,7 @@
 
   (segment
     (start 95.75 75) 
-    (end 95 75)
+    (end 95 74)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10764,8 +10764,8 @@
   )
 
   (segment
-    (start 95 75) 
-    (end 95 62)
+    (start 95 74) 
+    (end 95 63)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10773,7 +10773,7 @@
   )
 
   (segment
-    (start 95 62) 
+    (start 95 63) 
     (end 95.75 62)
     (width 0.25)
     (locked yes)
@@ -10802,7 +10802,7 @@
 
   (segment
     (start 95.75 56) 
-    (end 95 56)
+    (end 95 55)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10810,8 +10810,8 @@
   )
 
   (segment
-    (start 95 56) 
-    (end 95 43)
+    (start 95 55) 
+    (end 95 44)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10819,7 +10819,7 @@
   )
 
   (segment
-    (start 95 43) 
+    (start 95 44) 
     (end 95.75 43)
     (width 0.25)
     (locked yes)
@@ -10848,7 +10848,7 @@
 
   (segment
     (start 114.75 108) 
-    (end 114 108)
+    (end 114 107)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10856,8 +10856,8 @@
   )
 
   (segment
-    (start 114 108) 
-    (end 114 95)
+    (start 114 107) 
+    (end 114 96)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10865,7 +10865,7 @@
   )
 
   (segment
-    (start 114 95) 
+    (start 114 96) 
     (end 114.75 95)
     (width 0.25)
     (locked yes)
@@ -10894,7 +10894,7 @@
 
   (segment
     (start 114.75 89) 
-    (end 114 89)
+    (end 114 88)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10902,8 +10902,8 @@
   )
 
   (segment
-    (start 114 89) 
-    (end 114 76)
+    (start 114 88) 
+    (end 114 77)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10911,7 +10911,7 @@
   )
 
   (segment
-    (start 114 76) 
+    (start 114 77) 
     (end 114.75 76)
     (width 0.25)
     (locked yes)
@@ -10940,7 +10940,7 @@
 
   (segment
     (start 114.75 70) 
-    (end 114 70)
+    (end 114 69)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10948,8 +10948,8 @@
   )
 
   (segment
-    (start 114 70) 
-    (end 114 57)
+    (start 114 69) 
+    (end 114 58)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10957,7 +10957,7 @@
   )
 
   (segment
-    (start 114 57) 
+    (start 114 58) 
     (end 114.75 57)
     (width 0.25)
     (locked yes)
@@ -10986,7 +10986,7 @@
 
   (segment
     (start 114.75 51) 
-    (end 114 51)
+    (end 114 50)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -10994,8 +10994,8 @@
   )
 
   (segment
-    (start 114 51) 
-    (end 114 38)
+    (start 114 50) 
+    (end 114 39)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11003,7 +11003,7 @@
   )
 
   (segment
-    (start 114 38) 
+    (start 114 39) 
     (end 114.75 38)
     (width 0.25)
     (locked yes)
@@ -11032,7 +11032,7 @@
 
   (segment
     (start 133.75 113) 
-    (end 133 113)
+    (end 133 112)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11040,8 +11040,8 @@
   )
 
   (segment
-    (start 133 113) 
-    (end 133 100)
+    (start 133 112) 
+    (end 133 101)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11049,7 +11049,7 @@
   )
 
   (segment
-    (start 133 100) 
+    (start 133 101) 
     (end 133.75 100)
     (width 0.25)
     (locked yes)
@@ -11078,7 +11078,7 @@
 
   (segment
     (start 133.75 94) 
-    (end 133 94)
+    (end 133 93)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11086,8 +11086,8 @@
   )
 
   (segment
-    (start 133 94) 
-    (end 133 81)
+    (start 133 93) 
+    (end 133 82)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11095,7 +11095,7 @@
   )
 
   (segment
-    (start 133 81) 
+    (start 133 82) 
     (end 133.75 81)
     (width 0.25)
     (locked yes)
@@ -11124,7 +11124,7 @@
 
   (segment
     (start 133.75 75) 
-    (end 133 75)
+    (end 133 74)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11132,8 +11132,8 @@
   )
 
   (segment
-    (start 133 75) 
-    (end 133 62)
+    (start 133 74) 
+    (end 133 63)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11141,7 +11141,7 @@
   )
 
   (segment
-    (start 133 62) 
+    (start 133 63) 
     (end 133.75 62)
     (width 0.25)
     (locked yes)
@@ -11170,7 +11170,7 @@
 
   (segment
     (start 133.75 56) 
-    (end 133 56)
+    (end 133 55)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11178,8 +11178,8 @@
   )
 
   (segment
-    (start 133 56) 
-    (end 133 43)
+    (start 133 55) 
+    (end 133 44)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11187,7 +11187,7 @@
   )
 
   (segment
-    (start 133 43) 
+    (start 133 44) 
     (end 133.75 43)
     (width 0.25)
     (locked yes)
@@ -11216,7 +11216,7 @@
 
   (segment
     (start 152.75 99) 
-    (end 152 99)
+    (end 152 98)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11224,8 +11224,8 @@
   )
 
   (segment
-    (start 152 99) 
-    (end 152 86)
+    (start 152 98) 
+    (end 152 87)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11233,7 +11233,7 @@
   )
 
   (segment
-    (start 152 86) 
+    (start 152 87) 
     (end 152.75 86)
     (width 0.25)
     (locked yes)
@@ -11262,7 +11262,7 @@
 
   (segment
     (start 152.75 80) 
-    (end 152 80)
+    (end 152 79)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11270,8 +11270,8 @@
   )
 
   (segment
-    (start 152 80) 
-    (end 152 67)
+    (start 152 79) 
+    (end 152 68)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11279,7 +11279,7 @@
   )
 
   (segment
-    (start 152 67) 
+    (start 152 68) 
     (end 152.75 67)
     (width 0.25)
     (locked yes)
@@ -11308,7 +11308,7 @@
 
   (segment
     (start 152.75 61) 
-    (end 152 61)
+    (end 152 60)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11316,8 +11316,8 @@
   )
 
   (segment
-    (start 152 61) 
-    (end 152 48)
+    (start 152 60) 
+    (end 152 49)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11325,7 +11325,7 @@
   )
 
   (segment
-    (start 152 48) 
+    (start 152 49) 
     (end 152.75 48)
     (width 0.25)
     (locked yes)
@@ -11354,7 +11354,7 @@
 
   (segment
     (start 171.75 99) 
-    (end 171 99)
+    (end 171 98)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11362,8 +11362,8 @@
   )
 
   (segment
-    (start 171 99) 
-    (end 171 86)
+    (start 171 98) 
+    (end 171 87)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11371,7 +11371,7 @@
   )
 
   (segment
-    (start 171 86) 
+    (start 171 87) 
     (end 171.75 86)
     (width 0.25)
     (locked yes)
@@ -11400,7 +11400,7 @@
 
   (segment
     (start 171.75 80) 
-    (end 171 80)
+    (end 171 79)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11408,8 +11408,8 @@
   )
 
   (segment
-    (start 171 80) 
-    (end 171 67)
+    (start 171 79) 
+    (end 171 68)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11417,7 +11417,7 @@
   )
 
   (segment
-    (start 171 67) 
+    (start 171 68) 
     (end 171.75 67)
     (width 0.25)
     (locked yes)
@@ -11446,7 +11446,7 @@
 
   (segment
     (start 171.75 61) 
-    (end 171 61)
+    (end 171 60)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11454,8 +11454,8 @@
   )
 
   (segment
-    (start 171 61) 
-    (end 171 48)
+    (start 171 60) 
+    (end 171 49)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
@@ -11463,7 +11463,7 @@
   )
 
   (segment
-    (start 171 48) 
+    (start 171 49) 
     (end 171.75 48)
     (width 0.25)
     (locked yes)
