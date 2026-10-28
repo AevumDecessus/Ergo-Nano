@@ -9103,6 +9103,1070 @@
     )
   )
   
+
+  (segment
+    (start 42.25 120) 
+    (end 41 120)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 2)
+  )
+
+  (segment
+    (start 41 120) 
+    (end 41 124)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 2)
+  )
+
+  (segment
+    (start 41 124) 
+    (end 44 128)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 2)
+  )
+
+
+  (segment
+    (start 42.25 101) 
+    (end 41 101)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 6)
+  )
+
+  (segment
+    (start 41 101) 
+    (end 41 105)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 6)
+  )
+
+  (segment
+    (start 41 105) 
+    (end 44 109)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 6)
+  )
+
+
+  (segment
+    (start 42.25 82) 
+    (end 41 82)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 7)
+  )
+
+  (segment
+    (start 41 82) 
+    (end 41 86)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 7)
+  )
+
+  (segment
+    (start 41 86) 
+    (end 44 90)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 7)
+  )
+
+
+  (segment
+    (start 42.25 63) 
+    (end 41 63)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 8)
+  )
+
+  (segment
+    (start 41 63) 
+    (end 41 67)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 8)
+  )
+
+  (segment
+    (start 41 67) 
+    (end 44 71)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 8)
+  )
+
+
+  (segment
+    (start 42.25 44) 
+    (end 41 44)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 9)
+  )
+
+  (segment
+    (start 41 44) 
+    (end 41 48)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 9)
+  )
+
+  (segment
+    (start 41 48) 
+    (end 44 52)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 9)
+  )
+
+
+  (segment
+    (start 61.25 120) 
+    (end 60 120)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 11)
+  )
+
+  (segment
+    (start 60 120) 
+    (end 60 124)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 11)
+  )
+
+  (segment
+    (start 60 124) 
+    (end 63 128)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 11)
+  )
+
+
+  (segment
+    (start 61.25 101) 
+    (end 60 101)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 12)
+  )
+
+  (segment
+    (start 60 101) 
+    (end 60 105)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 12)
+  )
+
+  (segment
+    (start 60 105) 
+    (end 63 109)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 12)
+  )
+
+
+  (segment
+    (start 61.25 82) 
+    (end 60 82)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 13)
+  )
+
+  (segment
+    (start 60 82) 
+    (end 60 86)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 13)
+  )
+
+  (segment
+    (start 60 86) 
+    (end 63 90)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 13)
+  )
+
+
+  (segment
+    (start 61.25 63) 
+    (end 60 63)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 14)
+  )
+
+  (segment
+    (start 60 63) 
+    (end 60 67)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 14)
+  )
+
+  (segment
+    (start 60 67) 
+    (end 63 71)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 14)
+  )
+
+
+  (segment
+    (start 61.25 44) 
+    (end 60 44)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 15)
+  )
+
+  (segment
+    (start 60 44) 
+    (end 60 48)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 15)
+  )
+
+  (segment
+    (start 60 48) 
+    (end 63 52)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 15)
+  )
+
+
+  (segment
+    (start 80.25 115) 
+    (end 79 115)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 17)
+  )
+
+  (segment
+    (start 79 115) 
+    (end 79 119)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 17)
+  )
+
+  (segment
+    (start 79 119) 
+    (end 82 123)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 17)
+  )
+
+
+  (segment
+    (start 80.25 96) 
+    (end 79 96)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 18)
+  )
+
+  (segment
+    (start 79 96) 
+    (end 79 100)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 18)
+  )
+
+  (segment
+    (start 79 100) 
+    (end 82 104)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 18)
+  )
+
+
+  (segment
+    (start 80.25 77) 
+    (end 79 77)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 19)
+  )
+
+  (segment
+    (start 79 77) 
+    (end 79 81)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 19)
+  )
+
+  (segment
+    (start 79 81) 
+    (end 82 85)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 19)
+  )
+
+
+  (segment
+    (start 80.25 58) 
+    (end 79 58)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 20)
+  )
+
+  (segment
+    (start 79 58) 
+    (end 79 62)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 20)
+  )
+
+  (segment
+    (start 79 62) 
+    (end 82 66)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 20)
+  )
+
+
+  (segment
+    (start 80.25 39) 
+    (end 79 39)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 21)
+  )
+
+  (segment
+    (start 79 39) 
+    (end 79 43)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 21)
+  )
+
+  (segment
+    (start 79 43) 
+    (end 82 47)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 21)
+  )
+
+
+  (segment
+    (start 99.25 110) 
+    (end 98 110)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 23)
+  )
+
+  (segment
+    (start 98 110) 
+    (end 98 114)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 23)
+  )
+
+  (segment
+    (start 98 114) 
+    (end 101 118)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 23)
+  )
+
+
+  (segment
+    (start 99.25 91) 
+    (end 98 91)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 24)
+  )
+
+  (segment
+    (start 98 91) 
+    (end 98 95)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 24)
+  )
+
+  (segment
+    (start 98 95) 
+    (end 101 99)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 24)
+  )
+
+
+  (segment
+    (start 99.25 72) 
+    (end 98 72)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 25)
+  )
+
+  (segment
+    (start 98 72) 
+    (end 98 76)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 25)
+  )
+
+  (segment
+    (start 98 76) 
+    (end 101 80)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 25)
+  )
+
+
+  (segment
+    (start 99.25 53) 
+    (end 98 53)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 26)
+  )
+
+  (segment
+    (start 98 53) 
+    (end 98 57)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 26)
+  )
+
+  (segment
+    (start 98 57) 
+    (end 101 61)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 26)
+  )
+
+
+  (segment
+    (start 99.25 34) 
+    (end 98 34)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 27)
+  )
+
+  (segment
+    (start 98 34) 
+    (end 98 38)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 27)
+  )
+
+  (segment
+    (start 98 38) 
+    (end 101 42)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 27)
+  )
+
+
+  (segment
+    (start 118.25 115) 
+    (end 117 115)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 29)
+  )
+
+  (segment
+    (start 117 115) 
+    (end 117 119)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 29)
+  )
+
+  (segment
+    (start 117 119) 
+    (end 120 123)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 29)
+  )
+
+
+  (segment
+    (start 118.25 96) 
+    (end 117 96)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 30)
+  )
+
+  (segment
+    (start 117 96) 
+    (end 117 100)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 30)
+  )
+
+  (segment
+    (start 117 100) 
+    (end 120 104)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 30)
+  )
+
+
+  (segment
+    (start 118.25 77) 
+    (end 117 77)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 31)
+  )
+
+  (segment
+    (start 117 77) 
+    (end 117 81)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 31)
+  )
+
+  (segment
+    (start 117 81) 
+    (end 120 85)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 31)
+  )
+
+
+  (segment
+    (start 118.25 58) 
+    (end 117 58)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 32)
+  )
+
+  (segment
+    (start 117 58) 
+    (end 117 62)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 32)
+  )
+
+  (segment
+    (start 117 62) 
+    (end 120 66)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 32)
+  )
+
+
+  (segment
+    (start 118.25 39) 
+    (end 117 39)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 33)
+  )
+
+  (segment
+    (start 117 39) 
+    (end 117 43)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 33)
+  )
+
+  (segment
+    (start 117 43) 
+    (end 120 47)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 33)
+  )
+
+
+  (segment
+    (start 137.25 101) 
+    (end 136 101)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 35)
+  )
+
+  (segment
+    (start 136 101) 
+    (end 136 105)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 35)
+  )
+
+  (segment
+    (start 136 105) 
+    (end 139 109)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 35)
+  )
+
+
+  (segment
+    (start 137.25 82) 
+    (end 136 82)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 36)
+  )
+
+  (segment
+    (start 136 82) 
+    (end 136 86)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 36)
+  )
+
+  (segment
+    (start 136 86) 
+    (end 139 90)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 36)
+  )
+
+
+  (segment
+    (start 137.25 63) 
+    (end 136 63)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 37)
+  )
+
+  (segment
+    (start 136 63) 
+    (end 136 67)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 37)
+  )
+
+  (segment
+    (start 136 67) 
+    (end 139 71)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 37)
+  )
+
+
+  (segment
+    (start 137.25 44) 
+    (end 136 44)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 38)
+  )
+
+  (segment
+    (start 136 44) 
+    (end 136 48)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 38)
+  )
+
+  (segment
+    (start 136 48) 
+    (end 139 52)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 38)
+  )
+
+
+  (segment
+    (start 156.25 101) 
+    (end 155 101)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 40)
+  )
+
+  (segment
+    (start 155 101) 
+    (end 155 105)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 40)
+  )
+
+  (segment
+    (start 155 105) 
+    (end 158 109)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 40)
+  )
+
+
+  (segment
+    (start 156.25 82) 
+    (end 155 82)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 41)
+  )
+
+  (segment
+    (start 155 82) 
+    (end 155 86)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 41)
+  )
+
+  (segment
+    (start 155 86) 
+    (end 158 90)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 41)
+  )
+
+
+  (segment
+    (start 156.25 63) 
+    (end 155 63)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 42)
+  )
+
+  (segment
+    (start 155 63) 
+    (end 155 67)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 42)
+  )
+
+  (segment
+    (start 155 67) 
+    (end 158 71)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 42)
+  )
+
+
+  (segment
+    (start 156.25 44) 
+    (end 155 44)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 43)
+  )
+
+  (segment
+    (start 155 44) 
+    (end 155 48)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 43)
+  )
+
+  (segment
+    (start 155 48) 
+    (end 158 52)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 43)
+  )
+
+
+  (segment
+    (start 141.67019150000002 128.5391655) 
+    (end 140.86670700000002 127.58160999999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 45)
+  )
+
+  (segment
+    (start 140.86670700000002 127.58160999999998) 
+    (end 137.8025293 130.15276039999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 45)
+  )
+
+  (segment
+    (start 137.8025293 130.15276039999998) 
+    (end 136.66671430000002 135.02204419999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 45)
+  )
+
+
+  (segment
+    (start 146.6187222 149.25486410000002) 
+    (end 145.8152377 148.2973086)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 46)
+  )
+
+  (segment
+    (start 145.8152377 148.2973086) 
+    (end 142.75106 150.868459)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 46)
+  )
+
+  (segment
+    (start 142.75106 150.868459) 
+    (end 141.61524500000002 155.7377428)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 46)
+  )
+
+
+  (segment
+    (start 161.21186880000002 137.00976010000002) 
+    (end 160.40838430000002 136.0522046)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 47)
+  )
+
+  (segment
+    (start 160.40838430000002 136.0522046) 
+    (end 157.3442066 138.623355)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 47)
+  )
+
+  (segment
+    (start 157.3442066 138.623355) 
+    (end 156.20839160000003 143.4926388)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 47)
+  )
+
+
+  (segment
+    (start 158.8638261 163.8480108) 
+    (end 158.06034160000002 162.89045529999999)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 48)
+  )
+
+  (segment
+    (start 158.06034160000002 162.89045529999999) 
+    (end 154.9961639 165.46160569999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 48)
+  )
+
+  (segment
+    (start 154.9961639 165.46160569999998) 
+    (end 153.86034890000002 170.33088949999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 48)
+  )
+
+
+  (segment
+    (start 173.45697270000002 151.6029068) 
+    (end 172.65348820000003 150.6453513)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 49)
+  )
+
+  (segment
+    (start 172.65348820000003 150.6453513) 
+    (end 169.5893105 153.21650169999998)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 49)
+  )
+
+  (segment
+    (start 169.5893105 153.21650169999998) 
+    (end 168.45349550000003 158.0857855)
+    (width 0.25)
+    (locked no)
+    (layer F.Cu)
+    (net 49)
+  )
+
   (gr_line (start 36.975 133.025) (end 36.975 40.36020210526316) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 41.322727498298164 35.40293059232919) (end 74.66104298170184 31.0163101339866) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 75.2812370292228 30.89441130809926) (end 93.34941621077722 26.139627312953362) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

@@ -316,6 +316,12 @@ pcbs:
           hole_size: m3
           hole_drill: m3
           designator: 'MH'
+      key_routes:
+        what: ceoloide/utility_router
+        where: /^(matrix|thumbs)_/
+        params:
+          net: "{{colrow}}"
+          route: "f(-7.75,-5)(-9,-5)(-9,-1)(-6,3)"
 cases:
   _xl_bottom:
     - name: _board_with_border
