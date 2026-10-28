@@ -331,6 +331,64 @@ pcbs:
           rotate: 90
         params:
           reversible: true
+      board_name:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_outer_num
+          shift: [0.5kx, 0.6ky]
+        params:
+          reversible: true
+          bold: true
+          height: 3
+          width: 3
+          text: "Ergo-Nano"
+      board_version:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_ring_num
+          shift: [0, 0.5ky]
+        params:
+          reversible: true
+          bold: true
+          height: 3
+          width: 3
+          text: "V1.0"
+      author:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_outer_num
+          shift: [0.6kx, 0.4ky]
+        params:
+          reversible: true
+          bold: false
+          height: 1
+          width: 1
+          text: "by Aevum Decessus"
+      left_hand:
+        what: ceoloide/utility_text
+        where:
+          ref: [matrix_inner_num]
+          shift: [0.25kx, 0.5ky]
+        params:
+          side: F
+          mirrored: false
+          bold: true
+          height: 3
+          width: 3
+          text: Left Hand
+      right_hand:
+        what: ceoloide/utility_text
+        where:
+          ref: [matrix_inner_num]
+          shift: [0.25kx, 0.5ky]
+        params:
+          side: B
+          mirrored: true
+          bold: true
+          height: 3
+          width: 3
+          text: Right Hand
+
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
         where: /^mount_/
