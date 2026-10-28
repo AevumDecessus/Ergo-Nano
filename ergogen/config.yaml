@@ -17,6 +17,24 @@ units:
   half_py: 0.5py
   dpx: 2px
   dpy: 2py
+  # Relative column staggers
+  st_outer: 0
+  st_pinky: 0
+  st_ring: 5
+  st_middle: 5
+  st_index: -5
+  st_inner: -5
+  st_innermod: 0
+  # pre-evaluate target traces between column staggers
+  diode_y: 7
+  diode_length: 4
+  start_y: diode_y + diode_length # Diode bottom is at
+  y_outer_to_pinky: start_y + st_pinky
+  y_pinky_to_ring: start_y + st_ring
+  y_ring_to_middle: start_y + st_middle
+  y_middle_to_index: start_y + st_index
+  y_index_to_inner: start_y + st_inner
+  y_inner_to_innermod: start_y + st_innermod
   # Tolerances
   board_tolerance: 0.1 #Leave this much space around the board in the case
   # Mounting holes
@@ -38,29 +56,32 @@ points:
         outer:
           key:
             column_net: CL0
+            stagger: st_outer
         pinky:
           key:
             column_net: CL1
+            stagger: st_pinky
         ring:
           key:
             column_net: CL2
-            stagger: 5
+            stagger: st_ring
         middle:
           key:
             column_net: CL3
-            stagger: 5
+            stagger: st_middle
         index:
           key:
             column_net: CL4
-            stagger: -5
+            stagger: st_index
         inner:
           key:
             column_net: CL5
-            stagger: -5
+            stagger: st_inner
           rows.mod.skip: true
         innermod:
           key: 
             column_net: CL6
+            stagger: st_innermod
           rows.mod.skip: true
       rows:
         mod:
