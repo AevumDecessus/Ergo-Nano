@@ -26,7 +26,8 @@ units:
   st_inner: -5
   st_innermod: 0
   # pre-evaluate target traces between column staggers
-  diode_y: 7
+  diode_x: -6
+  diode_y: 7 #Negative to place the diode, positive for routing position
   diode_length: 4
   start_y: diode_y + diode_length # Diode bottom is at
   y_outer_to_pinky: start_y + st_pinky
@@ -270,7 +271,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [-6, -7]
+          shift: [diode_x, -diode_y]
           rotate: 90
       nice-nano:
         what: ceoloide/mcu_nice_nano
@@ -343,12 +344,14 @@ pcbs:
         params:
           net: "{{colrow}}"
           route: "f(-7.75,-5)(-9,-5)(-9,-1)(-6,3)"
+          locked: true
       col_routes:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{col_net}}"
           route: "b(7.75,-5)(7.75,-7)(7,-7)(7,-20)(7.75,-20)(7.75,-24)"
+          locked: true
 cases:
   _xl_bottom:
     - name: _board_with_border
