@@ -9,7 +9,6 @@ units:
   # Web View Resizing
   $default_width: U
   $default_height: U
-  # Proxy Spacing Variables
   kx: U
   ky: U
   ks: 19 # horizontal space between columns (default: 19)
@@ -38,32 +37,32 @@ units:
   st_inner: -5
   st_innermod: 0
   # pre-evaluate target traces between column staggers
-  diode_x: -6
+  diode_x: -5
   diode_y: 7 #Negative to place the diode, positive for routing position
   diode_length: 4
-  start_y: diode_y + diode_length # Diode bottom is at
-  y_outer_to_pinky: start_y + st_pinky
-  y_pinky_to_ring: start_y + st_ring
-  y_ring_to_middle: start_y + st_middle
-  y_middle_to_index: start_y + st_index
-  y_index_to_inner: start_y + st_inner
-  y_inner_to_innermod: start_y + st_innermod
   # kicad shifts
   kicad_shift_x: 50
   kicad_shift_y: -125
   # Tolerances
   board_tolerance: 0.3 #Leave this much space around the board in the case
-  # Mounting holes
-  m3: 3.2
+  # M3 specific sizes
+  m3_hole: 3.2
   m3_heatset_hole: 4.5
   m3_heatset_height: 4
-  standoff_size: m3_heatset_hole + (padding / 2)
+  m3_socket_head_size: 5.5
+  # Board sizes inheriting chosen size
+  screw_hole: m3_hole
+  screw_head: m3_socket_head_size
+  heatset_hole: m3_heatset_hole
+  heatset_height: m3_heatset_height
+  standoff_size: screw_hole + (padding / 2)
   # plate sizes
   pcb_thickness: 1.6
   plate_thickness: 1.5
   top_plate_surface: 5
   gap_pcb_top_plate: top_plate_surface - plate_thickness
-  wall_height: m3_heatset_height + pcb_thickness + plate_thickness + gap_pcb_top_plate
+  wall_height_switch_plate: heatset_height + pcb_thickness + plate_thickness + gap_pcb_top_plate
+  wall_height_pcb: heatset_height + pcb_thickness
   # Extrudes the walls to be level with the top of the PCB
 points:
   zones:
@@ -249,7 +248,7 @@ points:
         - ref: mcu_cover_bottom_right
           shift: [0, -padding]
 outlines:
-  _matrix_outline:
+  _matrix_outline: #Outline around all keys only with half a key of padding around
     - what: polygon
       operation: stack
       points:
@@ -280,7 +279,7 @@ outlines:
         - ref: matrix_outer_mod
           shift: [-half_px,-half_py]
       fillet: 2
-  _mcu_outline:
+  _mcu_outline: # Outline around the MCU, angled at the botom to merge more cleanly with the matrix
     - what: polygon
       operation: stack
       points:
@@ -293,14 +292,7 @@ outlines:
         - ref: mcu_cover_bottom_left
           shift: [-padding, -6padding]
       fillet: 2
-  _pcb_outline:
-    - what: outline
-      name: _mcu_outline
-    - what: outline
-      name: _matrix_outline
-      operation: add
-      fillet: 2
-  _mcu_tight:
+  _mcu_tight: # Exact size of the MCU, used to show it's position on the combo dxf
     - what: polygon
       operation: stack
       points:
@@ -308,20 +300,38 @@ outlines:
         - mcu_cover_top_right
         - mcu_cover_bottom_right
         - mcu_cover_bottom_left
-  _mcu_tolerance:
+  _mcu_tolerance: # The MCU board with a tolerance gap - Used if we want to extend the switch plate to cover the whole PCB
     - what: outline
       name: _mcu_tight
       expand: board_tolerance
       fillet: 2
-  _standoffs:
+  ## PCB ##
+  _pcb_outline: # Merged matrix and MCU outline to form the PCB shape
+    - what: outline
+      name: _mcu_outline
+    - what: outline
+      name: _matrix_outline
+      operation: add
+      fillet: 2
+  ## Standoffs and screws ##
+  _standoffs: # The circles for each screw showing standoff size
     - what: circle
       radius: standoff_size / 2
       where: /screw/
-  _standoff_holes:
+  _standoff_holes: # The heaset holes themselves for the bottom case
     - what: circle
-      radius: m3_heatset_hole / 2
+      radius: heatset_hole / 2
       where: /screw/
-  _switch_cutouts:
+  _screw_holes: # screw_holes for the bottom plate if not using a case
+    - what: circle
+      radius: screw_hole / 2
+      where: /screw/
+  _screw_heads:
+    - what: circle
+      radius: screw_head / 2
+      where: /screw/
+  ## Switch Plate ##
+  _switch_cutouts: # Switch cutouts to form the switch plate
     - what: rectangle
       fillet: 2
       where: /key/
@@ -335,18 +345,19 @@ outlines:
     - what: outline
       name: _switch_cutouts
       operation: subtract
-  _pcb_with_border: # 0.5 padding bigger than board
+  ## Case Wall ##
+  _outer_wall: # 0.5 padding bigger than board - forms the outer wall of the case
     - what: outline
       name: _pcb_outline
       expand: 0.5padding
-  _pcb_tolerance:
+  _inner_wall: # Tolerance gap around the whole PCB, forms the inner wall of the case
     - what: outline
       name: _pcb_outline
       expand: board_tolerance
-  _case_wall: # a wall of only 0.5 padding bigger than the board
-    - name: _pcb_with_border
+  _case_wall: # A wall from the inner and outer walls defined above
+    - name: _outer_wall
     - operation: subtract
-      name: _pcb_tolerance
+      name: _inner_wall
   combo:
     - name: _pcb_outline
     - operation: subtract
@@ -501,42 +512,48 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where: /screw/
         params:
-          hole_size: m3
-          hole_drill: m3
+          hole_size: screw_head
+          hole_drill: screw_hole
           designator: 'MH'
       key_diode_routes:
         what: ceoloide/utility_router
         where: /key/
         params:
           net: "{{colrow}}"
-          route: "f(-7.75,-5)(-9,-4)(-9,-1)(-6,3)"
+          route: "f(-7.75,-5)(-7.75,0)(-5,3)"
           locked: true
       col_routes:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{col_net}}"
-          route: "b(7.75,-5)(7.75,-7)(7,-8)(7,-19)(7.75,-20)(7.75,-24)"
+          route: "b(7.75,-5)(7.75,-6)(6,-8)(6,-17)(7.75,-19)(7.75,-24)"
           locked: true
 cases:
   _xl_bottom:
-    - name: _pcb_with_border
+    - name: _outer_wall
       extrude: plate_thickness
-  _wall:
+  _pcb_bottom:
+    - name: _pcb_outline
+      extrude: plate_thickness
+  _wall_switch_plate:
     - name: _case_wall
-      extrude: wall_height
+      extrude: wall_height_switch_plate
+  _wall_pcb:
+    - name: _case_wall
+      extrude: wall_height_pcb
   _case_standoffs:
     - name: _standoffs
-      extrude: m3_heatset_height
+      extrude: heatset_height
   _case_standoff_holes:
     - name: _standoff_holes
-      extrude: m3_heatset_height
-  bottom_case:
+      extrude: heatset_height
+  _pcb_plate_holes:
+    - name: _screw_holes
+      extrude: plate_thickness
+  _case_bottom: # The bottom surface of the case with standoffs
     - what: case
       name: _xl_bottom
-      operation: add
-    - what: case
-      name: _wall
       operation: add
     - what: case
       name: _case_standoffs
@@ -544,3 +561,24 @@ cases:
     - what: case
       name: _case_standoff_holes
       operation: subtract
+  bottom_plate: # Bottom plate with screw holes instead of a full case
+    - what: case
+      name: _pcb_bottom
+      operation: add
+    - what: case
+      name: _pcb_plate_holes
+      operation: subtract
+  bottom_case_switch: # Case with walls to the surface of the switch plate
+    - what: case
+      name: _case_bottom
+      operation: add
+    - what: case
+      name: _wall_switch_plate
+      operation: add
+  bottom_case_pcb: # Case with walls to the surface of the PCB
+    - what: case
+      name: _case_bottom
+      operation: add
+    - what: case
+      name: _wall_pcb
+      operation: add

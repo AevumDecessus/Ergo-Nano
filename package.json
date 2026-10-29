@@ -1,6 +1,10 @@
 {
     "scripts": {
-        "gen": "ergogen ./ergogen/ --output ./ --clear && npx @jscad/cli cases/bottom_case.jscad"
+        "_bottom_plate": "npx @jscad/cli cases/bottom_plate.jscad",
+        "_case_pcb": "npx @jscad/cli cases/bottom_case_pcb.jscad",
+        "_case_switch_plate": "npx @jscad/cli cases/bottom_case_switch.jscad",
+        "process_stls": "npm run _bottom_plate && npm run _case_pcb && npm run _case_switch_plate",
+        "gen": "ergogen ./ergogen/ --output ./ --clear && npm run process_stls"
     },
     "dependencies": {
         "ergogen": "github:ergogen/ergogen#develop",
