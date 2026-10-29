@@ -429,11 +429,13 @@ pcbs:
         what: ceoloide/battery_connector_jst_ph_2
         where:
           ref: mcu_cover_bottom_left
-          shift: [mcu_width / 2 , -(mcu_height / 2)]
+          ## Shift slightly right of "center" in order to actually center it with the rotation
+          shift: [(mcu_width / 2) + 4 , -(mcu_height / 2)]
           rotate: -90
         params:
           reversible: true
           include_traces: true
+      ## Power and Reset Switches ##
       power_switch:
         what: ceoloide/power_switch_smd_side
         where:
@@ -451,6 +453,7 @@ pcbs:
           rotate: 90
         params:
           reversible: true
+      ## Silkscreen Text ##
       board_name:
         what: ceoloide/utility_text
         where:
@@ -508,6 +511,7 @@ pcbs:
           height: 3
           width: 3
           text: Right Hand
+      ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
         where: /screw/
@@ -515,6 +519,7 @@ pcbs:
           hole_size: screw_head
           hole_drill: screw_hole
           designator: 'MH'
+      ## Static trace routes ##
       key_diode_routes:
         what: ceoloide/utility_router
         where: /key/

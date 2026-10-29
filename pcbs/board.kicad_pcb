@@ -8980,7 +8980,7 @@
 
     (footprint "ceoloide:battery_connector_jst_ph_2"
         (layer "F.Cu")
-        (at 187.4375 95.14999999999999 -90)
+        (at 191.4375 95.14999999999999 -90)
         (property "Reference" "JST1"
             (at 0 4.8 -90)
             (layer "F.SilkS")
@@ -9186,10 +9186,10 @@
         
     )
          
-    (segment (start 185.6375 94.14999999999999) (end 187.4375 94.14999999999999) (width 0.25) (layer "F.Cu") (net 96))
-    (segment (start 185.6375 94.14999999999999) (end 187.4375 94.14999999999999) (width 0.25) (layer "B.Cu") (net 96))
-    (segment (start 185.6375 96.14999999999999) (end 187.4375 96.14999999999999) (width 0.25) (layer "F.Cu") (net 97))
-    (segment (start 185.6375 96.14999999999999) (end 187.4375 96.14999999999999) (width 0.25) (layer "B.Cu") (net 97))
+    (segment (start 189.6375 94.14999999999999) (end 191.4375 94.14999999999999) (width 0.25) (layer "F.Cu") (net 96))
+    (segment (start 189.6375 94.14999999999999) (end 191.4375 94.14999999999999) (width 0.25) (layer "B.Cu") (net 96))
+    (segment (start 189.6375 96.14999999999999) (end 191.4375 96.14999999999999) (width 0.25) (layer "F.Cu") (net 97))
+    (segment (start 189.6375 96.14999999999999) (end 191.4375 96.14999999999999) (width 0.25) (layer "B.Cu") (net 97))
         
 
   (footprint "ceoloide:power_switch_smd_side"
