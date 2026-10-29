@@ -363,7 +363,7 @@ outlines:
       fillet: 2
       where: /encoder/
       size: [kcow, kcoh]
-  switch_plate:
+  switchplate:
     - what: outline
       name: _matrix_outline
     - what: outline
@@ -399,14 +399,42 @@ outlines:
     - name: _outer_wall
     - operation: subtract
       name: _inner_wall
-  combo: # Shows major items on the board
+  preview: # Preview output of most of the major elements
+    - name: _outer_wall
+      operation: stack
+    - name: _inner_wall
+      operation: stack
     - name: _pcb_outline
-    - operation: subtract
-      name: _mcu_tight
-    - operation: subtract
-      name: _keycap_outlines
+      operation: stack
+    - name: _mcu_tight
+      operation: stack
+    - name: _switch_cutouts
+      operation: stack
+    - name: _keycap_outlines
+      operation: stack
+    - name: _standoff_holes
+      operation: stack
 pcbs:
-  board:
+  backplate:
+    template: kicad8
+    outlines:
+      main:
+        outline: _pcb_outline
+    footprints:
+      ## Screw Holes ##
+      board_mounting_holes:
+        what: ceoloide/mounting_hole_npth
+        where: /screw/
+        params:
+          hole_size: screw_hole
+          hole_drill: screw_hole
+          designator: 'MH'
+  switchplate:
+    template: kicad8
+    outlines:
+      main:
+        outline: switchplate
+  ergonano:
     template: kicad8
     outlines:
       main:
