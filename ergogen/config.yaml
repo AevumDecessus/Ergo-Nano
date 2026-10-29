@@ -1,5 +1,10 @@
 meta:
   engine: 4.1.0
+  name: ergo-nano
+  version: 0.1
+  ref: &kb_ref "Ergo Nano v0.1"
+  author: aevumdecessus
+  url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
 units:
   # Web View Resizing
   $default_width: U
@@ -214,7 +219,7 @@ points:
         - mcu
       anchor:
         - ref: matrix_innermod_num
-          shift: [kx,5]
+          shift: [0.75kx,5]
     mcu_cover_top_right:
       key.tags:
         - helper
@@ -236,6 +241,13 @@ points:
       anchor:
         - ref: mcu_cover_top_left
           shift: [0,-mcu_height]
+    screw_mcu_bottom_right:
+      key.tags:
+        - helper
+        - screw
+      anchor:
+        - ref: mcu_cover_bottom_right
+          shift: [0, -padding]
 outlines:
   _matrix_outline:
     - what: polygon
@@ -277,9 +289,9 @@ outlines:
         - ref: mcu_cover_top_right # bottom right space for the MCU
           shift: [padding, padding]
         - ref: mcu_cover_bottom_right
-          shift: [padding, -padding]
+          shift: [padding, -2padding]
         - ref: mcu_cover_bottom_left
-          shift: [-padding, -padding]
+          shift: [-padding, -6padding]
       fillet: 2
   _pcb_outline:
     - what: outline
@@ -398,25 +410,24 @@ pcbs:
       nice-view:
         what: ceoloide/display_nice_view
         where:
-          ref: mcu_cover_top_left
-          shift: [(mcu_width / 2), -(mcu_height / 2)]
+          ref: mcu_cover_bottom_left
+          shift: [(mcu_width / 2), (mcu_height / 2) - 5]
         params:
           reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          ref: matrix_innermod_num
-          shift: [0.75kx,-0.25ky]
-          rotate: 180
+          ref: mcu_cover_bottom_left
+          shift: [mcu_width / 2 , -(mcu_height / 2)]
+          rotate: -90
         params:
           reversible: true
           include_traces: true
       power_switch:
         what: ceoloide/power_switch_smd_side
         where:
-          ref: matrix_innermod_num
-          shift: [.75kx,0.35py]
-          rotate: 90
+          ref: mcu_cover_bottom_right
+          shift: [(padding / 2), 0]
         params:
           reversible: true
           from: BAT_P
@@ -424,8 +435,8 @@ pcbs:
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where:
-          ref: matrix_innermod_top
-          shift: [0.75kx, 0]
+          ref: mcu_cover_top_right
+          shift: [padding / 2 , -half_px]
           rotate: 90
         params:
           reversible: true
@@ -450,7 +461,7 @@ pcbs:
           bold: true
           height: 3
           width: 3
-          text: "V1.0"
+          text: "V0.1"
       author:
         what: ceoloide/utility_text
         where:
