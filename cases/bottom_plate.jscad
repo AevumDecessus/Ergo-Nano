@@ -5,7 +5,7 @@ function _pcb_outline_extrude_1_5_outline_fn(){
 
 
 function _screw_holes_extrude_1_5_outline_fn(){
-    return CAG.circle({"center":[196.5875,-85.1],"radius":1.6})
+    return CAG.circle({"center":[197.5875,-86.1],"radius":1.6})
 .union(
     CAG.circle({"center":[173.525,-96.475],"radius":1.6})
 ).union(

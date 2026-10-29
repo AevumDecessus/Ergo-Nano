@@ -246,7 +246,7 @@ points:
         - screw
       anchor:
         - ref: mcu_cover_bottom_right
-          shift: [0, -padding]
+          shift: [1, -8]
 outlines:
   _matrix_outline: #Outline around all keys only with half a key of padding around
     - what: polygon

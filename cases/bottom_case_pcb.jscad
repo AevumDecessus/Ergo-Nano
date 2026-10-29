@@ -5,7 +5,7 @@ function _outer_wall_extrude_1_5_outline_fn(){
 
 
 function _standoffs_extrude_4_outline_fn(){
-    return CAG.circle({"center":[196.5875,-85.1],"radius":3.35})
+    return CAG.circle({"center":[197.5875,-86.1],"radius":3.35})
 .union(
     CAG.circle({"center":[173.525,-96.475],"radius":3.35})
 ).union(
@@ -27,7 +27,7 @@ function _standoffs_extrude_4_outline_fn(){
 
 
 function _standoff_holes_extrude_4_outline_fn(){
-    return CAG.circle({"center":[196.5875,-85.1],"radius":2.25})
+    return CAG.circle({"center":[197.5875,-86.1],"radius":2.25})
 .union(
     CAG.circle({"center":[173.525,-96.475],"radius":2.25})
 ).union(
