@@ -23,7 +23,7 @@ units:
   keych: 18 # keycap height (cherry)
   # Padding Variables
   padding: 7
-  mcu_padding: 12 # Padding to the right of the MCU for connctors/etc
+  mcu_padding: 8 # Padding to the right of the MCU for connctors/etc
   px: kx + padding
   py: ky + padding
   half_px: 0.5px
@@ -494,16 +494,16 @@ pcbs:
         what: ceoloide/display_nice_view
         where:
           ref: mcu_cover_bottom_left
-          shift: [(mcu_width / 2), (mcu_height / 2) - 5]
+          shift: [(mcu_width / 2), (mcu_height / 2) - 3]
         params:
           reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          ref: screw_mcu_bottom_right
+          ref: mcu_cover_top_right
           ## Shift slightly right of "center" in order to actually center it with the rotation
-          shift: [4 , -(screw_head + 1)]
-          rotate: -90
+          shift: [(mcu_padding / 2) , -8]
+          rotate: 180
         params:
           reversible: true
           include_traces: true
@@ -511,8 +511,8 @@ pcbs:
       power_switch:
         what: ceoloide/power_switch_smd_side
         where:
-          ref: mcu_cover_top_right
-          shift: [(mcu_padding / 2), 0]
+          ref: mcu_cover_bottom_right
+          shift: [(mcu_padding / 2), half_kx]
         params:
           reversible: true
           from: BAT_P
@@ -521,7 +521,7 @@ pcbs:
         what: ceoloide/reset_switch_tht_top
         where:
           ref: mcu_cover_bottom_right
-          shift: [mcu_padding / 2 , half_px]
+          shift: [mcu_padding / 2 , 0]
           rotate: 90
         params:
           reversible: true
@@ -616,6 +616,16 @@ pcbs:
           height: 3
           width: 3
           text: Right Hand
+      battery_connector:
+        what: ceoloide/utility_text
+        where:
+          ref: mcu_cover_top_right
+          shift: [mcu_padding / 2, 1.1]
+        params:
+          reversible: true
+          height: 0.5
+          width: 0.5
+          text: battery cable\ntop under mcu\nbottom in case
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
