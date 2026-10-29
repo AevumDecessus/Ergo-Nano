@@ -50,6 +50,7 @@ units:
   kicad_shift_y: -125
   # Tolerances
   board_tolerance: 0.3 #Leave this much space around the board in the case
+  fillet_radius: 2
   # M3 specific sizes
   m3_hole: 3.2
   m3_heatset_hole: 4.5
@@ -301,7 +302,7 @@ outlines:
           shift: [half_px, -half_py]
         - ref: matrix_outer_mod
           shift: [-half_px,-half_py]
-      fillet: 2
+      fillet: fillet_radius
   _mcu_outline: # Outline around the MCU, angled at the botom to merge more cleanly with the matrix
     - what: polygon
       operation: stack
@@ -314,7 +315,7 @@ outlines:
           shift: [mcu_padding, -2padding]
         - ref: mcu_cover_bottom_left
           shift: [-padding, -6padding]
-      fillet: 2
+      fillet: fillet_radius
   _mcu_tight: # Exact size of the MCU, used to show it's position on the combo dxf
     - what: polygon
       operation: stack
@@ -327,7 +328,7 @@ outlines:
     - what: outline
       name: _mcu_tight
       expand: board_tolerance
-      fillet: 2
+      fillet: fillet_radius
   ## PCB ##
   _pcb_outline: # Merged matrix and MCU outline to form the PCB shape
     - what: outline
@@ -335,7 +336,7 @@ outlines:
     - what: outline
       name: _matrix_outline
       operation: add
-      fillet: 2
+      fillet: fillet_radius
   ## Standoffs and screws ##
   _standoffs: # The circles for each screw showing standoff size
     - what: circle
@@ -356,11 +357,11 @@ outlines:
   ## Switch Plate ##
   _switch_cutouts: # Switch cutouts to form the switch plate
     - what: rectangle
-      fillet: 2
+      fillet: fillet_radius
       where: /key/
       size: [kcow, kcoh]
     - what: rectangle
-      fillet: 2
+      fillet: fillet_radius
       where: /encoder/
       size: [kcow, kcoh]
   switchplate:
@@ -375,15 +376,15 @@ outlines:
   ## Keycaps
   _keycap_outlines:
     - what: rectangle
-      fillet: 2
+      fillet: fillet_radius
       where: [key]
       size: [keycw, keych]
     - what: rectangle
-      fillet: 2
+      fillet: fillet_radius
       where: [key_2u_vert]
       size: [keycw, 2keych]
     - what: rectangle
-      fillet: 2
+      fillet: fillet_radius
       where: [encoder]
       size: [keycw, keych]
   ## Case Wall ##
