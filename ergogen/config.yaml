@@ -157,6 +157,20 @@ points:
       rows:
         near:
         far:
+    encoder_thumb:
+      key:
+        tags:
+          - encoder
+      columns:
+        encoder:
+          key:
+            column_net: CL6
+          rows.encoder.row_net: RW4
+      rows:
+        encoder:
+      anchor:
+        ref: matrix_innermod_bottom
+        shift: [1.1kx, 0.6ky]
     screw_top_left:
       key:
         tags:
@@ -345,6 +359,10 @@ outlines:
       fillet: 2
       where: /key/
       size: [kcow, kcoh]
+    - what: rectangle
+      fillet: 2
+      where: /encoder/
+      size: [kcow, kcoh]
   switch_plate:
     - what: outline
       name: _matrix_outline
@@ -364,6 +382,10 @@ outlines:
       fillet: 2
       where: [key_2u_vert]
       size: [keycw, 2keych]
+    - what: rectangle
+      fillet: 2
+      where: [encoder]
+      size: [keycw, keych]
   ## Case Wall ##
   _outer_wall: # 0.5 padding bigger than board - forms the outer wall of the case
     - what: outline
@@ -418,9 +440,11 @@ pcbs:
         params:
           reverse_mount: true
           reversible: true
+          P0: EN1
           P1: CS
           P2: MOS
           P3: SCK
+          P4: EN2
           P5: RW0
           P6: RW1
           P7: RW2
@@ -472,6 +496,39 @@ pcbs:
           rotate: 90
         params:
           reversible: true
+      ## Rotary Encoder
+      rotary_encoder:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: [encoder]
+        adjust:
+          rotate: 180
+        params:
+          reversible: true
+          include_silkscreen: true
+          include_plated_mounting_holes: true
+          include_plate_hole_marking: true
+          S1: "{{column_net}}"
+          S2: "{{colrow}}"
+          A: EN1
+          C: EN2
+      encoder_diode:
+        what: ceoloide/diode_tht_sod123
+        where: encoder
+        params:
+          reversible: true
+          include_tht: true
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, 0]
+          rotate: 270
+      encoder_diode_route:
+        what: ceoloide/utility_router
+        where: [encoder]
+        params:
+          net: "{{col_net}}"
+          route: "b(-2.5,7)(0,4)"
+          locked: true
       ## Silkscreen Text ##
       board_name:
         what: ceoloide/utility_text
