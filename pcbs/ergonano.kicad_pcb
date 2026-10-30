@@ -10297,7 +10297,7 @@
 
   (footprint "ceoloide:power_switch_smd_side"
     (layer "F.Cu")
-    (at 200.5875 68.57499999999999 0)
+    (at 200.5875 59.05 0)
     (property "Reference" "PWR1"
       (at -3.6 0 -90)
       (layer "F.SilkS")
@@ -10605,12 +10605,12 @@
   )
       
 
-  (gr_text "battery cable\ntop under mcu\nbottom in case"
-    (at 200.5875 42.9 0)
+  (gr_text "mount battery connector\ntop side if under mcu\nbottom side if larger"
+    (at 187.4375 40 0)
     (layer "F.SilkS" )
     (effects
       (font 
-        (size 0.5 0.5)
+        (size 1 1)
         (thickness 0.15)
         
         
@@ -10619,12 +10619,12 @@
     )
   )
       
-  (gr_text "battery cable\ntop under mcu\nbottom in case"
-    (at 200.5875 42.9 0)
+  (gr_text "mount battery connector\ntop side if under mcu\nbottom side if larger"
+    (at 187.4375 40 0)
     (layer "B.SilkS" )
     (effects
       (font 
-        (size 0.5 0.5)
+        (size 1 1)
         (thickness 0.15)
         
         

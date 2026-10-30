@@ -535,7 +535,7 @@ pcbs:
         what: ceoloide/power_switch_smd_side
         where:
           ref: mcu_cover_bottom_right
-          shift: [(mcu_padding / 2), half_kx]
+          shift: [(mcu_padding / 2), kx]
         params:
           reversible: true
           from: BAT_P
@@ -639,16 +639,16 @@ pcbs:
           height: 3
           width: 3
           text: Right Hand
-      battery_connector:
+      battery_connector_text:
         what: ceoloide/utility_text
         where:
-          ref: mcu_cover_top_right
-          shift: [mcu_padding / 2, 1.1]
+          ref: mcu_cover_top_left
+          shift: [mcu_width / 2, mcu_padding / 2]
         params:
           reversible: true
-          height: 0.5
-          width: 0.5
-          text: battery cable\ntop under mcu\nbottom in case
+          height: 1
+          width: 1
+          text: mount battery connector\ntop side if under mcu\nbottom side if larger
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
