@@ -115,7 +115,7 @@ build_board() {
         --router.job_timeout="${FREEROUTING_JOB_TIMEOUT:-00:20:00}" \
         --router.automatic_neckdown="$freerouting_automatic_neckdown" \
         --router.neck_width_um="$freerouting_neck_width_um" \
-        -dct 0 --profile.email=marco.massarelli@gmail.com
+        -dct 0 --profile.email=aevum@decess.us
     run_container "$kicad_auto_image" kibot/import_ses.py -b "pcbs/$board.kicad_pcb" -s "pcbs/$board.ses" -o "pcbs/${board}_autorouted.kicad_pcb"
     cp "pcbs/$board.kicad_pro" "pcbs/${board}_autorouted.kicad_pro"
     cp "pcbs/$board.kicad_dru" "pcbs/${board}_autorouted.kicad_dru"

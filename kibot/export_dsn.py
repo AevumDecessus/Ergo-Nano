@@ -37,7 +37,7 @@ def main():
         Path(temporary).write_text(text)
         # mkstemp creates mode 0600; container-generated exports must also be
         # readable by the host/CI artifact uploader after the atomic rename.
-        os.chmod(temporary, 0o644)
+        #os.chmod(temporary, 0o644)
         os.replace(temporary, target)
     finally:
         if os.path.exists(temporary):
@@ -49,3 +49,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    

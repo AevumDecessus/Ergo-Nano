@@ -47,6 +47,10 @@ node_modules
 gerbers/*/*
 !gerbers/*/*.zip
 
+# freerouting misc
+freerouting/*.json
+freerouting/*.log
+
 # temporary while debugging
 gerbers
 docs
