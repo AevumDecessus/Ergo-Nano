@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "ergonano")
-    (date "2026-10-29")
+    (date "2026-10-30")
     (rev "0.1")
     (company "aevumdecessus")
   )
@@ -5767,6 +5767,35 @@
         
     )
         
+    (segment
+      (start 45 128.19)
+      (end 45 130.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 2)
+    )
+    (segment
+      (start 45 128.19)
+      (end 45 130.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 2)
+    )
+    (segment
+      (start 45 133.65)
+      (end 45 135.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 45 133.65)
+      (end 45 135.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5805,6 +5834,35 @@
         
     )
         
+    (segment
+      (start 45 109.19)
+      (end 45 111.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 6)
+    )
+    (segment
+      (start 45 109.19)
+      (end 45 111.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 6)
+    )
+    (segment
+      (start 45 114.65)
+      (end 45 116.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 45 114.65)
+      (end 45 116.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5843,6 +5901,35 @@
         
     )
         
+    (segment
+      (start 45 90.19)
+      (end 45 92.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 7)
+    )
+    (segment
+      (start 45 90.19)
+      (end 45 92.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 7)
+    )
+    (segment
+      (start 45 95.65)
+      (end 45 97.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 45 95.65)
+      (end 45 97.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5881,6 +5968,35 @@
         
     )
         
+    (segment
+      (start 45 71.19)
+      (end 45 73.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 8)
+    )
+    (segment
+      (start 45 71.19)
+      (end 45 73.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 8)
+    )
+    (segment
+      (start 45 76.65)
+      (end 45 78.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 45 76.65)
+      (end 45 78.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5919,6 +6035,35 @@
         
     )
         
+    (segment
+      (start 45 52.19)
+      (end 45 54.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 9)
+    )
+    (segment
+      (start 45 52.19)
+      (end 45 54.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 9)
+    )
+    (segment
+      (start 45 57.65)
+      (end 45 59.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 45 57.65)
+      (end 45 59.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5957,6 +6102,35 @@
         
     )
         
+    (segment
+      (start 64 128.19)
+      (end 64 130.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 11)
+    )
+    (segment
+      (start 64 128.19)
+      (end 64 130.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 11)
+    )
+    (segment
+      (start 64 133.65)
+      (end 64 135.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 64 133.65)
+      (end 64 135.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -5995,6 +6169,35 @@
         
     )
         
+    (segment
+      (start 64 109.19)
+      (end 64 111.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 12)
+    )
+    (segment
+      (start 64 109.19)
+      (end 64 111.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 12)
+    )
+    (segment
+      (start 64 114.65)
+      (end 64 116.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 64 114.65)
+      (end 64 116.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6033,6 +6236,35 @@
         
     )
         
+    (segment
+      (start 64 90.19)
+      (end 64 92.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 13)
+    )
+    (segment
+      (start 64 90.19)
+      (end 64 92.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 13)
+    )
+    (segment
+      (start 64 95.65)
+      (end 64 97.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 64 95.65)
+      (end 64 97.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6071,6 +6303,35 @@
         
     )
         
+    (segment
+      (start 64 71.19)
+      (end 64 73.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 14)
+    )
+    (segment
+      (start 64 71.19)
+      (end 64 73.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 14)
+    )
+    (segment
+      (start 64 76.65)
+      (end 64 78.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 64 76.65)
+      (end 64 78.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6109,6 +6370,35 @@
         
     )
         
+    (segment
+      (start 64 52.19)
+      (end 64 54.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 15)
+    )
+    (segment
+      (start 64 52.19)
+      (end 64 54.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 15)
+    )
+    (segment
+      (start 64 57.65)
+      (end 64 59.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 64 57.65)
+      (end 64 59.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6147,6 +6437,35 @@
         
     )
         
+    (segment
+      (start 83 123.19)
+      (end 83 125.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 17)
+    )
+    (segment
+      (start 83 123.19)
+      (end 83 125.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 17)
+    )
+    (segment
+      (start 83 128.65)
+      (end 83 130.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 83 128.65)
+      (end 83 130.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6185,6 +6504,35 @@
         
     )
         
+    (segment
+      (start 83 104.19)
+      (end 83 106.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 18)
+    )
+    (segment
+      (start 83 104.19)
+      (end 83 106.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 18)
+    )
+    (segment
+      (start 83 109.65)
+      (end 83 111.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 83 109.65)
+      (end 83 111.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6223,6 +6571,35 @@
         
     )
         
+    (segment
+      (start 83 85.19)
+      (end 83 87.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 19)
+    )
+    (segment
+      (start 83 85.19)
+      (end 83 87.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 19)
+    )
+    (segment
+      (start 83 90.65)
+      (end 83 92.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 83 90.65)
+      (end 83 92.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6261,6 +6638,35 @@
         
     )
         
+    (segment
+      (start 83 66.19)
+      (end 83 68.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 20)
+    )
+    (segment
+      (start 83 66.19)
+      (end 83 68.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 20)
+    )
+    (segment
+      (start 83 71.65)
+      (end 83 73.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 83 71.65)
+      (end 83 73.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6299,6 +6705,35 @@
         
     )
         
+    (segment
+      (start 83 47.19)
+      (end 83 49.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 21)
+    )
+    (segment
+      (start 83 47.19)
+      (end 83 49.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 21)
+    )
+    (segment
+      (start 83 52.65)
+      (end 83 54.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 83 52.65)
+      (end 83 54.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6337,6 +6772,35 @@
         
     )
         
+    (segment
+      (start 102 118.19)
+      (end 102 120.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 23)
+    )
+    (segment
+      (start 102 118.19)
+      (end 102 120.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 23)
+    )
+    (segment
+      (start 102 123.65)
+      (end 102 125.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 102 123.65)
+      (end 102 125.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6375,6 +6839,35 @@
         
     )
         
+    (segment
+      (start 102 99.19)
+      (end 102 101.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 24)
+    )
+    (segment
+      (start 102 99.19)
+      (end 102 101.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 24)
+    )
+    (segment
+      (start 102 104.65)
+      (end 102 106.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 102 104.65)
+      (end 102 106.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6413,6 +6906,35 @@
         
     )
         
+    (segment
+      (start 102 80.19)
+      (end 102 82.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 25)
+    )
+    (segment
+      (start 102 80.19)
+      (end 102 82.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 25)
+    )
+    (segment
+      (start 102 85.65)
+      (end 102 87.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 102 85.65)
+      (end 102 87.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6451,6 +6973,35 @@
         
     )
         
+    (segment
+      (start 102 61.19)
+      (end 102 63.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 26)
+    )
+    (segment
+      (start 102 61.19)
+      (end 102 63.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 26)
+    )
+    (segment
+      (start 102 66.65)
+      (end 102 68.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 102 66.65)
+      (end 102 68.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6489,6 +7040,35 @@
         
     )
         
+    (segment
+      (start 102 42.19)
+      (end 102 44.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 27)
+    )
+    (segment
+      (start 102 42.19)
+      (end 102 44.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 27)
+    )
+    (segment
+      (start 102 47.65)
+      (end 102 49.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 102 47.65)
+      (end 102 49.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6527,6 +7107,35 @@
         
     )
         
+    (segment
+      (start 121 123.19)
+      (end 121 125.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 29)
+    )
+    (segment
+      (start 121 123.19)
+      (end 121 125.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 29)
+    )
+    (segment
+      (start 121 128.65)
+      (end 121 130.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 121 128.65)
+      (end 121 130.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6565,6 +7174,35 @@
         
     )
         
+    (segment
+      (start 121 104.19)
+      (end 121 106.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 30)
+    )
+    (segment
+      (start 121 104.19)
+      (end 121 106.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 30)
+    )
+    (segment
+      (start 121 109.65)
+      (end 121 111.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 121 109.65)
+      (end 121 111.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6603,6 +7241,35 @@
         
     )
         
+    (segment
+      (start 121 85.19)
+      (end 121 87.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 31)
+    )
+    (segment
+      (start 121 85.19)
+      (end 121 87.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 31)
+    )
+    (segment
+      (start 121 90.65)
+      (end 121 92.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 121 90.65)
+      (end 121 92.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6641,6 +7308,35 @@
         
     )
         
+    (segment
+      (start 121 66.19)
+      (end 121 68.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 32)
+    )
+    (segment
+      (start 121 66.19)
+      (end 121 68.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 32)
+    )
+    (segment
+      (start 121 71.65)
+      (end 121 73.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 121 71.65)
+      (end 121 73.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6679,6 +7375,35 @@
         
     )
         
+    (segment
+      (start 121 47.19)
+      (end 121 49.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 33)
+    )
+    (segment
+      (start 121 47.19)
+      (end 121 49.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 33)
+    )
+    (segment
+      (start 121 52.65)
+      (end 121 54.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 121 52.65)
+      (end 121 54.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6717,6 +7442,35 @@
         
     )
         
+    (segment
+      (start 140 109.19)
+      (end 140 111.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 35)
+    )
+    (segment
+      (start 140 109.19)
+      (end 140 111.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 35)
+    )
+    (segment
+      (start 140 114.65)
+      (end 140 116.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 140 114.65)
+      (end 140 116.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6755,6 +7509,35 @@
         
     )
         
+    (segment
+      (start 140 90.19)
+      (end 140 92.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 36)
+    )
+    (segment
+      (start 140 90.19)
+      (end 140 92.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 36)
+    )
+    (segment
+      (start 140 95.65)
+      (end 140 97.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 140 95.65)
+      (end 140 97.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6793,6 +7576,35 @@
         
     )
         
+    (segment
+      (start 140 71.19)
+      (end 140 73.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 37)
+    )
+    (segment
+      (start 140 71.19)
+      (end 140 73.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 37)
+    )
+    (segment
+      (start 140 76.65)
+      (end 140 78.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 140 76.65)
+      (end 140 78.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6831,6 +7643,35 @@
         
     )
         
+    (segment
+      (start 140 52.19)
+      (end 140 54.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 38)
+    )
+    (segment
+      (start 140 52.19)
+      (end 140 54.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 38)
+    )
+    (segment
+      (start 140 57.65)
+      (end 140 59.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 140 57.65)
+      (end 140 59.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6869,6 +7710,35 @@
         
     )
         
+    (segment
+      (start 159 109.19)
+      (end 159 111.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 40)
+    )
+    (segment
+      (start 159 109.19)
+      (end 159 111.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 40)
+    )
+    (segment
+      (start 159 114.65)
+      (end 159 116.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 159 114.65)
+      (end 159 116.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6907,6 +7777,35 @@
         
     )
         
+    (segment
+      (start 159 90.19)
+      (end 159 92.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 41)
+    )
+    (segment
+      (start 159 90.19)
+      (end 159 92.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 41)
+    )
+    (segment
+      (start 159 95.65)
+      (end 159 97.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 159 95.65)
+      (end 159 97.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6945,6 +7844,35 @@
         
     )
         
+    (segment
+      (start 159 71.19)
+      (end 159 73.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 42)
+    )
+    (segment
+      (start 159 71.19)
+      (end 159 73.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 42)
+    )
+    (segment
+      (start 159 76.65)
+      (end 159 78.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 159 76.65)
+      (end 159 78.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
 
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
@@ -6983,6 +7911,370 @@
         
     )
         
+    (segment
+      (start 159 52.19)
+      (end 159 54.35)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 43)
+    )
+    (segment
+      (start 159 52.19)
+      (end 159 54.35)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 43)
+    )
+    (segment
+      (start 159 57.65)
+      (end 159 59.81)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 159 57.65)
+      (end 159 59.81)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 134.2453241 138.3592391 40)
+        (property "Reference" "D34"
+            (at 0 0 40)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 54 "RW0"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 45 "t_col0_near"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 54 "RW0"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 45 "t_col0_near"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 40) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 54 "RW0"))
+      (pad "2" thru_hole circle (at 3.81 0 40) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 45 "t_col0_near"))
+        
+    )
+        
+    (segment
+      (start 137.1639534 135.9102183)
+      (end 135.5092974 137.2986395)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 45)
+    )
+    (segment
+      (start 137.1639534 135.9102183)
+      (end 135.5092974 137.2986395)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 45)
+    )
+    (segment
+      (start 132.9813508 139.41983869999999)
+      (end 131.3266948 140.8082599)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 54)
+    )
+    (segment
+      (start 132.9813508 139.41983869999999)
+      (end 131.3266948 140.8082599)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 54)
+    )
+    
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 139.1938548 159.07493770000002 40)
+        (property "Reference" "D35"
+            (at 0 0 40)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "RW4"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 46 "t_col1_near"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "RW4"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 46 "t_col1_near"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 40) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 50 "RW4"))
+      (pad "2" thru_hole circle (at 3.81 0 40) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 46 "t_col1_near"))
+        
+    )
+        
+    (segment
+      (start 142.1124841 156.62591690000002)
+      (end 140.4578281 158.01433810000003)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 46)
+    )
+    (segment
+      (start 142.1124841 156.62591690000002)
+      (end 140.4578281 158.01433810000003)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 46)
+    )
+    (segment
+      (start 137.9298815 160.1355373)
+      (end 136.2752255 161.52395850000002)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 50)
+    )
+    (segment
+      (start 137.9298815 160.1355373)
+      (end 136.2752255 161.52395850000002)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 50)
+    )
+    
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 153.7486992 146.86197310000003 40)
+        (property "Reference" "D36"
+            (at 0 0 40)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 53 "RW1"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 47 "t_col1_far"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "RW1"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 47 "t_col1_far"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 40) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 53 "RW1"))
+      (pad "2" thru_hole circle (at 3.81 0 40) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 47 "t_col1_far"))
+        
+    )
+        
+    (segment
+      (start 156.6673285 144.41295230000003)
+      (end 155.0126725 145.80137350000004)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 47)
+    )
+    (segment
+      (start 156.6673285 144.41295230000003)
+      (end 155.0126725 145.80137350000004)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 47)
+    )
+    (segment
+      (start 152.4847259 147.92257270000002)
+      (end 150.8300699 149.31099390000003)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 53)
+    )
+    (segment
+      (start 152.4847259 147.92257270000002)
+      (end 150.8300699 149.31099390000003)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 53)
+    )
+    
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 151.4389587 173.6680844 40)
+        (property "Reference" "D37"
+            (at 0 0 40)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "RW3"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "t_col2_near"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "RW3"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 48 "t_col2_near"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 40) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 51 "RW3"))
+      (pad "2" thru_hole circle (at 3.81 0 40) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 48 "t_col2_near"))
+        
+    )
+        
+    (segment
+      (start 154.357588 171.2190636)
+      (end 152.702932 172.6074848)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 48)
+    )
+    (segment
+      (start 154.357588 171.2190636)
+      (end 152.702932 172.6074848)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 48)
+    )
+    (segment
+      (start 150.1749854 174.728684)
+      (end 148.5203294 176.1171052)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 51)
+    )
+    (segment
+      (start 150.1749854 174.728684)
+      (end 148.5203294 176.1171052)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 51)
+    )
+    
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 165.9938031 161.4551198 40)
+        (property "Reference" "D38"
+            (at 0 0 40)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 52 "RW2"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "t_col2_far"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 52 "RW2"))
+      (pad "2" smd rect (at 1.65 0 40) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 49 "t_col2_far"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 40) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 52 "RW2"))
+      (pad "2" thru_hole circle (at 3.81 0 40) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 49 "t_col2_far"))
+        
+    )
+        
+    (segment
+      (start 168.9124324 159.006099)
+      (end 167.2577764 160.39452020000002)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 49)
+    )
+    (segment
+      (start 168.9124324 159.006099)
+      (end 167.2577764 160.39452020000002)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 49)
+    )
+    (segment
+      (start 164.7298298 162.5157194)
+      (end 163.07517380000002 163.9041406)
+      (width 0.25)
+      (layer "F.Cu")
+      (net 52)
+    )
+    (segment
+      (start 164.7298298 162.5157194)
+      (end 163.07517380000002 163.9041406)
+      (width 0.25)
+      (layer "B.Cu")
+      (net 52)
+    )
+    
 
     
     
@@ -9130,23 +10422,17 @@
     (pad "S1" thru_hole oval (at -2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 39 "CL6"))
     (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 98 "encoder_encoder"))
     
-    (pad "" thru_hole roundrect
+    (pad "" np_thru_hole oval
       (at -5.6 0 90)
-      (size 2.5999999999999996 1.8)
+      (size 2.3 1.5)
       (drill oval 2.3 1.5)
       (layers "*.Cu" "*.Mask")
-      (roundrect_rratio 0)
-      (chamfer_ratio 0.2)
-      (chamfer top_right top_left)
-    )
-    (pad "" thru_hole roundrect
+    )    
+    (pad "" np_thru_hole oval
       (at 5.6 0 90)
-      (size 2.5999999999999996 1.8)
+      (size 2.3 1.5)
       (drill oval 2.3 1.5)
       (layers "*.Cu" "*.Mask")
-      (roundrect_rratio 0)
-      (chamfer_ratio 0.2)
-      (chamfer bottom_right bottom_left)
     )
     
     (fp_rect (start -5.9 -6) (end 5.9 6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
@@ -9157,7 +10443,7 @@
     (footprint "ceoloide:diode_tht_sod123"
         (layer "F.Cu")
         (at 184.95499999999998 94.57 270)
-        (property "Reference" "D34"
+        (property "Reference" "D39"
             (at 0 0 270)
             (layer "F.SilkS")
             hide
@@ -9359,7 +10645,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9377,7 +10663,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9395,7 +10681,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9413,7 +10699,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9431,7 +10717,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9449,7 +10735,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9467,7 +10753,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 -50)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9485,7 +10771,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )
@@ -9503,7 +10789,7 @@
     )
     (pad "" np_thru_hole circle
       (at 0 0 0)
-      (size 5.5 5.5)
+      (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
     )

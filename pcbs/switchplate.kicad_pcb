@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "switchplate")
-    (date "2026-10-29")
+    (date "2026-10-30")
     (rev "0.1")
     (company "aevumdecessus")
   )
@@ -84,6 +84,149 @@
   (net 0 "")
 
   
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 59.525 58.525 0)
+    (property "Reference" "MH1"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 135.525 34.475 0)
+    (property "Reference" "MH2"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 173.525 58.525 0)
+    (property "Reference" "MH3"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 59.525 115.475 0)
+    (property "Reference" "MH4"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 135.525 129.525 0)
+    (property "Reference" "MH5"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 97.525 129.525 0)
+    (property "Reference" "MH6"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 161.1892292 159.579668 -50)
+    (property "Reference" "MH7"
+      (at 0 2.55 -50)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 -50)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
+
+  (footprint "ceoloide:mounting_hole_npth"
+    (layer "F.Cu")
+    (at 173.525 96.475 0)
+    (property "Reference" "MH8"
+      (at 0 2.55 0)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" np_thru_hole circle
+      (at 0 0 0)
+      (size 3.2 3.2)
+      (drill 3.2)
+      (layers "*.Cu" "*.Mask")
+    )
+  )
+  
   (gr_line (start 36.975 136.025) (end 36.975 37.72908083684211) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 38.714091 35.746172236842106) (end 74.84941700000002 30.991524078947368) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 75.09749462461141 30.94276457247068) (end 93.72476655538861 26.040850906476685) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -110,14 +253,6 @@
 (gr_arc (start 101.28375318000005 133.025) (mid 101.02713878000004 133.04153110000001) (end 100.77476658000005 133.0908509) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 81.76624681999995 138.025) (mid 82.02286121999995 138.0084689) (end 82.27523341999995 137.95914910000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 36.975 136.025) (mid 37.5607864 137.43921360000002) (end 38.975 138.025) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_circle (center 59.525 58.525) (end 61.775 58.525) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 135.525 34.475) (end 137.775 34.475) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 173.525 58.525) (end 175.775 58.525) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 59.525 115.475) (end 61.775 115.475) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 135.525 129.525) (end 137.775 129.525) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 97.525 129.525) (end 99.775 129.525) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 161.1892292 159.579668) (end 163.4392292 159.579668) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 173.525 96.475) (end 175.775 96.475) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_line (start 45 132) (end 55 132) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 57 130) (end 57 120) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 55 118) (end 45 118) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

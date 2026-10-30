@@ -130,6 +130,7 @@ points:
         tags:
           - key
           - thumb_cluster
+          - switch_diode
       anchor:
         ref: matrix_index_mod
         shift: [half_kx,-1.25ky]
@@ -138,7 +139,6 @@ points:
         t_col0:
           key:
             tags:
-              - thumb_cluster
               - key_2u_vert
             column_net: CL7
             height: 2ky
@@ -267,7 +267,7 @@ points:
     screw_mcu_bottom_right:
       key.tags:
         - helper
-        - screw
+        - screws_expand
       anchor:
         - ref: mcu_cover_bottom_right
           shift: [1, -8]
@@ -364,14 +364,27 @@ outlines:
       fillet: fillet_radius
       where: /encoder/
       size: [kcow, kcoh]
-  switchplate:
+  _switchplate_base:
     - what: outline
       name: _matrix_outline
     - what: outline
-      name: _standoff_holes
-      operation: subtract
-    - what: outline
       name: _switch_cutouts
+      operation: subtract
+  switchplate:
+    - what: outline
+      name: _switchplate_base
+    - what: outline
+      name: _screw_holes
+      operation: subtract
+  ## Back Plate
+  _backplate_base:
+    - what: outline
+      name: _pcb_outline
+  backplate:
+    - what: outline
+      name: _backplate_base
+    - what: outline
+      name: _screw_holes
       operation: subtract
   ## Keycaps
   _keycap_outlines:
@@ -420,12 +433,12 @@ pcbs:
     template: kicad8
     outlines:
       main:
-        outline: _pcb_outline
+        outline: _backplate_base
     footprints:
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
-        where: /screw/
+        where: /screws/
         params:
           hole_size: screw_hole
           hole_drill: screw_hole
@@ -434,7 +447,16 @@ pcbs:
     template: kicad8
     outlines:
       main:
-        outline: switchplate
+        outline: _switchplate_base
+    footprints:
+      ## Screw Holes ##
+      board_mounting_holes:
+        what: ceoloide/mounting_hole_npth
+        where: /^screws$/ #Don't try to cut the screws_expand holes
+        params:
+          hole_size: screw_hole
+          hole_drill: screw_hole
+          designator: 'MH'
   ergonano:
     template: kicad8
     outlines:
@@ -455,10 +477,11 @@ pcbs:
           to: "{{colrow}}"
       diode:
         what: ceoloide/diode_tht_sod123
-        where: switch_diode
+        where: [switch_diode]
         params:
           reversible: true
           include_tht: true
+          include_traces_vias: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
@@ -534,7 +557,7 @@ pcbs:
         params:
           reversible: true
           include_silkscreen: true
-          include_plated_mounting_holes: true
+          include_plated_mounting_holes: false
           include_plate_hole_marking: true
           S1: "{{column_net}}"
           S2: "{{colrow}}"
@@ -631,7 +654,7 @@ pcbs:
         what: ceoloide/mounting_hole_npth
         where: /screw/
         params:
-          hole_size: screw_head
+          hole_size: screw_hole
           hole_drill: screw_hole
           designator: 'MH'
       ## Static trace routes ##
