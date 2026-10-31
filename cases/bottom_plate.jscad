@@ -7,19 +7,15 @@ function _pcb_outline_extrude_1_5_outline_fn(){
 function _screw_holes_extrude_1_5_outline_fn(){
     return CAG.circle({"center":[197.5875,-85.1],"radius":1.6})
 .union(
-    CAG.circle({"center":[173.525,-96.475],"radius":1.6})
+    CAG.circle({"center":[154.525,-96.475],"radius":1.6})
 ).union(
     CAG.circle({"center":[161.1892292,-159.579668],"radius":1.6})
-).union(
-    CAG.circle({"center":[97.525,-129.525],"radius":1.6})
 ).union(
     CAG.circle({"center":[135.525,-129.525],"radius":1.6})
 ).union(
     CAG.circle({"center":[59.525,-115.475],"radius":1.6})
 ).union(
-    CAG.circle({"center":[173.525,-58.525],"radius":1.6})
-).union(
-    CAG.circle({"center":[135.525,-34.475],"radius":1.6})
+    CAG.circle({"center":[154.525,-58.525],"radius":1.6})
 ).union(
     CAG.circle({"center":[59.525,-58.525],"radius":1.6})
 ).extrude({ offset: [0, 0, 1.5] });

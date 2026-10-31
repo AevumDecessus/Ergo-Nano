@@ -104,7 +104,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 135.525 34.475 0)
+    (at 154.525 58.525 0)
     (property "Reference" "MH2"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -122,7 +122,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 173.525 58.525 0)
+    (at 59.525 115.475 0)
     (property "Reference" "MH3"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -140,7 +140,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 59.525 115.475 0)
+    (at 135.525 129.525 0)
     (property "Reference" "MH4"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -158,44 +158,8 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 135.525 129.525 0)
-    (property "Reference" "MH5"
-      (at 0 2.55 0)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" np_thru_hole circle
-      (at 0 0 0)
-      (size 3.2 3.2)
-      (drill 3.2)
-      (layers "*.Cu" "*.Mask")
-    )
-  )
-  
-
-  (footprint "ceoloide:mounting_hole_npth"
-    (layer "F.Cu")
-    (at 97.525 129.525 0)
-    (property "Reference" "MH6"
-      (at 0 2.55 0)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" np_thru_hole circle
-      (at 0 0 0)
-      (size 3.2 3.2)
-      (drill 3.2)
-      (layers "*.Cu" "*.Mask")
-    )
-  )
-  
-
-  (footprint "ceoloide:mounting_hole_npth"
-    (layer "F.Cu")
     (at 161.1892292 159.579668 -50)
-    (property "Reference" "MH7"
+    (property "Reference" "MH5"
       (at 0 2.55 -50)
       (layer "F.SilkS")
       hide
@@ -212,8 +176,8 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 173.525 96.475 0)
-    (property "Reference" "MH8"
+    (at 154.525 96.475 0)
+    (property "Reference" "MH6"
       (at 0 2.55 0)
       (layer "F.SilkS")
       hide

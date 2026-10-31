@@ -71,6 +71,7 @@ units:
   plate_thickness: 1.5
   top_plate_surface: 5
   gap_pcb_top_plate: top_plate_surface - plate_thickness
+  wall_thickness: 2
   wall_height_switch_plate: heatset_height + pcb_thickness + plate_thickness + gap_pcb_top_plate
   wall_height_pcb: heatset_height + pcb_thickness
   # Extrudes the walls to be level with the top of the PCB
@@ -182,21 +183,13 @@ points:
       anchor:
         ref: matrix_outer_num
         shift: [half_kx, -half_ky]
-    screw_top_center:
-      key:
-        tags:
-          - helper
-          - screws
-      anchor:
-        ref: matrix_index_num
-        shift: [half_kx, half_ky]
     screw_top_right:
       key:
         tags:
           - helper
           - screws
       anchor:
-        ref: matrix_innermod_num
+        ref: matrix_inner_num
         shift: [half_kx, -half_ky]
     screw_bottom_left:
       key:
@@ -206,21 +199,13 @@ points:
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
-    screw_center:
-      key:
-        tags:
-          - helper
-          - screws
-      anchor:
-        ref: matrix_index_mod
-        shift: [half_kx, -half_ky]
     screw_center_bottom:
       key:
         tags:
           - helper
           - screws
       anchor:
-        ref: matrix_ring_mod
+        ref: matrix_index_mod
         shift: [half_kx, -half_ky]
     screw_thumbs_right_center:
       key:
@@ -236,7 +221,7 @@ points:
           - helper
           - screws
       anchor:
-        ref: matrix_innermod_bottom
+        ref: matrix_inner_bottom
         shift: [half_kx, half_ky]
     mcu_top_left:
       key.tags:
@@ -442,7 +427,7 @@ outlines:
   _outer_wall: # 0.5 padding bigger than board - forms the outer wall of the case
     - what: outline
       name: _pcb_outline
-      expand: 0.5padding
+      expand: wall_thickness
   _inner_wall: # Tolerance gap around the whole PCB, forms the inner wall of the case
     - what: outline
       name: _pcb_outline
@@ -741,7 +726,7 @@ pcbs:
         where: /key/
         params:
           net: "{{colrow}}"
-          route: "f(-7,-4)(-7,-3)(-7,1)(-5,3)"
+          route: "f(-7,-4)(-7,1)(-5,3)"
           locked: false
       col_routes:
         what: ceoloide/utility_router

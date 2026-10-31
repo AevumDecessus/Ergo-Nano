@@ -11497,7 +11497,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 135.525 34.475 0)
+    (at 154.525 58.525 0)
     (property "Reference" "MH2"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -11515,7 +11515,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 173.525 58.525 0)
+    (at 59.525 115.475 0)
     (property "Reference" "MH3"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -11533,7 +11533,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 59.525 115.475 0)
+    (at 135.525 129.525 0)
     (property "Reference" "MH4"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -11551,15 +11551,15 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 135.525 129.525 0)
+    (at 161.1892292 159.579668 -50)
     (property "Reference" "MH5"
-      (at 0 2.55 0)
+      (at 0 2.55 -50)
       (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle
-      (at 0 0 0)
+      (at 0 0 -50)
       (size 3.2 3.2)
       (drill 3.2)
       (layers "*.Cu" "*.Mask")
@@ -11569,7 +11569,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 97.525 129.525 0)
+    (at 154.525 96.475 0)
     (property "Reference" "MH6"
       (at 0 2.55 0)
       (layer "F.SilkS")
@@ -11587,44 +11587,8 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 161.1892292 159.579668 -50)
-    (property "Reference" "MH7"
-      (at 0 2.55 -50)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" np_thru_hole circle
-      (at 0 0 -50)
-      (size 3.2 3.2)
-      (drill 3.2)
-      (layers "*.Cu" "*.Mask")
-    )
-  )
-  
-
-  (footprint "ceoloide:mounting_hole_npth"
-    (layer "F.Cu")
-    (at 173.525 96.475 0)
-    (property "Reference" "MH8"
-      (at 0 2.55 0)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad "" np_thru_hole circle
-      (at 0 0 0)
-      (size 3.2 3.2)
-      (drill 3.2)
-      (layers "*.Cu" "*.Mask")
-    )
-  )
-  
-
-  (footprint "ceoloide:mounting_hole_npth"
-    (layer "F.Cu")
     (at 197.5875 85.1 0)
-    (property "Reference" "MH9"
+    (property "Reference" "MH7"
       (at 0 2.55 0)
       (layer "F.SilkS")
       hide
@@ -11641,15 +11605,6 @@
 
   (segment
     (start 43 121) 
-    (end 43 122)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 2)
-  )
-
-  (segment
-    (start 43 122) 
     (end 43 126)
     (width 0.25)
     (locked no)
@@ -11669,15 +11624,6 @@
 
   (segment
     (start 43 102) 
-    (end 43 103)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 6)
-  )
-
-  (segment
-    (start 43 103) 
     (end 43 107)
     (width 0.25)
     (locked no)
@@ -11697,15 +11643,6 @@
 
   (segment
     (start 43 83) 
-    (end 43 84)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 7)
-  )
-
-  (segment
-    (start 43 84) 
     (end 43 88)
     (width 0.25)
     (locked no)
@@ -11725,15 +11662,6 @@
 
   (segment
     (start 43 64) 
-    (end 43 65)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 8)
-  )
-
-  (segment
-    (start 43 65) 
     (end 43 69)
     (width 0.25)
     (locked no)
@@ -11753,15 +11681,6 @@
 
   (segment
     (start 43 45) 
-    (end 43 46)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 9)
-  )
-
-  (segment
-    (start 43 46) 
     (end 43 50)
     (width 0.25)
     (locked no)
@@ -11781,15 +11700,6 @@
 
   (segment
     (start 62 121) 
-    (end 62 122)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 11)
-  )
-
-  (segment
-    (start 62 122) 
     (end 62 126)
     (width 0.25)
     (locked no)
@@ -11809,15 +11719,6 @@
 
   (segment
     (start 62 102) 
-    (end 62 103)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 12)
-  )
-
-  (segment
-    (start 62 103) 
     (end 62 107)
     (width 0.25)
     (locked no)
@@ -11837,15 +11738,6 @@
 
   (segment
     (start 62 83) 
-    (end 62 84)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 13)
-  )
-
-  (segment
-    (start 62 84) 
     (end 62 88)
     (width 0.25)
     (locked no)
@@ -11865,15 +11757,6 @@
 
   (segment
     (start 62 64) 
-    (end 62 65)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 14)
-  )
-
-  (segment
-    (start 62 65) 
     (end 62 69)
     (width 0.25)
     (locked no)
@@ -11893,15 +11776,6 @@
 
   (segment
     (start 62 45) 
-    (end 62 46)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 15)
-  )
-
-  (segment
-    (start 62 46) 
     (end 62 50)
     (width 0.25)
     (locked no)
@@ -11921,15 +11795,6 @@
 
   (segment
     (start 81 116) 
-    (end 81 117)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 17)
-  )
-
-  (segment
-    (start 81 117) 
     (end 81 121)
     (width 0.25)
     (locked no)
@@ -11949,15 +11814,6 @@
 
   (segment
     (start 81 97) 
-    (end 81 98)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 18)
-  )
-
-  (segment
-    (start 81 98) 
     (end 81 102)
     (width 0.25)
     (locked no)
@@ -11977,15 +11833,6 @@
 
   (segment
     (start 81 78) 
-    (end 81 79)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 19)
-  )
-
-  (segment
-    (start 81 79) 
     (end 81 83)
     (width 0.25)
     (locked no)
@@ -12005,15 +11852,6 @@
 
   (segment
     (start 81 59) 
-    (end 81 60)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 20)
-  )
-
-  (segment
-    (start 81 60) 
     (end 81 64)
     (width 0.25)
     (locked no)
@@ -12033,15 +11871,6 @@
 
   (segment
     (start 81 40) 
-    (end 81 41)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 21)
-  )
-
-  (segment
-    (start 81 41) 
     (end 81 45)
     (width 0.25)
     (locked no)
@@ -12061,15 +11890,6 @@
 
   (segment
     (start 100 111) 
-    (end 100 112)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 23)
-  )
-
-  (segment
-    (start 100 112) 
     (end 100 116)
     (width 0.25)
     (locked no)
@@ -12089,15 +11909,6 @@
 
   (segment
     (start 100 92) 
-    (end 100 93)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 24)
-  )
-
-  (segment
-    (start 100 93) 
     (end 100 97)
     (width 0.25)
     (locked no)
@@ -12117,15 +11928,6 @@
 
   (segment
     (start 100 73) 
-    (end 100 74)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 25)
-  )
-
-  (segment
-    (start 100 74) 
     (end 100 78)
     (width 0.25)
     (locked no)
@@ -12145,15 +11947,6 @@
 
   (segment
     (start 100 54) 
-    (end 100 55)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 26)
-  )
-
-  (segment
-    (start 100 55) 
     (end 100 59)
     (width 0.25)
     (locked no)
@@ -12173,15 +11966,6 @@
 
   (segment
     (start 100 35) 
-    (end 100 36)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 27)
-  )
-
-  (segment
-    (start 100 36) 
     (end 100 40)
     (width 0.25)
     (locked no)
@@ -12201,15 +11985,6 @@
 
   (segment
     (start 119 116) 
-    (end 119 117)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 29)
-  )
-
-  (segment
-    (start 119 117) 
     (end 119 121)
     (width 0.25)
     (locked no)
@@ -12229,15 +12004,6 @@
 
   (segment
     (start 119 97) 
-    (end 119 98)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 30)
-  )
-
-  (segment
-    (start 119 98) 
     (end 119 102)
     (width 0.25)
     (locked no)
@@ -12257,15 +12023,6 @@
 
   (segment
     (start 119 78) 
-    (end 119 79)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 31)
-  )
-
-  (segment
-    (start 119 79) 
     (end 119 83)
     (width 0.25)
     (locked no)
@@ -12285,15 +12042,6 @@
 
   (segment
     (start 119 59) 
-    (end 119 60)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 32)
-  )
-
-  (segment
-    (start 119 60) 
     (end 119 64)
     (width 0.25)
     (locked no)
@@ -12313,15 +12061,6 @@
 
   (segment
     (start 119 40) 
-    (end 119 41)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 33)
-  )
-
-  (segment
-    (start 119 41) 
     (end 119 45)
     (width 0.25)
     (locked no)
@@ -12341,15 +12080,6 @@
 
   (segment
     (start 138 102) 
-    (end 138 103)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 35)
-  )
-
-  (segment
-    (start 138 103) 
     (end 138 107)
     (width 0.25)
     (locked no)
@@ -12369,15 +12099,6 @@
 
   (segment
     (start 138 83) 
-    (end 138 84)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 36)
-  )
-
-  (segment
-    (start 138 84) 
     (end 138 88)
     (width 0.25)
     (locked no)
@@ -12397,15 +12118,6 @@
 
   (segment
     (start 138 64) 
-    (end 138 65)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 37)
-  )
-
-  (segment
-    (start 138 65) 
     (end 138 69)
     (width 0.25)
     (locked no)
@@ -12425,15 +12137,6 @@
 
   (segment
     (start 138 45) 
-    (end 138 46)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 38)
-  )
-
-  (segment
-    (start 138 46) 
     (end 138 50)
     (width 0.25)
     (locked no)
@@ -12453,15 +12156,6 @@
 
   (segment
     (start 157 102) 
-    (end 157 103)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 40)
-  )
-
-  (segment
-    (start 157 103) 
     (end 157 107)
     (width 0.25)
     (locked no)
@@ -12481,15 +12175,6 @@
 
   (segment
     (start 157 83) 
-    (end 157 84)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 41)
-  )
-
-  (segment
-    (start 157 84) 
     (end 157 88)
     (width 0.25)
     (locked no)
@@ -12509,15 +12194,6 @@
 
   (segment
     (start 157 64) 
-    (end 157 65)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 42)
-  )
-
-  (segment
-    (start 157 65) 
     (end 157 69)
     (width 0.25)
     (locked no)
@@ -12537,15 +12213,6 @@
 
   (segment
     (start 157 45) 
-    (end 157 46)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 43)
-  )
-
-  (segment
-    (start 157 46) 
     (end 157 50)
     (width 0.25)
     (locked no)
@@ -12565,15 +12232,6 @@
 
   (segment
     (start 141.3862378 129.7564865) 
-    (end 140.6201934 130.39927409999999)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 45)
-  )
-
-  (segment
-    (start 140.6201934 130.39927409999999) 
     (end 137.55601560000002 132.97042449999998)
     (width 0.25)
     (locked no)
@@ -12593,15 +12251,6 @@
 
   (segment
     (start 146.3347685 150.47218510000002) 
-    (end 145.5687241 151.1149727)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 46)
-  )
-
-  (segment
-    (start 145.5687241 151.1149727) 
     (end 142.50454630000002 153.6861231)
     (width 0.25)
     (locked no)
@@ -12621,15 +12270,6 @@
 
   (segment
     (start 160.8896129 138.25922050000003) 
-    (end 160.1235685 138.90200810000002)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 47)
-  )
-
-  (segment
-    (start 160.1235685 138.90200810000002) 
     (end 157.05939070000002 141.4731585)
     (width 0.25)
     (locked no)
@@ -12649,15 +12289,6 @@
 
   (segment
     (start 158.5798724 165.0653318) 
-    (end 157.813828 165.7081194)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 48)
-  )
-
-  (segment
-    (start 157.813828 165.7081194) 
     (end 154.74965020000002 168.27926979999998)
     (width 0.25)
     (locked no)
@@ -12677,15 +12308,6 @@
 
   (segment
     (start 173.1347168 152.8523672) 
-    (end 172.3686724 153.4951548)
-    (width 0.25)
-    (locked no)
-    (layer F.Cu)
-    (net 49)
-  )
-
-  (segment
-    (start 172.3686724 153.4951548) 
     (end 169.30449460000003 156.0663052)
     (width 0.25)
     (locked no)
