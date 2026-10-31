@@ -51,9 +51,3 @@ gerbers/*/*
 freerouting/*.json
 freerouting/*.log
 kibot/drc
-
-# temporary while debugging
-gerbers
-docs
-*.kicad_pro
-*.kicad_dru
