@@ -33,6 +33,10 @@ units:
   # MCU
   mcu_width: 18.3
   mcu_height: 34.1
+  # display
+  display_width: 14
+  display_height: 36
+  display_vert_shift: 4
   # Relative column staggers
   st_outer: 0
   st_pinky: 0
@@ -168,7 +172,8 @@ points:
           rows.encoder.row_net: R4
       anchor:
         ref: matrix_innermod_bottom
-        shift: [1.1kx, 0.5ky]
+        shift: [1.25kx, 0.65ky]
+        rotate: 40
     screw_top_left:
       key:
         tags:
@@ -233,40 +238,68 @@ points:
       anchor:
         ref: matrix_innermod_bottom
         shift: [half_kx, half_ky]
-    mcu_cover_top_left:
+    mcu_top_left:
       key.tags:
         - helper
         - mcu
       anchor:
         - ref: matrix_innermod_num
-          shift: [0.75kx,5]
-    mcu_cover_top_right:
+          shift: [0.75kx,6]
+    mcu_top_right:
       key.tags:
         - helper
         - mcu
       anchor:
-        - ref: mcu_cover_top_left
+        - ref: mcu_top_left
           shift: [mcu_width,0]
-    mcu_cover_bottom_right:
+    mcu_bottom_right:
       key.tags:
         - helper
         - mcu
       anchor:
-        - ref: mcu_cover_top_right
+        - ref: mcu_top_right
           shift: [0,-mcu_height]
-    mcu_cover_bottom_left:
+    mcu_bottom_left:
       key.tags:
         - helper
         - mcu
       anchor:
-        - ref: mcu_cover_top_left
+        - ref: mcu_top_left
           shift: [0,-mcu_height]
+    display_bottom_left:
+      key.tags:
+        - helper
+        - display
+      anchor:
+        - ref: mcu_bottom_left
+          shift: [mcu_width / 2 - display_width / 2, -display_vert_shift]
+    display_bottom_right:
+      key.tags:
+        - helper
+        - display
+      anchor:
+        - ref: display_bottom_left
+          shift: [display_width, 0]
+    display_top_left:
+      key.tags:
+        - helper
+        - display
+      anchor:
+        - ref: display_bottom_left
+          shift: [0, display_height]
+    display_top_right:
+      key.tags:
+        - helper
+        - display
+      anchor:
+        - ref:  display_bottom_left
+          shift: [display_width, display_height]
     screw_mcu_bottom_right:
       key.tags:
         - helper
         - screws_expand
       anchor:
-        - ref: mcu_cover_bottom_right
+        - ref: mcu_bottom_right
           shift: [1, -8]
 outlines:
   _matrix_outline: #Outline around all keys only with half a key of padding around
@@ -304,28 +337,36 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: mcu_cover_top_left
+        - ref: mcu_top_left
           shift: [-padding, padding]
-        - ref: mcu_cover_top_right # bottom right space for the MCU
+        - ref: mcu_top_right # bottom right space for the MCU
           shift: [mcu_padding, padding]
-        - ref: mcu_cover_bottom_right
+        - ref: mcu_bottom_right
           shift: [mcu_padding, -2padding]
-        - ref: mcu_cover_bottom_left
+        - ref: mcu_bottom_left
           shift: [-padding, -6padding]
       fillet: fillet_radius
   _mcu_tight: # Exact size of the MCU, used to show it's position on the combo dxf
     - what: polygon
       operation: stack
       points:
-        - mcu_cover_top_left
-        - mcu_cover_top_right
-        - mcu_cover_bottom_right
-        - mcu_cover_bottom_left
+        - mcu_top_left
+        - mcu_top_right
+        - mcu_bottom_right
+        - mcu_bottom_left
   _mcu_tolerance: # The MCU board with a tolerance gap - Used if we want to extend the switch plate to cover the whole PCB
     - what: outline
       name: _mcu_tight
       expand: board_tolerance
       fillet: fillet_radius
+  _display_tight:
+    - what: polygon
+      operation: stack
+      points:
+        - display_bottom_left
+        - display_bottom_right
+        - display_top_right
+        - display_top_left
   ## PCB ##
   _pcb_outline: # Merged matrix and MCU outline to form the PCB shape
     - what: outline
@@ -418,6 +459,8 @@ outlines:
     - name: _pcb_outline
       operation: stack
     - name: _mcu_tight
+      operation: stack
+    - name: _display_tight
       operation: stack
     - name: _switch_cutouts
       operation: stack
@@ -516,19 +559,19 @@ pcbs:
           P10: C7
           RST: RS
         where:
-          ref: mcu_cover_top_left
+          ref: mcu_top_left
           shift: [(mcu_width / 2), -(mcu_height / 2)]
       nice-view:
         what: ceoloide/display_nice_view
         where:
-          ref: mcu_cover_bottom_left
-          shift: [(mcu_width / 2), (mcu_height / 2) - 4]
+          ref: display_bottom_left
+          shift: [display_width / 2, display_height / 2]
         params:
           reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          ref: mcu_cover_top_right
+          ref: mcu_top_right
           ## Shift slightly right of "center" in order to actually center it with the rotation
           shift: [(mcu_padding / 2) , -8]
           rotate: 180
@@ -539,7 +582,7 @@ pcbs:
       power_switch:
         what: ceoloide/power_switch_smd_side
         where:
-          ref: mcu_cover_bottom_right
+          ref: mcu_bottom_right
           shift: [(mcu_padding / 2), kx]
         params:
           reversible: true
@@ -549,7 +592,7 @@ pcbs:
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where:
-          ref: mcu_cover_bottom_right
+          ref: mcu_bottom_right
           shift: [mcu_padding / 2 , 0]
           rotate: 90
         params:
@@ -653,7 +696,7 @@ pcbs:
       battery_connector_text:
         what: ceoloide/utility_text
         where:
-          ref: mcu_cover_top_left
+          ref: mcu_top_left
           shift: [mcu_width / 2, mcu_padding / 2]
         params:
           reversible: true
