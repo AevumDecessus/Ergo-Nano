@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "ergonano")
-    (date "2026-10-30")
+    (date "2026-10-31")
     (rev "0.1")
     (company "aevumdecessus")
   )
@@ -179,7 +179,8 @@
 (net 95 "BAT_P")
 (net 96 "JST1_1")
 (net 97 "JST1_2")
-(net 98 "encoder_encoder")
+(net 98 "encoder_mcu")
+(net 99 "encoder_encoder")
 
   
   (footprint "ceoloide:switch_mx"
@@ -10420,7 +10421,42 @@
     (pad "C" thru_hole oval (at -2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 62 "EN2"))
     
     (pad "S1" thru_hole oval (at -2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 39 "CL6"))
-    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 98 "encoder_encoder"))
+    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 98 "encoder_mcu"))
+    
+    (pad "" np_thru_hole oval
+      (at -5.6 0 90)
+      (size 2.3 1.5)
+      (drill oval 2.3 1.5)
+      (layers "*.Cu" "*.Mask")
+    )    
+    (pad "" np_thru_hole oval
+      (at 5.6 0 90)
+      (size 2.3 1.5)
+      (drill oval 2.3 1.5)
+      (layers "*.Cu" "*.Mask")
+    )
+    
+    (fp_rect (start -5.9 -6) (end 5.9 6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
+  )
+    
+
+  (footprint "ceoloide:rotary_encoder_ec11_ec12"
+    (layer "F.Cu")
+    (at 184.95499999999998 75.57 180)
+    (property "Reference" "RE2"
+      (at 0 -8.5)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr through_hole)
+    (pad "A" thru_hole oval (at 2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 59 "EN1"))
+    (pad "B" thru_hole oval (at 0 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 3 "GND"))
+    (pad "C" thru_hole oval (at -2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 62 "EN2"))
+    
+    (pad "S1" thru_hole oval (at -2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 39 "CL6"))
+    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 99 "encoder_encoder"))
     
     (pad "" np_thru_hole oval
       (at -5.6 0 90)
@@ -10458,8 +10494,46 @@
       (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
+      (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 0 ""))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 98 "encoder_mcu"))
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
+        
+      (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 0 ""))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 98 "encoder_mcu"))
+        
+      (pad "1" thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 0 ""))
+      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 98 "encoder_mcu"))
+        
+    )
+        
+
+    (footprint "ceoloide:diode_tht_sod123"
+        (layer "F.Cu")
+        (at 184.95499999999998 75.57 270)
+        (property "Reference" "D40"
+            (at 0 0 270)
+            (layer "F.SilkS")
+            hide
+            (effects (font (size 1 1) (thickness 0.15)))
+        )
+        
+      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+        
       (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "RW4"))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 98 "encoder_encoder"))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 99 "encoder_encoder"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -10470,10 +10544,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "RW4"))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 98 "encoder_encoder"))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 99 "encoder_encoder"))
         
       (pad "1" thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 50 "RW4"))
-      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 98 "encoder_encoder"))
+      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 99 "encoder_encoder"))
         
     )
         
@@ -10481,6 +10555,16 @@
   (segment
     (start 182.45499999999998 101.57) 
     (end 184.95499999999998 98.57)
+    (width 0.25)
+    (locked yes)
+    (layer B.Cu)
+    (net 0)
+  )
+
+
+  (segment
+    (start 182.45499999999998 82.57) 
+    (end 184.95499999999998 79.57)
     (width 0.25)
     (locked yes)
     (layer B.Cu)

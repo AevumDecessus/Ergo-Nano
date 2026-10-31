@@ -158,7 +158,7 @@ points:
       rows:
         near:
         far:
-    encoder_thumb:
+    encoder_mcu:
       key:
         tags:
           - encoder
@@ -168,7 +168,7 @@ points:
             column_net: CL6
           rows.encoder.row_net: RW4
       rows:
-        encoder:
+        mcu:
       anchor:
         ref: matrix_innermod_bottom
         shift: [1.1kx, 0.6ky]

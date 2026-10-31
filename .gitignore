@@ -50,6 +50,7 @@ gerbers/*/*
 # freerouting misc
 freerouting/*.json
 freerouting/*.log
+kibot/drc
 
 # temporary while debugging
 gerbers
