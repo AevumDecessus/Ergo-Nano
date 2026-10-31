@@ -705,14 +705,14 @@ pcbs:
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{col_net}}"
-          route: "b(7,-5)(7,-6)(6,-7)(6,-17)(7,-18)(7,-24)"
+          route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
           locked: false
       thumb_col_routes:
         what: ceoloide/utility_router
         where: /^thumbs_(?!t_col0).*_near/
         params:
           net: "{{col_net}}"
-          route: "b(7,-5)(7,-6)(6,-7)(6,-17)(7,-18)(7,-24)"
+          route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
           locked: false
 cases:
   _xl_bottom:

@@ -12704,25 +12704,7 @@
 
 
   (segment
-    (start 57 120) 
-    (end 57 119)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 57 119) 
-    (end 56 118)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 56 118) 
+    (start 56 119) 
     (end 56 108)
     (width 0.25)
     (locked no)
@@ -12750,25 +12732,7 @@
 
 
   (segment
-    (start 57 101) 
-    (end 57 100)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 57 100) 
-    (end 56 99)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 56 99) 
+    (start 56 100) 
     (end 56 89)
     (width 0.25)
     (locked no)
@@ -12796,25 +12760,7 @@
 
 
   (segment
-    (start 57 82) 
-    (end 57 81)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 57 81) 
-    (end 56 80)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 56 80) 
+    (start 56 81) 
     (end 56 70)
     (width 0.25)
     (locked no)
@@ -12842,25 +12788,7 @@
 
 
   (segment
-    (start 57 63) 
-    (end 57 62)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 57 62) 
-    (end 56 61)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 56 61) 
+    (start 56 62) 
     (end 56 51)
     (width 0.25)
     (locked no)
@@ -12888,25 +12816,7 @@
 
 
   (segment
-    (start 76 120) 
-    (end 76 119)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 76 119) 
-    (end 75 118)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 75 118) 
+    (start 75 119) 
     (end 75 108)
     (width 0.25)
     (locked no)
@@ -12934,25 +12844,7 @@
 
 
   (segment
-    (start 76 101) 
-    (end 76 100)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 76 100) 
-    (end 75 99)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 75 99) 
+    (start 75 100) 
     (end 75 89)
     (width 0.25)
     (locked no)
@@ -12980,25 +12872,7 @@
 
 
   (segment
-    (start 76 82) 
-    (end 76 81)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 76 81) 
-    (end 75 80)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 75 80) 
+    (start 75 81) 
     (end 75 70)
     (width 0.25)
     (locked no)
@@ -13026,25 +12900,7 @@
 
 
   (segment
-    (start 76 63) 
-    (end 76 62)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 76 62) 
-    (end 75 61)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 75 61) 
+    (start 75 62) 
     (end 75 51)
     (width 0.25)
     (locked no)
@@ -13072,25 +12928,7 @@
 
 
   (segment
-    (start 95 115) 
-    (end 95 114)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 95 114) 
-    (end 94 113)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 94 113) 
+    (start 94 114) 
     (end 94 103)
     (width 0.25)
     (locked no)
@@ -13118,25 +12956,7 @@
 
 
   (segment
-    (start 95 96) 
-    (end 95 95)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 95 95) 
-    (end 94 94)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 94 94) 
+    (start 94 95) 
     (end 94 84)
     (width 0.25)
     (locked no)
@@ -13164,25 +12984,7 @@
 
 
   (segment
-    (start 95 77) 
-    (end 95 76)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 95 76) 
-    (end 94 75)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 94 75) 
+    (start 94 76) 
     (end 94 65)
     (width 0.25)
     (locked no)
@@ -13210,25 +13012,7 @@
 
 
   (segment
-    (start 95 58) 
-    (end 95 57)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 95 57) 
-    (end 94 56)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 94 56) 
+    (start 94 57) 
     (end 94 46)
     (width 0.25)
     (locked no)
@@ -13256,25 +13040,7 @@
 
 
   (segment
-    (start 114 110) 
-    (end 114 109)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 114 109) 
-    (end 113 108)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 113 108) 
+    (start 113 109) 
     (end 113 98)
     (width 0.25)
     (locked no)
@@ -13302,25 +13068,7 @@
 
 
   (segment
-    (start 114 91) 
-    (end 114 90)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 114 90) 
-    (end 113 89)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 113 89) 
+    (start 113 90) 
     (end 113 79)
     (width 0.25)
     (locked no)
@@ -13348,25 +13096,7 @@
 
 
   (segment
-    (start 114 72) 
-    (end 114 71)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 114 71) 
-    (end 113 70)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 113 70) 
+    (start 113 71) 
     (end 113 60)
     (width 0.25)
     (locked no)
@@ -13394,25 +13124,7 @@
 
 
   (segment
-    (start 114 53) 
-    (end 114 52)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 114 52) 
-    (end 113 51)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 113 51) 
+    (start 113 52) 
     (end 113 41)
     (width 0.25)
     (locked no)
@@ -13440,25 +13152,7 @@
 
 
   (segment
-    (start 133 115) 
-    (end 133 114)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 133 114) 
-    (end 132 113)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 132 113) 
+    (start 132 114) 
     (end 132 103)
     (width 0.25)
     (locked no)
@@ -13486,25 +13180,7 @@
 
 
   (segment
-    (start 133 96) 
-    (end 133 95)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 133 95) 
-    (end 132 94)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 132 94) 
+    (start 132 95) 
     (end 132 84)
     (width 0.25)
     (locked no)
@@ -13532,25 +13208,7 @@
 
 
   (segment
-    (start 133 77) 
-    (end 133 76)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 133 76) 
-    (end 132 75)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 132 75) 
+    (start 132 76) 
     (end 132 65)
     (width 0.25)
     (locked no)
@@ -13578,25 +13236,7 @@
 
 
   (segment
-    (start 133 58) 
-    (end 133 57)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 133 57) 
-    (end 132 56)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 132 56) 
+    (start 132 57) 
     (end 132 46)
     (width 0.25)
     (locked no)
@@ -13624,25 +13264,7 @@
 
 
   (segment
-    (start 152 101) 
-    (end 152 100)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 152 100) 
-    (end 151 99)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151 99) 
+    (start 151 100) 
     (end 151 89)
     (width 0.25)
     (locked no)
@@ -13670,25 +13292,7 @@
 
 
   (segment
-    (start 152 82) 
-    (end 152 81)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 152 81) 
-    (end 151 80)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151 80) 
+    (start 151 81) 
     (end 151 70)
     (width 0.25)
     (locked no)
@@ -13716,25 +13320,7 @@
 
 
   (segment
-    (start 152 63) 
-    (end 152 62)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 152 62) 
-    (end 151 61)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 151 61) 
+    (start 151 62) 
     (end 151 51)
     (width 0.25)
     (locked no)
@@ -13762,25 +13348,7 @@
 
 
   (segment
-    (start 171 101) 
-    (end 171 100)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 171 100) 
-    (end 170 99)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 170 99) 
+    (start 170 100) 
     (end 170 89)
     (width 0.25)
     (locked no)
@@ -13808,25 +13376,7 @@
 
 
   (segment
-    (start 171 82) 
-    (end 171 81)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 171 81) 
-    (end 170 80)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 170 80) 
+    (start 170 81) 
     (end 170 70)
     (width 0.25)
     (locked no)
@@ -13854,25 +13404,7 @@
 
 
   (segment
-    (start 171 63) 
-    (end 171 62)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 171 62) 
-    (end 170 61)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 170 61) 
+    (start 170 62) 
     (end 170 51)
     (width 0.25)
     (locked no)
@@ -13900,25 +13432,7 @@
 
 
   (segment
-    (start 156.0998395 160.5540197) 
-    (end 156.8658839 159.911232)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 156.8658839 159.911232) 
-    (end 156.9891408 158.50240000000002)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 156.9891408 158.50240000000002) 
+    (start 156.2230963 159.1451876) 
     (end 164.6495852 152.0745239)
     (width 0.25)
     (locked no)
@@ -13946,25 +13460,7 @@
 
 
   (segment
-    (start 168.3449434 175.14716639999997) 
-    (end 169.1109878 174.5043787)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 169.1109878 174.5043787) 
-    (end 169.2342447 173.0955467)
-    (width 0.25)
-    (locked no)
-    (layer B.Cu)
-    (net 0)
-  )
-
-  (segment
-    (start 169.2342447 173.0955467) 
+    (start 168.4682002 173.7383343) 
     (end 176.8946891 166.66767059999998)
     (width 0.25)
     (locked no)
