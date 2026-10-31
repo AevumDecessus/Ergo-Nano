@@ -660,6 +660,30 @@ pcbs:
           height: 1
           width: 1
           text: mount battery connector\ntop side if under mcu\nbottom side if larger
+      switch_column_label:
+        what: ceoloide/utility_text
+        where: /^key/
+        adjust:
+          shift: [-3, -11]
+        params:
+          reversible: true
+          text: "{{row_net}}"
+      switch_row_label:
+        what: ceoloide/utility_text
+        where: /^key/
+        adjust:
+          shift: [8.5,4.5]
+        params:
+          reversible: true
+          text: "{{column_net}}"
+      switch_name_label:
+        what: ceoloide/utility_text
+        where: /^key/
+        adjust: 
+          shift: [3,-4]
+        params:
+          reversible: true
+          text: "{{colrow}}"
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth

@@ -8171,6 +8171,3312 @@
   )
       
 
+  (gr_text "R4"
+    (at 47 136 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 47 136 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 47 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 47 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 47 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 47 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 47 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 47 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 47 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 47 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 66 136 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 66 136 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 66 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 66 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 66 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 66 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 66 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 66 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 66 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 66 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 85 131 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 85 131 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 85 112 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 85 112 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 85 93 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 85 93 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 85 74 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 85 74 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 85 55 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 85 55 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 104 126 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 104 126 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 104 107 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 104 107 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 104 88 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 104 88 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 104 69 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 104 69 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 104 50 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 104 50 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 123 131 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 123 131 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 123 112 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 123 112 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 123 93 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 123 93 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 123 74 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 123 74 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 123 55 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 123 55 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 142 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 142 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 142 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 142 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 142 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 142 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 142 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 142 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 161 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 161 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 161 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 161 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 161 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 161 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 161 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 161 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 132.4667216 142.46247839999998 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 132.4667216 142.46247839999998 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 137.4152523 163.178177 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 137.4152523 163.178177 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 151.9700967 150.9652124 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 151.9700967 150.9652124 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 149.6603562 177.77132369999998 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 149.6603562 177.77132369999998 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 164.2152006 165.5583591 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 164.2152006 165.5583591 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C0"
+    (at 58.5 120.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C0"
+    (at 58.5 120.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C0"
+    (at 58.5 101.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C0"
+    (at 58.5 101.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C0"
+    (at 58.5 82.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C0"
+    (at 58.5 82.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C0"
+    (at 58.5 63.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C0"
+    (at 58.5 63.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C0"
+    (at 58.5 44.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C0"
+    (at 58.5 44.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C1"
+    (at 77.5 120.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C1"
+    (at 77.5 120.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C1"
+    (at 77.5 101.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C1"
+    (at 77.5 101.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C1"
+    (at 77.5 82.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C1"
+    (at 77.5 82.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C1"
+    (at 77.5 63.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C1"
+    (at 77.5 63.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C1"
+    (at 77.5 44.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C1"
+    (at 77.5 44.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C2"
+    (at 96.5 115.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C2"
+    (at 96.5 115.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C2"
+    (at 96.5 96.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C2"
+    (at 96.5 96.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C2"
+    (at 96.5 77.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C2"
+    (at 96.5 77.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C2"
+    (at 96.5 58.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C2"
+    (at 96.5 58.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C2"
+    (at 96.5 39.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C2"
+    (at 96.5 39.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C3"
+    (at 115.5 110.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C3"
+    (at 115.5 110.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C3"
+    (at 115.5 91.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C3"
+    (at 115.5 91.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C3"
+    (at 115.5 72.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C3"
+    (at 115.5 72.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C3"
+    (at 115.5 53.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C3"
+    (at 115.5 53.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C3"
+    (at 115.5 34.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C3"
+    (at 115.5 34.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C4"
+    (at 134.5 115.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C4"
+    (at 134.5 115.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C4"
+    (at 134.5 96.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C4"
+    (at 134.5 96.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C4"
+    (at 134.5 77.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C4"
+    (at 134.5 77.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C4"
+    (at 134.5 58.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C4"
+    (at 134.5 58.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C4"
+    (at 134.5 39.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C4"
+    (at 134.5 39.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C5"
+    (at 153.5 101.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C5"
+    (at 153.5 101.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C5"
+    (at 153.5 82.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C5"
+    (at 153.5 82.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C5"
+    (at 153.5 63.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C5"
+    (at 153.5 63.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C5"
+    (at 153.5 44.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C5"
+    (at 153.5 44.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C6"
+    (at 172.5 101.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C6"
+    (at 172.5 101.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C6"
+    (at 172.5 82.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C6"
+    (at 172.5 82.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C6"
+    (at 172.5 63.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C6"
+    (at 172.5 63.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C6"
+    (at 172.5 44.5 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C6"
+    (at 172.5 44.5 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C7"
+    (at 151.732468 141.30878149999998 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C7"
+    (at 151.732468 141.30878149999998 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C7"
+    (at 156.6809987 162.0244801 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C7"
+    (at 156.6809987 162.0244801 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C7"
+    (at 171.2358431 149.8115155 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C7"
+    (at 171.2358431 149.8115155 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C7"
+    (at 168.9261026 176.61762679999998 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C7"
+    (at 168.9261026 176.61762679999998 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "C7"
+    (at 183.48094700000001 164.4046622 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "C7"
+    (at 183.48094700000001 164.4046622 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "outer_mod"
+    (at 53 129 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "outer_mod"
+    (at 53 129 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "outer_bottom"
+    (at 53 110 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "outer_bottom"
+    (at 53 110 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "outer_home"
+    (at 53 91 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "outer_home"
+    (at 53 91 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "outer_top"
+    (at 53 72 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "outer_top"
+    (at 53 72 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "outer_num"
+    (at 53 53 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "outer_num"
+    (at 53 53 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "pinky_mod"
+    (at 72 129 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "pinky_mod"
+    (at 72 129 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "pinky_bottom"
+    (at 72 110 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "pinky_bottom"
+    (at 72 110 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "pinky_home"
+    (at 72 91 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "pinky_home"
+    (at 72 91 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "pinky_top"
+    (at 72 72 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "pinky_top"
+    (at 72 72 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "pinky_num"
+    (at 72 53 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "pinky_num"
+    (at 72 53 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "ring_mod"
+    (at 91 124 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "ring_mod"
+    (at 91 124 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "ring_bottom"
+    (at 91 105 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "ring_bottom"
+    (at 91 105 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "ring_home"
+    (at 91 86 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "ring_home"
+    (at 91 86 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "ring_top"
+    (at 91 67 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "ring_top"
+    (at 91 67 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "ring_num"
+    (at 91 48 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "ring_num"
+    (at 91 48 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "middle_mod"
+    (at 110 119 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "middle_mod"
+    (at 110 119 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "middle_bottom"
+    (at 110 100 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "middle_bottom"
+    (at 110 100 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "middle_home"
+    (at 110 81 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "middle_home"
+    (at 110 81 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "middle_top"
+    (at 110 62 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "middle_top"
+    (at 110 62 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "middle_num"
+    (at 110 43 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "middle_num"
+    (at 110 43 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "index_mod"
+    (at 129 124 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "index_mod"
+    (at 129 124 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "index_bottom"
+    (at 129 105 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "index_bottom"
+    (at 129 105 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "index_home"
+    (at 129 86 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "index_home"
+    (at 129 86 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "index_top"
+    (at 129 67 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "index_top"
+    (at 129 67 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "index_num"
+    (at 129 48 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "index_num"
+    (at 129 48 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "inner_bottom"
+    (at 148 110 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "inner_bottom"
+    (at 148 110 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "inner_home"
+    (at 148 91 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "inner_home"
+    (at 148 91 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "inner_top"
+    (at 148 72 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "inner_top"
+    (at 148 72 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "inner_num"
+    (at 148 53 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "inner_num"
+    (at 148 53 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "innermod_bottom"
+    (at 167 110 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "innermod_bottom"
+    (at 167 110 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "innermod_home"
+    (at 167 91 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "innermod_home"
+    (at 167 91 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "innermod_top"
+    (at 167 72 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "innermod_top"
+    (at 167 72 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "innermod_num"
+    (at 167 53 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "innermod_num"
+    (at 167 53 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "t_col0_near"
+    (at 141.6857584 142.5592318 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "t_col0_near"
+    (at 141.6857584 142.5592318 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "t_col1_near"
+    (at 146.6342891 163.27493040000002 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "t_col1_near"
+    (at 146.6342891 163.27493040000002 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "t_col1_far"
+    (at 161.1891335 151.06196580000002 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "t_col1_far"
+    (at 161.1891335 151.06196580000002 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "t_col2_near"
+    (at 158.879393 177.8680771 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "t_col2_near"
+    (at 158.879393 177.8680771 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "t_col2_far"
+    (at 173.4342374 165.6551125 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "t_col2_far"
+    (at 173.4342374 165.6551125 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
     (at 59.525 58.525 0)
