@@ -105,7 +105,7 @@ build_board() {
 
     # A failed run must not reuse an earlier routing result.
     rm -f "pcbs/$board.ses" "pcbs/${board}_autorouted.kicad_pcb"
-    sed "s/(rules PCB corney_island/(rules PCB $board/" freerouting/freerouting.rules > "freerouting/$board.rules"
+    sed "s/(rules PCB ergonano/(rules PCB $board/" freerouting/freerouting.rules > "freerouting/$board.rules"
     run_container "$freerouting_cli_image" java \
         -Dlog4j.configurationFile=freerouting/log4j2.xml -jar /opt/freerouting.jar \
         -de "pcbs/$board.dsn" -do "pcbs/$board.ses" -dr "./freerouting/$board.rules" \

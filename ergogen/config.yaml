@@ -84,45 +84,45 @@ points:
       columns:
         outer:
           key:
-            column_net: CL0
+            column_net: C0
             stagger: st_outer
         pinky:
           key:
-            column_net: CL1
+            column_net: C1
             stagger: st_pinky
         ring:
           key:
-            column_net: CL2
+            column_net: C2
             stagger: st_ring
         middle:
           key:
-            column_net: CL3
+            column_net: C3
             stagger: st_middle
         index:
           key:
-            column_net: CL4
+            column_net: C4
             stagger: st_index
         inner:
           key:
-            column_net: CL5
+            column_net: C5
             stagger: st_inner
           rows.mod.skip: true
         innermod:
           key: 
-            column_net: CL6
+            column_net: C6
             stagger: st_innermod
           rows.mod.skip: true
       rows:
         mod:
-          row_net: RW4
+          row_net: R4
         bottom:
-          row_net: RW3
+          row_net: R3
         home:
-          row_net: RW2
+          row_net: R2
         top:
-          row_net: RW1
+          row_net: R1
         num:
-          row_net: RW0
+          row_net: R0
     thumbs:
       key:
         padding: 1kp
@@ -140,21 +140,21 @@ points:
           key:
             tags:
               - key_2u_vert
-            column_net: CL7
+            column_net: C7
             height: 2ky
             shift: [0, half_ky]
           rows.far.skip: true
-          rows.near.row_net: RW0
+          rows.near.row_net: R0
         t_col1:
           key:
-            column_net: CL7
-          rows.near.row_net: RW4
-          rows.far.row_net: RW1
+            column_net: C7
+          rows.near.row_net: R4
+          rows.far.row_net: R1
         t_col2:
           key:
-            column_net: CL7
-          rows.near.row_net: RW3
-          rows.far.row_net: RW2
+            column_net: C7
+          rows.near.row_net: R3
+          rows.far.row_net: R2
       rows:
         near:
         far:
@@ -162,13 +162,13 @@ points:
       columns:
         encoder:
           key:
-            column_net: CL6
+            column_net: C6
             tags:
               - encoder
-          rows.encoder.row_net: RW4
+          rows.encoder.row_net: R4
       anchor:
         ref: matrix_innermod_bottom
-        shift: [1.1kx, 0.6ky]
+        shift: [1.1kx, 0.5ky]
     screw_top_left:
       key:
         tags:
@@ -469,13 +469,14 @@ pcbs:
           reversible: true
           include_silkscreen: true
           include_corner_marks: true
-          include_keycap: true
+          include_keycap: false
+          include_plated_holes: true
           outer_pad_width_front: 2
           outer_pad_width_back: 2
           outer_pad_height: 2
           keycap_width: keycw
           keycap_height: keych
-          locked_traces_vias: true
+          locked_traces_vias: false
           from: "{{column_net}}"
           to: "{{colrow}}"
       diode:
@@ -495,24 +496,25 @@ pcbs:
         params:
           reverse_mount: true
           reversible: true
-          P0: EN1
+          P0: E1
           P1: CS
           P2: MOS
           P3: SCK
-          P4: EN2
-          P5: RW0
-          P6: RW1
-          P7: RW2
-          P8: RW3
-          P9: RW4
-          P21: CL0
-          P20: CL1
-          P19: CL2
-          P18: CL3
-          P15: CL4
-          P14: CL5
-          P16: CL6
-          P10: CL7
+          P4: E2
+          P5: R0
+          P6: R1
+          P7: R2
+          P8: R3
+          P9: R4
+          P21: C0
+          P20: C1
+          P19: C2
+          P18: C3
+          P15: C4
+          P14: C5
+          P16: C6
+          P10: C7
+          RST: RS
         where:
           ref: mcu_cover_top_left
           shift: [(mcu_width / 2), -(mcu_height / 2)]
@@ -520,7 +522,7 @@ pcbs:
         what: ceoloide/display_nice_view
         where:
           ref: mcu_cover_bottom_left
-          shift: [(mcu_width / 2), (mcu_height / 2) - 3]
+          shift: [(mcu_width / 2), (mcu_height / 2) - 4]
         params:
           reversible: true
       battery_jst:
@@ -541,6 +543,7 @@ pcbs:
           shift: [(mcu_padding / 2), kx]
         params:
           reversible: true
+          include_courtyard: true
           from: BAT_P
           to: VCC
       reset_switch:
@@ -551,6 +554,8 @@ pcbs:
           rotate: 90
         params:
           reversible: true
+          from: GND
+          to: RS
       ## Rotary Encoder
       rotary_encoder:
         what: ceoloide/rotary_encoder_ec11_ec12
@@ -561,17 +566,20 @@ pcbs:
           reversible: true
           include_silkscreen: true
           include_plated_mounting_holes: false
-          include_plate_hole_marking: true
+          include_plate_hole_marking: false
+          mounting_holes_height: 2.8
+          mounting_holes_width: 1.5
           S1: "{{column_net}}"
           S2: "{{colrow}}"
-          A: EN1
-          C: EN2
+          A: E1
+          C: E2
       encoder_diode:
         what: ceoloide/diode_tht_sod123
         where: [encoder]
         params:
           reversible: true
           include_tht: true
+          include_traces_vias: true
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
@@ -583,7 +591,7 @@ pcbs:
         params:
           net: "{{col_net}}"
           route: "b(-2.5,7)(0,4)"
-          locked: true
+          locked: false
       ## Silkscreen Text ##
       board_name:
         what: ceoloide/utility_text
@@ -666,22 +674,22 @@ pcbs:
         where: /key/
         params:
           net: "{{colrow}}"
-          route: "f(-7.75,-5)(-7.75,0)(-5,3)"
-          locked: true
+          route: "f(-7,-4)(-7,-3)(-7,1)(-5,3)"
+          locked: false
       col_routes:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{col_net}}"
-          route: "b(7.75,-5)(7.75,-6)(6,-8)(6,-17)(7.75,-19)(7.75,-24)"
-          locked: true
+          route: "b(7,-5)(7,-6)(6,-7)(6,-17)(7,-18)(7,-24)"
+          locked: false
       thumb_col_routes:
         what: ceoloide/utility_router
         where: /^thumbs_(?!t_col0).*_near/
         params:
           net: "{{col_net}}"
-          route: "b(7.75,-5)(7.75,-6)(6,-8)(6,-17)(7.75,-19)(7.75,-24)"
-          locked: true
+          route: "b(7,-5)(7,-6)(6,-7)(6,-17)(7,-18)(7,-24)"
+          locked: false
 cases:
   _xl_bottom:
     - name: _outer_wall
