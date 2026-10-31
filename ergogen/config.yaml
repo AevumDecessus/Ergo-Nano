@@ -159,16 +159,13 @@ points:
         near:
         far:
     encoder_mcu:
-      key:
-        tags:
-          - encoder
       columns:
         encoder:
           key:
             column_net: CL6
+            tags:
+              - encoder
           rows.encoder.row_net: RW4
-      rows:
-        mcu:
       anchor:
         ref: matrix_innermod_bottom
         shift: [1.1kx, 0.6ky]
@@ -472,6 +469,12 @@ pcbs:
           reversible: true
           include_silkscreen: true
           include_corner_marks: true
+          include_keycap: true
+          outer_pad_width_front: 2
+          outer_pad_width_back: 2
+          outer_pad_height: 2
+          keycap_width: keycw
+          keycap_height: keych
           locked_traces_vias: true
           from: "{{column_net}}"
           to: "{{colrow}}"
@@ -565,7 +568,7 @@ pcbs:
           C: EN2
       encoder_diode:
         what: ceoloide/diode_tht_sod123
-        where: encoder
+        where: [encoder]
         params:
           reversible: true
           include_tht: true

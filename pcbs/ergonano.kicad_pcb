@@ -179,8 +179,7 @@
 (net 95 "BAT_P")
 (net 96 "JST1_1")
 (net 97 "JST1_2")
-(net 98 "encoder_mcu")
-(net 99 "encoder_encoder")
+(net 98 "encoder_encoder")
 
   
   (footprint "ceoloide:switch_mx"
@@ -224,9 +223,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -241,7 +242,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 2 "outer_mod")
     )
@@ -370,9 +371,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -387,7 +390,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 6 "outer_bottom")
     )
@@ -516,9 +519,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -533,7 +538,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 7 "outer_home")
     )
@@ -662,9 +667,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -679,7 +686,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 8 "outer_top")
     )
@@ -808,9 +815,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 1 "CL0"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -825,7 +834,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 9 "outer_num")
     )
@@ -954,9 +963,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -971,7 +982,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 11 "pinky_mod")
     )
@@ -1100,9 +1111,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1117,7 +1130,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 12 "pinky_bottom")
     )
@@ -1246,9 +1259,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1263,7 +1278,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 13 "pinky_home")
     )
@@ -1392,9 +1407,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1409,7 +1426,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 14 "pinky_top")
     )
@@ -1538,9 +1555,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 10 "CL1"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1555,7 +1574,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 15 "pinky_num")
     )
@@ -1684,9 +1703,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1701,7 +1722,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 17 "ring_mod")
     )
@@ -1830,9 +1851,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1847,7 +1870,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 18 "ring_bottom")
     )
@@ -1976,9 +1999,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -1993,7 +2018,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 19 "ring_home")
     )
@@ -2122,9 +2147,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2139,7 +2166,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 20 "ring_top")
     )
@@ -2268,9 +2295,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 16 "CL2"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2285,7 +2314,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 21 "ring_num")
     )
@@ -2414,9 +2443,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2431,7 +2462,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 23 "middle_mod")
     )
@@ -2560,9 +2591,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2577,7 +2610,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 24 "middle_bottom")
     )
@@ -2706,9 +2739,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2723,7 +2758,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 25 "middle_home")
     )
@@ -2852,9 +2887,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -2869,7 +2906,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 26 "middle_top")
     )
@@ -2998,9 +3035,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 22 "CL3"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3015,7 +3054,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 27 "middle_num")
     )
@@ -3144,9 +3183,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3161,7 +3202,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 29 "index_mod")
     )
@@ -3290,9 +3331,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3307,7 +3350,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 30 "index_bottom")
     )
@@ -3436,9 +3479,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3453,7 +3498,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 31 "index_home")
     )
@@ -3582,9 +3627,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3599,7 +3646,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 32 "index_top")
     )
@@ -3728,9 +3775,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "CL4"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3745,7 +3794,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 33 "index_num")
     )
@@ -3874,9 +3923,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -3891,7 +3942,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 35 "inner_bottom")
     )
@@ -4020,9 +4071,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4037,7 +4090,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 36 "inner_home")
     )
@@ -4166,9 +4219,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4183,7 +4238,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 37 "inner_top")
     )
@@ -4312,9 +4367,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "CL5"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4329,7 +4386,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 38 "inner_num")
     )
@@ -4458,9 +4515,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4475,7 +4534,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 40 "innermod_bottom")
     )
@@ -4604,9 +4663,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4621,7 +4682,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 41 "innermod_home")
     )
@@ -4750,9 +4811,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4767,7 +4830,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 42 "innermod_top")
     )
@@ -4896,9 +4959,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
+		(pad "1" smd rect (at 7.085 -2.54 0) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "CL6"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 0)
       (size 2.55 2.5)
@@ -4913,7 +4978,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 0)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 43 "innermod_num")
     )
@@ -5042,9 +5107,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
+		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 -50)
       (size 2.55 2.5)
@@ -5059,7 +5126,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 -50)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 45 "t_col0_near")
     )
@@ -5188,9 +5255,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
+		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 -50)
       (size 2.55 2.5)
@@ -5205,7 +5274,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 -50)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 46 "t_col1_near")
     )
@@ -5334,9 +5403,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
+		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 -50)
       (size 2.55 2.5)
@@ -5351,7 +5422,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 -50)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 47 "t_col1_far")
     )
@@ -5480,9 +5551,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
+		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 -50)
       (size 2.55 2.5)
@@ -5497,7 +5570,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 -50)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 48 "t_col2_near")
     )
@@ -5626,9 +5699,11 @@
     (fp_line (start 6 7) (end 7 7) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     (fp_line (start 7 -7) (end 7 -6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)))
     
+    (fp_rect (start 9 9) (end -9 -9) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
+    
 		(pad "" np_thru_hole circle (at -2.54 -5.08 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "" np_thru_hole circle (at 3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
-		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
+		(pad "1" smd rect (at 7.085 -2.54 -50) (size 2.55 2) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "CL7"))
 		(pad "2" smd roundrect
       (at -5.842 -5.08 -50)
       (size 2.55 2.5)
@@ -5643,7 +5718,7 @@
 		(pad "" np_thru_hole circle (at -3.81 -2.54 180) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask"))
 		(pad "1" smd rect
       (at -7.085 -2.54 -50)
-      (size 2.55 2.5)
+      (size 2.55 2)
       (layers "B.Cu" "B.Paste" "B.Mask")
       (net 49 "t_col2_far")
     )
@@ -10421,42 +10496,7 @@
     (pad "C" thru_hole oval (at -2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 62 "EN2"))
     
     (pad "S1" thru_hole oval (at -2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 39 "CL6"))
-    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 98 "encoder_mcu"))
-    
-    (pad "" np_thru_hole oval
-      (at -5.6 0 90)
-      (size 2.3 1.5)
-      (drill oval 2.3 1.5)
-      (layers "*.Cu" "*.Mask")
-    )    
-    (pad "" np_thru_hole oval
-      (at 5.6 0 90)
-      (size 2.3 1.5)
-      (drill oval 2.3 1.5)
-      (layers "*.Cu" "*.Mask")
-    )
-    
-    (fp_rect (start -5.9 -6) (end 5.9 6) (layer "Dwgs.User") (stroke (width 0.15) (type solid)) (fill none))
-    
-  )
-    
-
-  (footprint "ceoloide:rotary_encoder_ec11_ec12"
-    (layer "F.Cu")
-    (at 184.95499999999998 75.57 180)
-    (property "Reference" "RE2"
-      (at 0 -8.5)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr through_hole)
-    (pad "A" thru_hole oval (at 2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 59 "EN1"))
-    (pad "B" thru_hole oval (at 0 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 3 "GND"))
-    (pad "C" thru_hole oval (at -2.5 7.5 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 62 "EN2"))
-    
-    (pad "S1" thru_hole oval (at -2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 39 "CL6"))
-    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 99 "encoder_encoder"))
+    (pad "S2" thru_hole oval (at 2.5 -7 180) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 98 "encoder_encoder"))
     
     (pad "" np_thru_hole oval
       (at -5.6 0 90)
@@ -10494,46 +10534,8 @@
       (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
-      (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 0 ""))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 98 "encoder_mcu"))
-        
-      (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
-        
-      (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 0 ""))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 98 "encoder_mcu"))
-        
-      (pad "1" thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 0 ""))
-      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 98 "encoder_mcu"))
-        
-    )
-        
-
-    (footprint "ceoloide:diode_tht_sod123"
-        (layer "F.Cu")
-        (at 184.95499999999998 75.57 270)
-        (property "Reference" "D40"
-            (at 0 0 270)
-            (layer "F.SilkS")
-            hide
-            (effects (font (size 1 1) (thickness 0.15)))
-        )
-        
-      (fp_line (start 0.25 0) (end 0.75 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 0.25 0.4) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 0.25 -0.4) (end 0.25 0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end 0.25 -0.4) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end -0.35 0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.35 0) (end -0.35 -0.55) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -0.75 0) (end -0.35 0) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-        
       (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "RW4"))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 99 "encoder_encoder"))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 98 "encoder_encoder"))
         
       (fp_line (start 0.25 0) (end 0.75 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
       (fp_line (start 0.25 0.4) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
@@ -10544,10 +10546,10 @@
       (fp_line (start -0.75 0) (end -0.35 0) (layer "B.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "RW4"))
-      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 99 "encoder_encoder"))
+      (pad "2" smd rect (at 1.65 0 270) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 98 "encoder_encoder"))
         
       (pad "1" thru_hole rect (at -3.81 0 270) (size 1.778 1.778) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 50 "RW4"))
-      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 99 "encoder_encoder"))
+      (pad "2" thru_hole circle (at 3.81 0 270) (size 1.905 1.905) (drill 0.9906) (layers "*.Cu" "*.Mask") (net 98 "encoder_encoder"))
         
     )
         
@@ -10555,16 +10557,6 @@
   (segment
     (start 182.45499999999998 101.57) 
     (end 184.95499999999998 98.57)
-    (width 0.25)
-    (locked yes)
-    (layer B.Cu)
-    (net 0)
-  )
-
-
-  (segment
-    (start 182.45499999999998 82.57) 
-    (end 184.95499999999998 79.57)
     (width 0.25)
     (locked yes)
     (layer B.Cu)
