@@ -33,6 +33,17 @@ custom_rules = """(version 1)
 (rule "JLCPCB SMD pad spacing"
  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD'")
  (constraint clearance (min 0.15mm)))
+(rule "JLCPCB Silkscreen text"
+ (layer "?.Silkscreen")
+ (condition "A.Type == 'Text' || A.Type == 'Text Box'")
+ (constraint text_thickness (min 0.2mm))
+ (constraint text_height (min 1mm))
+)
+(rule "JLCPCB Pad to Silkscreen"
+ (layer outer)
+ (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+ (constraint silk_clearance (min 0.15mm))
+)
 (rule "JLCPCB PTH to copper"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
  (constraint hole_clearance (min 0.28mm)))
