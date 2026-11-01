@@ -1,8 +1,8 @@
 meta:
   engine: 4.1.0
   name: ergo-nano
-  version: 0.1
-  ref: &kb_ref "Ergo Nano v0.1"
+  version: 0.2
+  ref: &kb_ref "Ergo Nano v0.2"
   author: aevumdecessus
   url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
 units:
@@ -46,15 +46,19 @@ units:
   st_inner: -5
   st_innermod: 0
   # pre-evaluate target traces between column staggers
-  diode_x: -5
+  diode_x: -6.5
   diode_y: 7 #Negative to place the diode, positive for routing position
   diode_length: 4
+  # led settings
+  led_pos_x: 0
+  led_pos_y: -4.75
+  led_rotation: 180
   # kicad shifts
   kicad_shift_x: 50
   kicad_shift_y: -125
   # Tolerances
   board_tolerance: 0.3 #Leave this much space around the board in the case
-  fillet_radius: 2
+  fillet_radius: 0.5
   # M3 specific sizes
   m3_hole: 3.2
   m3_heatset_hole: 4.5
@@ -67,6 +71,12 @@ units:
   heatset_height: m3_heatset_height
   standoff_height_deep: 8
   standoff_size: screw_hole + (padding / 2)
+  # Board Settings
+  via_size: 0.56 # JLCPCB min 0.56 | KiCad default 0.8
+  via_drill: 0.3 # JLCPCB min 0.3 | KiCad default 0.4
+  pwr_trace_width: 0.25
+  gnd_trace_width: 0.25
+  signal_trace_width: 0.15
   # plate sizes
   pcb_thickness: 1.6
   plate_thickness: 1.5
@@ -83,7 +93,7 @@ points:
       key:
         padding: kp
         tags:
-          - key
+          - keyswitch
           - matrix_key
           - switch_diode
       anchor:
@@ -93,31 +103,136 @@ points:
           key:
             column_net: C0
             stagger: st_outer
+          rows:
+            num.key:
+              led_prev: LED_6
+              led_next: LED_7
+            top.key:
+              led_prev: LED_7
+              led_next: LED_8
+            home.key:
+              led_prev: LED_21
+              led_next: LED_22
+            bottom.key:
+              led_prev: LED_22
+              led_next: LED_23
+            mod.key:
+              led_prev: LED_38
+              led_next: LED_39
         pinky:
           key:
             column_net: C1
             stagger: st_pinky
+          rows:
+            num.key:
+              led_prev: LED_5
+              led_next: LED_6
+            top.key:
+              led_prev: LED_8
+              led_next: LED_9
+            home.key:
+              led_prev: LED_20
+              led_next: LED_21
+            bottom.key:
+              led_prev: LED_23
+              led_next: LED_24
+            mod.key:
+              led_prev: LED_37
+              led_next: LED_38
         ring:
           key:
             column_net: C2
             stagger: st_ring
+          rows:
+            num.key:
+              led_prev: LED_4
+              led_next: LED_5
+            top.key:
+              led_prev: LED_10
+              led_next: LED_11
+            home.key:
+              led_prev: LED_19
+              led_next: LED_20
+            bottom.key:
+              led_prev: LED_24
+              led_next: LED_25
+            mod.key:
+              led_prev: LED_36
+              led_next: LED_37
         middle:
           key:
             column_net: C3
             stagger: st_middle
+          rows:
+            num.key:
+              led_prev: LED_3
+              led_next: LED_4
+            top.key:
+              led_prev: LED_11
+              led_next: LED_12
+            home.key:
+              led_prev: LED_18
+              led_next: LED_19
+            bottom.key:
+              led_prev: LED_25
+              led_next: LED_26
+            mod.key:
+              led_prev: LED_35
+              led_next: LED_36
         index:
           key:
             column_net: C4
             stagger: st_index
+          rows:
+            num.key:
+              led_prev: LED_2
+              led_next: LED_3
+            top.key:
+              led_prev: LED_12
+              led_next: LED_13
+            home.key:
+              led_prev: LED_17
+              led_next: LED_18
+            bottom.key:
+              led_prev: LED_26
+              led_next: LED_27
+            mod.key:
+              led_prev: LED_34
+              led_next: LED_35
         inner:
           key:
             column_net: C5
             stagger: st_inner
+          rows:
+            num.key:
+              led_prev: LED_1
+              led_next: LED_2
+            top.key:
+              led_prev: LED_13
+              led_next: LED_14
+            home.key:
+              led_prev: LED_16
+              led_next: LED_17
+            bottom.key:
+              led_prev: LED_27
+              led_next: LED_28
           rows.mod.skip: true
         innermod:
           key: 
             column_net: C6
-            stagger: st_innermod
+          rows:
+            num.key:
+              led_prev: LED
+              led_next: LED_1
+            top.key:
+              led_prev: LED_14
+              led_next: LED_15
+            home.key:
+              led_prev: LED_15
+              led_next: LED_16
+            bottom.key:
+              led_prev: LED_28
+              led_next: LED_29
           rows.mod.skip: true
       rows:
         mod:
@@ -135,7 +250,7 @@ points:
         padding: 1kp
         spread: 1ky
         tags:
-          - key
+          - keyswitch
           - thumb_cluster
           - switch_diode
       anchor:
@@ -145,21 +260,37 @@ points:
       columns:
         t_col0:
           key:
-            tags:
-              - key_1_5u_vert
             column_net: C7
             height: 1.5ky
             shift: [0, half_ky]
+          rows:
+            near.key:
+              led_prev: LED_33
+              led_next: LED_34
           rows.far.skip: true
           rows.near.row_net: R0
         t_col1:
           key:
             column_net: C7
+          rows:
+            near.key:
+              led_prev: LED_32
+              led_next: LED_33
+            far.key:
+              led_prev: LED_29
+              led_next: LED_30
           rows.near.row_net: R4
           rows.far.row_net: R1
         t_col2:
           key:
             column_net: C7
+          rows:
+            near.key:
+              led_prev: LED_31
+              led_next: LED_32
+            far.key:
+              led_prev: LED_30
+              led_next: LED_31
           rows.near.row_net: R3
           rows.far.row_net: R2
       rows:
@@ -383,7 +514,7 @@ outlines:
   _switch_cutouts: # Switch cutouts to form the switch plate
     - what: rectangle
       fillet: fillet_radius
-      where: /key/
+      where: [keyswitch]
       size: [kcow, kcoh]
     - what: rectangle
       fillet: fillet_radius
@@ -415,7 +546,7 @@ outlines:
   _keycap_outlines:
     - what: rectangle
       fillet: fillet_radius
-      where: [key]
+      where: [keyswitch]
       size: [keycw, keych]
     - what: rectangle
       fillet: fillet_radius
@@ -492,7 +623,7 @@ pcbs:
     footprints:
       mx:
         what: ceoloide/switch_mx
-        where: /key/
+        where: [keyswitch]
         params:
           hotswap: true
           hotswap_pads_same_side: true
@@ -501,14 +632,41 @@ pcbs:
           include_corner_marks: true
           include_keycap: false
           include_plated_holes: true
+          include_centerhole_net: false
+          include_stabilizer_nets: true
           outer_pad_width_front: 2
           outer_pad_width_back: 2
           outer_pad_height: 2
+          via_drill: via_drill
+          via_size: via_size
           keycap_width: keycw
           keycap_height: keych
           locked_traces_vias: false
+          LEFTSTAB: "{{colrow}}"
+          RIGHTSTAB: "{{column_net}}"
           from: "{{column_net}}"
           to: "{{colrow}}"
+      per_key_leds:
+        what: ceoloide/led_sk6812mini-e
+        where: [keyswitch]
+        params:
+          P1: VCC
+          P2: "{{key.led_next}}" #DOUT
+          P3: GND
+          P4: "{{key.led_prev}}" #DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: true
+          include_keepout: false
+          include_courtyard: false
+          signal_trace_width: signal_trace_width
+          gnd_trace_width: gnd_trace_width
+          vcc_trace_width: pwr_trace_width
+          via_size: via_size
+          via_drill: via_drill
+        adjust:
+          shift: [led_pos_x, led_pos_y]
+          rotate: led_rotation
       diode:
         what: ceoloide/diode_tht_sod123
         where: [switch_diode]
@@ -516,6 +674,8 @@ pcbs:
           reversible: true
           include_tht: true
           include_traces_vias: true
+          via_size: via_size
+          via_drill: via_drill
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
@@ -526,6 +686,12 @@ pcbs:
         params:
           reverse_mount: true
           reversible: true
+          include_traces: true
+          show_silk_labels: true
+          show_via_labels: true
+          use_rectangular_jumpers: true
+          via_size: via_size
+          via_drill: via_drill
           P0: E1
           P1: CS
           P2: MOS
@@ -565,6 +731,7 @@ pcbs:
         params:
           reversible: true
           include_traces: true
+          use_rectangular_jumpers: true
       ## Power and Reset Switches ##
       power_switch:
         what: ceoloide/power_switch_smd_side
@@ -627,7 +794,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_outer_num
-          shift: [0.5kx, 0.6ky]
+          shift: [0.9kx, 0.65ky]
         params:
           reversible: true
           bold: true
@@ -638,18 +805,18 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_ring_num
-          shift: [0, 0.5ky]
+          shift: [0, 0.6ky]
         params:
           reversible: true
           bold: true
           height: 3
           width: 3
-          text: "V0.1"
+          text: "V0.2"
       author:
         what: ceoloide/utility_text
         where:
           ref: matrix_outer_num
-          shift: [0.6kx, 0.4ky]
+          shift: [0.9kx, 0.5ky]
         params:
           reversible: true
           bold: false
@@ -660,7 +827,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: [matrix_inner_num]
-          shift: [0.25kx, 0.5ky]
+          shift: [0.25kx, 0.6ky]
         params:
           side: F
           mirrored: false
@@ -672,7 +839,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: [matrix_inner_num]
-          shift: [0.25kx, 0.5ky]
+          shift: [0.25kx, 0.6ky]
         params:
           side: B
           mirrored: true
@@ -710,7 +877,7 @@ pcbs:
         what: ceoloide/utility_text
         where: /^key/
         adjust: 
-          shift: [3,-4]
+          shift: [3,8]
         params:
           reversible: true
           text: "{{colrow}}"
@@ -723,12 +890,40 @@ pcbs:
           hole_drill: screw_hole
           designator: 'MH'
       ## Static trace routes ##
-      key_diode_routes:
+      key_colrow_trace_net_f:
         what: ceoloide/utility_router
         where: /key/
         params:
           net: "{{colrow}}"
-          route: "f(-7,-4)(-7,1)(-5,3)"
+          route: "f(-7,-5)(-7,-1)(-5,1)"
+          locked: false
+      key_colrow_trace_net_b:
+        what: ceoloide/utility_router
+        where: /key/
+        params:
+          net: "{{colrow}}"
+          route: "b(-7,-2)(-7,-1)(-5,1)"
+          locked: false
+      key_colrow_diode_route_f:
+        what: ceoloide/utility_router
+        where: /key/
+        params:
+          net: "{{colrow}}"
+          route: "f(-5,1)(-7,3)"
+          locked: false
+      key_col_trace_net_f:
+        what: ceoloide/utility_router
+        where: /key/
+        params:
+          net: "{{colrow}}"
+          route: "f(7,-2)(7,-1)(5,1)"
+          locked: false
+      key_col_trace_net_b:
+        what: ceoloide/utility_router
+        where: /key/
+        params:
+          net: "{{colrow}}"
+          route: "b(7,-5)(7,-1)(5,1)"
           locked: false
       col_routes:
         what: ceoloide/utility_router
