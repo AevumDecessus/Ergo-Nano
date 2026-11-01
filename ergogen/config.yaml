@@ -65,6 +65,7 @@ units:
   screw_head: m3_socket_head_size
   heatset_hole: m3_heatset_hole
   heatset_height: m3_heatset_height
+  standoff_height_deep: 8
   standoff_size: screw_hole + (padding / 2)
   # plate sizes
   pcb_thickness: 1.6
@@ -74,6 +75,7 @@ units:
   wall_thickness: 2
   wall_height_switch_plate: heatset_height + pcb_thickness + plate_thickness + gap_pcb_top_plate
   wall_height_pcb: heatset_height + pcb_thickness
+  wall_height_deep: standoff_height_deep + pcb_thickness
   # Extrudes the walls to be level with the top of the PCB
 points:
   zones:
@@ -144,9 +146,9 @@ points:
         t_col0:
           key:
             tags:
-              - key_2u_vert
+              - key_1_5u_vert
             column_net: C7
-            height: 2ky
+            height: 1.5ky
             shift: [0, half_ky]
           rows.far.skip: true
           rows.near.row_net: R0
@@ -417,8 +419,8 @@ outlines:
       size: [keycw, keych]
     - what: rectangle
       fillet: fillet_radius
-      where: [key_2u_vert]
-      size: [keycw, 2keych]
+      where: [key_1_5u_vert]
+      size: [keycw, 1.5keych]
     - what: rectangle
       fillet: fillet_radius
       where: [encoder]
@@ -755,9 +757,15 @@ cases:
   _wall_pcb:
     - name: _case_wall
       extrude: wall_height_pcb
-  _case_standoffs:
+  _wall_deep:
+    - name: _case_wall
+      extrude: wall_height_deep
+  _case_standoffs_heatset:
     - name: _standoffs
       extrude: heatset_height
+  _case_standoffs_deep:
+    - name: _standoffs
+      extrude: standoff_height_deep
   _case_standoff_holes:
     - name: _standoff_holes
       extrude: heatset_height
@@ -769,10 +777,21 @@ cases:
       name: _xl_bottom
       operation: add
     - what: case
-      name: _case_standoffs
+      name: _case_standoffs_heatset
       operation: add
     - what: case
       name: _case_standoff_holes
+      operation: subtract
+  _case_bottom_deep:
+    - what: case
+      name: _xl_bottom
+      operation: add
+    - what: case
+      name: _case_standoffs_deep
+      operation: add
+    - what: case
+      name: _case_standoff_holes  
+      shift: [0,0,standoff_height_deep-heatset_height]
       operation: subtract
   bottom_plate: # Bottom plate with screw holes instead of a full case
     - what: case
@@ -781,6 +800,13 @@ cases:
     - what: case
       name: _pcb_plate_holes
       operation: subtract
+  bottom_case_deep:
+    - what: case
+      name: _case_bottom_deep
+      operation: add
+    - what: case
+      name: _wall_deep
+      operation: add
   bottom_case_switch: # Case with walls to the surface of the switch plate
     - what: case
       name: _case_bottom

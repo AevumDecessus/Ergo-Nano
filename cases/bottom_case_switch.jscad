@@ -70,7 +70,7 @@ function _case_wall_extrude_10_6_outline_fn(){
             
 
                 // creating part 1 of case _case_bottom
-                let _case_bottom__part_1 = _case_standoffs_case_fn();
+                let _case_bottom__part_1 = _case_standoffs_heatset_case_fn();
 
                 // make sure that rotations are relative
                 let _case_bottom__part_1_bounds = _case_bottom__part_1.getBounds();
@@ -128,22 +128,22 @@ function _case_wall_extrude_10_6_outline_fn(){
             
             
 
-                function _case_standoffs_case_fn() {
+                function _case_standoffs_heatset_case_fn() {
                     
 
-                // creating part 0 of case _case_standoffs
-                let _case_standoffs__part_0 = _standoffs_extrude_4_outline_fn();
+                // creating part 0 of case _case_standoffs_heatset
+                let _case_standoffs_heatset__part_0 = _standoffs_extrude_4_outline_fn();
 
                 // make sure that rotations are relative
-                let _case_standoffs__part_0_bounds = _case_standoffs__part_0.getBounds();
-                let _case_standoffs__part_0_x = _case_standoffs__part_0_bounds[0].x + (_case_standoffs__part_0_bounds[1].x - _case_standoffs__part_0_bounds[0].x) / 2
-                let _case_standoffs__part_0_y = _case_standoffs__part_0_bounds[0].y + (_case_standoffs__part_0_bounds[1].y - _case_standoffs__part_0_bounds[0].y) / 2
-                _case_standoffs__part_0 = translate([-_case_standoffs__part_0_x, -_case_standoffs__part_0_y, 0], _case_standoffs__part_0);
-                _case_standoffs__part_0 = rotate([0,0,0], _case_standoffs__part_0);
-                _case_standoffs__part_0 = translate([_case_standoffs__part_0_x, _case_standoffs__part_0_y, 0], _case_standoffs__part_0);
+                let _case_standoffs_heatset__part_0_bounds = _case_standoffs_heatset__part_0.getBounds();
+                let _case_standoffs_heatset__part_0_x = _case_standoffs_heatset__part_0_bounds[0].x + (_case_standoffs_heatset__part_0_bounds[1].x - _case_standoffs_heatset__part_0_bounds[0].x) / 2
+                let _case_standoffs_heatset__part_0_y = _case_standoffs_heatset__part_0_bounds[0].y + (_case_standoffs_heatset__part_0_bounds[1].y - _case_standoffs_heatset__part_0_bounds[0].y) / 2
+                _case_standoffs_heatset__part_0 = translate([-_case_standoffs_heatset__part_0_x, -_case_standoffs_heatset__part_0_y, 0], _case_standoffs_heatset__part_0);
+                _case_standoffs_heatset__part_0 = rotate([0,0,0], _case_standoffs_heatset__part_0);
+                _case_standoffs_heatset__part_0 = translate([_case_standoffs_heatset__part_0_x, _case_standoffs_heatset__part_0_y, 0], _case_standoffs_heatset__part_0);
 
-                _case_standoffs__part_0 = translate([0,0,0], _case_standoffs__part_0);
-                let result = _case_standoffs__part_0;
+                _case_standoffs_heatset__part_0 = translate([0,0,0], _case_standoffs_heatset__part_0);
+                let result = _case_standoffs_heatset__part_0;
                 
             
                     return result;
