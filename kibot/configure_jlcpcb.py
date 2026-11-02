@@ -36,8 +36,8 @@ custom_rules = """(version 1)
 (rule "JLCPCB Silkscreen text"
  (layer "?.Silkscreen")
  (condition "A.Type == 'Text' || A.Type == 'Text Box'")
- (constraint text_thickness (min 0.2mm))
- (constraint text_height (min 1mm)))
+ (constraint text_thickness (min 0.15mm))
+ (constraint text_height (min 0.8mm)))
 (rule "JLCPCB Pad to Silkscreen"
  (layer outer)
  (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")

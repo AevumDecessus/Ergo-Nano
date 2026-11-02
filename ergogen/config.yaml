@@ -36,7 +36,7 @@ units:
   # display
   display_width: 14
   display_height: 36
-  display_vert_shift: 4
+  display_vert_shift: 2.5
   # Relative column staggers
   st_outer: 0
   st_pinky: 0
@@ -731,6 +731,10 @@ pcbs:
           shift: [display_width / 2, display_height / 2]
         params:
           reversible: true
+          gnd_trace_width: gnd_trace_width
+          signal_trace_width: signal_trace_width
+          invert_jumpers_position: true
+          include_courtyard: false
       battery_jst:
         what: aevumdecessus/battery_connector_jst_ph_2
         where:
@@ -805,6 +809,7 @@ pcbs:
         where:
           ref: matrix_outer_num
           shift: [0.9kx, 0.65ky]
+          rotate: 10
         params:
           reversible: true
           bold: true
@@ -826,7 +831,8 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_outer_num
-          shift: [0.9kx, 0.5ky]
+          shift: [0.9kx, 0.48ky]
+          rotate: 10
         params:
           reversible: true
           bold: false
@@ -867,15 +873,15 @@ pcbs:
           height: 1
           width: 1
           text: mount battery connector\ntop side if under mcu\nbottom side if larger
-      switch_column_label:
+      switch_row_label:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust:
-          shift: [-3, -11]
+          shift: [-4, -11]
         params:
           reversible: true
           text: "{{row_net}}"
-      switch_row_label:
+      switch_column_label:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust:
@@ -887,7 +893,7 @@ pcbs:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust: 
-          shift: [3,8]
+          shift: [4,8]
         params:
           reversible: true
           text: "{{colrow}}"
