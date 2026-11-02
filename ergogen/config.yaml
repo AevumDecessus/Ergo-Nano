@@ -308,7 +308,9 @@ points:
           rows.far.row_net: R2
       rows:
         near:
+          key.led_dir: RL
         far:
+          key.led_dir: LR
     encoder_mcu:
       columns:
         encoder:
