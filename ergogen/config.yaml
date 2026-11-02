@@ -939,7 +939,7 @@ pcbs:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
-          net: "{{col_net}}"
+          net: "{{column_net}}"
           route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
           locked: false
       thumb_col_routes:
