@@ -92,15 +92,13 @@ points:
     matrix:
       key:
         padding: kp
-        tags:
-          - keyswitch
-          - matrix_key
-          - switch_diode
+        tags: [keyswitch, matrix_key, keyswitch_diode, keycap_1u]
       anchor:
         shift: [kicad_shift_x, kicad_shift_y]
       columns:
         outer:
           key:
+            next_col_stagger: st_pinky
             column_net: C0
             stagger: st_outer
           rows:
@@ -123,6 +121,8 @@ points:
           key:
             column_net: C1
             stagger: st_pinky
+            next_col_stagger: st_ring
+            prev_col_stagger: st_pinky
           rows:
             num.key:
               led_prev: LED_5
@@ -143,6 +143,8 @@ points:
           key:
             column_net: C2
             stagger: st_ring
+            next_col_stagger: st_middle
+            prev_col_stagger: st_pinky
           rows:
             num.key:
               led_prev: LED_4
@@ -163,6 +165,8 @@ points:
           key:
             column_net: C3
             stagger: st_middle
+            next_col_stagger: st_index
+            prev_col_stagger: st_ring
           rows:
             num.key:
               led_prev: LED_3
@@ -183,6 +187,8 @@ points:
           key:
             column_net: C4
             stagger: st_index
+            next_col_stagger: st_inner
+            prev_col_stagger: st_middle
           rows:
             num.key:
               led_prev: LED_2
@@ -203,6 +209,8 @@ points:
           key:
             column_net: C5
             stagger: st_inner
+            next_col_stagger: st_innermod
+            prev_col_stagger: st_index
           rows:
             num.key:
               led_prev: LED_1
@@ -220,6 +228,8 @@ points:
         innermod:
           key: 
             column_net: C6
+            stagger: st_innermod
+            prev_key_stagger: st_inner
           rows:
             num.key:
               led_prev: LED
@@ -236,23 +246,25 @@ points:
           rows.mod.skip: true
       rows:
         mod:
+          key.led_dir: RL
           row_net: R4
         bottom:
+          key.led_dir: LR
           row_net: R3
         home:
+          key.led_dir: RL
           row_net: R2
         top:
+          key.led_dir: LR
           row_net: R1
         num:
+          key.led_dir: RL
           row_net: R0
     thumbs:
       key:
         padding: 1kp
         spread: 1ky
-        tags:
-          - keyswitch
-          - thumb_cluster
-          - switch_diode
+        tags: [keyswitch, thumb_cluster, keyswitch_diode, keycap_1u]
       anchor:
         ref: matrix_index_mod
         shift: [half_kx,-1.25ky]
@@ -260,6 +272,7 @@ points:
       columns:
         t_col0:
           key:
+            tags: [keyswitch, thumb_cluster, keyswitch_diode, keycap_1_5u_vert]
             column_net: C7
             height: 1.5ky
             shift: [0, half_ky]
@@ -301,121 +314,84 @@ points:
         encoder:
           key:
             column_net: C6
-            tags:
-              - encoder
+            tags: [encoder]
           rows.encoder.row_net: R4
       anchor:
         ref: matrix_innermod_bottom
         shift: [1.25kx, 0.65ky]
         rotate: 40
     screw_top_left:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: matrix_outer_num
         shift: [half_kx, -half_ky]
     screw_top_right:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: matrix_inner_num
         shift: [half_kx, -half_ky]
     screw_bottom_left:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
     screw_center_bottom:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: matrix_index_mod
         shift: [half_kx, -half_ky]
     screw_thumbs_right_center:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: thumbs_t_col2_near
         shift: [-half_kx, half_ky]
     screw_bottom_right:
-      key:
-        tags:
-          - helper
-          - screws
+      key.tags: [helper, screws]
       anchor:
         ref: matrix_inner_bottom
         shift: [half_kx, half_ky]
     mcu_top_left:
-      key.tags:
-        - helper
-        - mcu
+      key.tags: [helper, mcu]
       anchor:
         - ref: matrix_innermod_num
           shift: [0.75kx,6]
     mcu_top_right:
-      key.tags:
-        - helper
-        - mcu
+      key.tags: [helper, mcu]
       anchor:
         - ref: mcu_top_left
           shift: [mcu_width,0]
     mcu_bottom_right:
-      key.tags:
-        - helper
-        - mcu
+      key.tags: [helper, mcu]
       anchor:
         - ref: mcu_top_right
           shift: [0,-mcu_height]
     mcu_bottom_left:
-      key.tags:
-        - helper
-        - mcu
+      key.tags: [helper, mcu]
       anchor:
         - ref: mcu_top_left
           shift: [0,-mcu_height]
     display_bottom_left:
-      key.tags:
-        - helper
-        - display
+      key.tags: [helper, display]
       anchor:
         - ref: mcu_bottom_left
           shift: [mcu_width / 2 - display_width / 2, -display_vert_shift]
     display_bottom_right:
-      key.tags:
-        - helper
-        - display
+      key.tags: [helper, display]
       anchor:
         - ref: display_bottom_left
           shift: [display_width, 0]
     display_top_left:
-      key.tags:
-        - helper
-        - display
+      key.tags: [helper, display]
       anchor:
         - ref: display_bottom_left
           shift: [0, display_height]
     display_top_right:
-      key.tags:
-        - helper
-        - display
+      key.tags: [helper, display]
       anchor:
         - ref:  display_bottom_left
           shift: [display_width, display_height]
     screw_mcu_bottom_right:
-      key.tags:
-        - helper
-        - screws_expand
+      key.tags: [helper, screws_expand]
       anchor:
         - ref: mcu_bottom_right
           shift: [1, -8]
@@ -497,19 +473,19 @@ outlines:
   _standoffs: # The circles for each screw showing standoff size
     - what: circle
       radius: standoff_size / 2
-      where: /screw/
+      where: /^screws/
   _standoff_holes: # The heaset holes themselves for the bottom case
     - what: circle
       radius: heatset_hole / 2
-      where: /screw/
+      where: /^screws/
   _screw_holes: # screw_holes for the bottom plate if not using a case
     - what: circle
       radius: screw_hole / 2
-      where: /screw/
+      where: /^screws/
   _screw_heads:
     - what: circle
       radius: screw_head / 2
-      where: /screw/
+      where: /^screws/
   ## Switch Plate ##
   _switch_cutouts: # Switch cutouts to form the switch plate
     - what: rectangle
@@ -518,7 +494,7 @@ outlines:
       size: [kcow, kcoh]
     - what: rectangle
       fillet: fillet_radius
-      where: /encoder/
+      where: [encoder]
       size: [kcow, kcoh]
   _switchplate_base:
     - what: outline
@@ -546,16 +522,15 @@ outlines:
   _keycap_outlines:
     - what: rectangle
       fillet: fillet_radius
-      where: [keyswitch]
+      where: [keycap_1u]
       size: [keycw, keych]
     - what: rectangle
       fillet: fillet_radius
-      where: [key_1_5u_vert]
+      where: [keycap_1_5u_vert]
       size: [keycw, 1.5keych]
-    - what: rectangle
-      fillet: fillet_radius
+    - what: circle
       where: [encoder]
-      size: [keycw, keych]
+      radius: keycw / 2
   ## Case Wall ##
   _outer_wall: # 0.5 padding bigger than board - forms the outer wall of the case
     - what: outline
@@ -596,7 +571,7 @@ pcbs:
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
-        where: /screws/
+        where: /^screws/
         params:
           hole_size: screw_hole
           hole_drill: screw_hole
@@ -632,7 +607,7 @@ pcbs:
           include_corner_marks: true
           include_keycap: false
           include_plated_holes: true
-          include_centerhole_net: false
+          include_centerhole_net: true
           include_stabilizer_nets: true
           outer_pad_width_front: 2
           outer_pad_width_back: 2
@@ -646,9 +621,9 @@ pcbs:
           RIGHTSTAB: "{{column_net}}"
           from: "{{column_net}}"
           to: "{{colrow}}"
-      per_key_leds:
+      per_key_leds_RL:
         what: ceoloide/led_sk6812mini-e
-        where: [keyswitch]
+        where: meta.key.led_dir ~ RL
         params:
           P1: VCC
           P2: "{{key.led_next}}" #DOUT
@@ -667,9 +642,34 @@ pcbs:
         adjust:
           shift: [led_pos_x, led_pos_y]
           rotate: led_rotation
+      per_key_leds_LR:
+        what: ceoloide/led_sk6812mini-e
+        where: meta.key.led_dir ~ LR
+        params:
+          P1: VCC
+          P2: "{{key.led_next}}" #DOUT
+          P3: GND
+          P4: "{{key.led_prev}}" #DIN
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: true
+          include_keepout: false
+          include_courtyard: false
+          signal_trace_width: signal_trace_width
+          gnd_trace_width: gnd_trace_width
+          vcc_trace_width: pwr_trace_width
+          via_size: via_size
+          via_drill: via_drill
+        adjust:
+          shift: [led_pos_x, led_pos_y]
+          rotate: led_rotation + 180
+      per_key_led_RL_GND:
+        what: ceoloide/utility_router
+        where: meta.key.led_dir ~ RL
+          
       diode:
         what: ceoloide/diode_tht_sod123
-        where: [switch_diode]
+        where: [keyswitch_diode]
         params:
           reversible: true
           include_tht: true
@@ -859,7 +859,7 @@ pcbs:
           text: mount battery connector\ntop side if under mcu\nbottom side if larger
       switch_column_label:
         what: ceoloide/utility_text
-        where: /^key/
+        where: [keyswitch]
         adjust:
           shift: [-3, -11]
         params:
@@ -867,7 +867,7 @@ pcbs:
           text: "{{row_net}}"
       switch_row_label:
         what: ceoloide/utility_text
-        where: /^key/
+        where: [keyswitch]
         adjust:
           shift: [8.5,4.5]
         params:
@@ -875,7 +875,7 @@ pcbs:
           text: "{{column_net}}"
       switch_name_label:
         what: ceoloide/utility_text
-        where: /^key/
+        where: [keyswitch]
         adjust: 
           shift: [3,8]
         params:
@@ -884,7 +884,7 @@ pcbs:
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
-        where: /screw/
+        where: /^screws/
         params:
           hole_size: screw_hole
           hole_drill: screw_hole
@@ -892,35 +892,35 @@ pcbs:
       ## Static trace routes ##
       key_colrow_trace_net_f:
         what: ceoloide/utility_router
-        where: /key/
+        where: [keyswitch]
         params:
           net: "{{colrow}}"
           route: "f(-7,-5)(-7,-1)(-5,1)"
           locked: false
       key_colrow_trace_net_b:
         what: ceoloide/utility_router
-        where: /key/
+        where: [keyswitch]
         params:
           net: "{{colrow}}"
           route: "b(-7,-2)(-7,-1)(-5,1)"
           locked: false
       key_colrow_diode_route_f:
         what: ceoloide/utility_router
-        where: /key/
+        where: [keyswitch]
         params:
           net: "{{colrow}}"
           route: "f(-5,1)(-7,3)"
           locked: false
       key_col_trace_net_f:
         what: ceoloide/utility_router
-        where: /key/
+        where: [keyswitch]
         params:
           net: "{{colrow}}"
           route: "f(7,-2)(7,-1)(5,1)"
           locked: false
       key_col_trace_net_b:
         what: ceoloide/utility_router
-        where: /key/
+        where: [keyswitch]
         params:
           net: "{{colrow}}"
           route: "b(7,-5)(7,-1)(5,1)"
