@@ -732,7 +732,7 @@ pcbs:
         params:
           reversible: true
       battery_jst:
-        what: ceoloide/battery_connector_jst_ph_2
+        what: aevumdecessus/battery_connector_jst_ph_2
         where:
           ref: mcu_top_right
           ## Shift slightly right of "center" in order to actually center it with the rotation
