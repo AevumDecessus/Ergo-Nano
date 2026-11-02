@@ -178,7 +178,7 @@
 (net 94 "RAW")
 (net 95 "RS")
 (net 96 "CS")
-(net 97 "E1")
+(net 97 "P0")
 (net 98 "MOS")
 (net 99 "SCK")
 (net 100 "E2")
@@ -218,6 +218,7 @@
 (net 134 "JST1_1")
 (net 135 "JST1_2")
 (net 136 "encoder_encoder")
+(net 137 "E1")
 
   
   (footprint "ceoloide:switch_mx"
@@ -9769,12 +9770,12 @@
     (pad "2" thru_hole circle (at 7.62 -10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 107 "MCU1_2"))
       
     
-    (pad "123" thru_hole circle (at -3.4 -10.16 0) (size 0.56 0.56) (drill 0.3) (layers "*.Cu" "*.Mask") (net 97 "E1"))
+    (pad "123" thru_hole circle (at -3.4 -10.16 0) (size 0.56 0.56) (drill 0.3) (layers "*.Cu" "*.Mask") (net 97 "P0"))
     (pad "102" thru_hole circle (at 3.4 -10.16 0) (size 0.56 0.56) (drill 0.3) (layers "*.Cu" "*.Mask") (net 3 "GND"))
       
     
     (pad "23" smd rect (at -5.48 -10.16 0) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 106 "MCU1_23"))
-    (pad "123" smd rect (at -4.58 -10.16 0) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 97 "E1"))
+    (pad "123" smd rect (at -4.58 -10.16 0) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 97 "P0"))
 
     
     (pad "102" smd rect (at 4.58 -10.16 0) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
@@ -9785,10 +9786,10 @@
     (pad "102" smd rect (at -4.58 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "GND"))
 
     
-    (pad "123" smd rect (at 4.58 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 97 "E1"))
+    (pad "123" smd rect (at 4.58 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 97 "P0"))
     (pad "2" smd rect (at 5.48 -10.16 0) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 107 "MCU1_2"))
         
-    (fp_text user "E1" (at -2.04 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -2.04 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -9800,12 +9801,12 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
             
-    (fp_text user "E1" (at 2.04 -10.16 0) (layer "B.SilkS")
+    (fp_text user "P0" (at 2.04 -10.16 0) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
             
     
-    (fp_text user "E1" (at -3.262 -10.96 0) (layer "F.Fab")
+    (fp_text user "P0" (at -3.262 -10.96 0) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)))
     )
     (fp_text user "GND" (at 3.262 -10.96 0) (layer "F.Fab")
@@ -9813,7 +9814,7 @@
     )
 
     
-    (fp_text user "E1" (at -3.262 -10.96 180) (layer "B.Fab")
+    (fp_text user "P0" (at -3.262 -10.96 180) (layer "B.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.08)) (justify mirror))
     )
     (fp_text user "GND" (at 3.262 -10.96 180) (layer "B.Fab")
@@ -10695,7 +10696,7 @@
 
   (footprint "ceoloide:display_nice_view"
     (layer F.Cu)
-    (at 187.4375 63.099999999999994 0)
+    (at 187.4375 61.599999999999994 0)
     (property "Reference" "DISP1"
       (at 0 20 0)
       (layer "F.SilkS")
@@ -10709,72 +10710,62 @@
     (fp_line (start 6.41 15.37) (end 6.41 18.03) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.41 15.37) (end -6.41 15.37) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     
-    (fp_text user "CS" (at -5.08 18.5 90) (unlocked yes) (layer "F.SilkS")
+    (fp_text user "CS" (at -5.08 20.12 90) (unlocked yes) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
-    (fp_text user "GND" (at -2.48 18.5 90) (unlocked yes) (layer "F.SilkS")
+    (fp_text user "GND" (at -2.48 20.12 90) (unlocked yes) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
     (fp_text user "VCC" (at 0.15 18.5 90) (unlocked yes) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
-    (fp_text user "SCK" (at 2.62 18.5 90) (unlocked yes) (layer "F.SilkS")
+    (fp_text user "SCK" (at 2.62 20.12 90) (unlocked yes) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
-    (fp_text user "MOSI" (at 5.12 18.5 90) (unlocked yes) (layer "F.SilkS")
+    (fp_text user "MOSI" (at 5.12 20.12 90) (unlocked yes) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify right))
     )
-    
-    (fp_line (start 6.88 14.9) (end 6.88 18.45) (layer "F.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start 6.88 18.45) (end -6.82 18.45) (layer "F.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start -6.82 18.45) (end -6.82 14.9) (layer "F.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start -6.82 14.9) (end 6.88 14.9) (layer "F.CrtYd") (stroke (width 0.15) (type solid)))
     
     (fp_line (start 6.41 15.37) (end 6.41 18.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.41 15.37) (end -6.41 15.37) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 6.41 18.03) (end -6.41 18.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -6.41 15.37) (end -6.41 18.03) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     
-    (fp_text user "CS" (at 5.22 18.5 90) (unlocked yes) (layer "B.SilkS")
+    (fp_text user "CS" (at 5.22 20.12 90) (unlocked yes) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
-    (fp_text user "GND" (at 2.72 18.5 90) (unlocked yes) (layer "B.SilkS")
+    (fp_text user "GND" (at 2.72 20.12 90) (unlocked yes) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
     (fp_text user "VCC" (at 0.15 18.5 90) (unlocked yes) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
-    (fp_text user "SCK" (at -2.38 18.5 90) (unlocked yes) (layer "B.SilkS")
+    (fp_text user "SCK" (at -2.38 20.12 90) (unlocked yes) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
-    (fp_text user "MOSI" (at -4.98 18.5 90) (unlocked yes) (layer "B.SilkS")
+    (fp_text user "MOSI" (at -4.98 20.12 90) (unlocked yes) (layer "B.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
     )
     
-    (fp_line (start 6.88 14.9) (end 6.88 18.45) (layer "B.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start 6.88 18.45) (end -6.82 18.45) (layer "B.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start -6.82 18.45) (end -6.82 14.9) (layer "B.CrtYd") (stroke (width 0.15) (type solid)))
-    (fp_line (start -6.82 14.9) (end 6.88 14.9) (layer "B.CrtYd") (stroke (width 0.15) (type solid)))
-    
-    (pad "14" smd rect (at -5.08 14.05 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 96 "CS"))
-    (pad "15" smd rect (at -2.54 14.05 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
-    (pad "16" smd rect (at 2.54 14.05 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 99 "SCK"))
-    (pad "17" smd rect (at 5.08 14.05 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 128 "MOSI"))
+    (pad "14" smd rect (at -5.08 18.450000000000003 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 129 "DISP1_1"))
+    (pad "15" smd rect (at -2.54 18.450000000000003 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 130 "DISP1_2"))
+    (pad "16" smd rect (at 2.54 18.450000000000003 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 131 "DISP1_4"))
+    (pad "17" smd rect (at 5.08 18.450000000000003 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 132 "DISP1_5"))
 
-    (pad "10" smd rect (at -5.08 14.95 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 129 "DISP1_1"))
-    (pad "11" smd rect (at -2.54 14.95 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 130 "DISP1_2"))
-    (pad "12" smd rect (at 2.54 14.95 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 131 "DISP1_4"))
-    (pad "13" smd rect (at 5.08 14.95 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 132 "DISP1_5"))
+    (pad "10" smd rect (at -5.08 19.35 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 96 "CS"))
+    (pad "11" smd rect (at -2.54 19.35 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
+    (pad "12" smd rect (at 2.54 19.35 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 99 "SCK"))
+    (pad "13" smd rect (at 5.08 19.35 90) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 128 "MOSI"))
     
-    (pad "24" smd rect (at 5.08 14.05 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 96 "CS"))
-    (pad "25" smd rect (at 2.54 14.05 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "GND"))
-    (pad "26" smd rect (at -2.54 14.05 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 99 "SCK"))
-    (pad "27" smd rect (at -5.08 14.05 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 128 "MOSI"))
+    (pad "24" smd rect (at 5.08 18.450000000000003 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 132 "DISP1_5"))
+    (pad "25" smd rect (at 2.54 18.450000000000003 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 131 "DISP1_4"))
+    (pad "26" smd rect (at -2.54 18.450000000000003 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 130 "DISP1_2"))
+    (pad "27" smd rect (at -5.08 18.450000000000003 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 129 "DISP1_1"))
 
-    (pad "20" smd rect (at 5.08 14.95 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 132 "DISP1_5"))
-    (pad "21" smd rect (at 2.54 14.95 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 131 "DISP1_4"))
-    (pad "22" smd rect (at -2.54 14.95 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 130 "DISP1_2"))
-    (pad "23" smd rect (at -5.08 14.95 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 129 "DISP1_1"))
+    (pad "20" smd rect (at 5.08 19.35 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 96 "CS"))
+    (pad "21" smd rect (at 2.54 19.35 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 3 "GND"))
+    (pad "22" smd rect (at -2.54 19.35 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 99 "SCK"))
+    (pad "23" smd rect (at -5.08 19.35 270) (size 0.6 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (net 128 "MOSI"))
     
     (pad "1" thru_hole oval (at -5.08 16.7 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 129 "DISP1_1"))
     (pad "2" thru_hole oval (at -2.54 16.7 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 130 "DISP1_2"))
@@ -10793,14 +10784,14 @@
     (fp_line (start 7 18) (end 7 -18) (layer Dwgs.User) (stroke (width 0.15) (type solid)))
   )
     
-  (segment (start 182.3575 79.8) (end 182.3575 78.05) (width 0.25) (layer "F.Cu") (net 129))
-  (segment (start 184.8975 79.8) (end 184.8975 78.05) (width 0.25) (layer "F.Cu") (net 130))
-  (segment (start 189.9775 79.8) (end 189.9775 78.05) (width 0.25) (layer "F.Cu") (net 131))
-  (segment (start 192.5175 79.8) (end 192.5175 78.05) (width 0.25) (layer "F.Cu") (net 132))
-  (segment (start 182.3575 79.8) (end 182.3575 78.05) (width 0.25) (layer "B.Cu") (net 129))
-  (segment (start 184.8975 79.8) (end 184.8975 78.05) (width 0.25) (layer "B.Cu") (net 130))
-  (segment (start 189.9775 79.8) (end 189.9775 78.05) (width 0.25) (layer "B.Cu") (net 131))
-  (segment (start 192.5175 79.8) (end 192.5175 78.05) (width 0.25) (layer "B.Cu") (net 132))
+  (segment (start 182.3575 78.3) (end 182.3575 80.05) (width 0.15) (layer "F.Cu") (net 129))
+  (segment (start 184.8975 78.3) (end 184.8975 80.05) (width 0.25) (layer "F.Cu") (net 130))
+  (segment (start 189.9775 78.3) (end 189.9775 80.05) (width 0.15) (layer "F.Cu") (net 131))
+  (segment (start 192.5175 78.3) (end 192.5175 80.05) (width 0.15) (layer "F.Cu") (net 132))
+  (segment (start 182.3575 78.3) (end 182.3575 80.05) (width 0.15) (layer "B.Cu") (net 129))
+  (segment (start 184.8975 78.3) (end 184.8975 80.05) (width 0.15) (layer "B.Cu") (net 130))
+  (segment (start 189.9775 78.3) (end 189.9775 80.05) (width 0.25) (layer "B.Cu") (net 131))
+  (segment (start 192.5175 78.3) (end 192.5175 80.05) (width 0.15) (layer "B.Cu") (net 132))
     
 
     (footprint "ceoloide:battery_connector_jst_ph_2"
@@ -11023,7 +11014,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (attr through_hole)
-    (pad "A" thru_hole oval (at 2.5 7.5 220) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 97 "E1"))
+    (pad "A" thru_hole oval (at 2.5 7.5 220) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 137 "E1"))
     (pad "B" thru_hole oval (at 0 7.5 220) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 3 "GND"))
     (pad "C" thru_hole oval (at -2.5 7.5 220) (size 1.6 1.1) (drill oval 1 0.5) (layers "*.Cu" "*.Mask") (net 100 "E2"))
     
@@ -11124,11 +11115,11 @@
 
 
   (gr_text "Ergo-Nano"
-    (at 67.145 36.6175 0)
+    (at 67.145 36.6175 10)
     (layer "F.SilkS" )
     (effects
       (font 
-        (size 3 3)
+        (size 2.5 2.5)
         (thickness 0.15)
         (bold yes)
         
@@ -11138,11 +11129,11 @@
   )
       
   (gr_text "Ergo-Nano"
-    (at 67.145 36.6175 0)
+    (at 67.145 36.6175 10)
     (layer "B.SilkS" )
     (effects
       (font 
-        (size 3 3)
+        (size 2.5 2.5)
         (thickness 0.15)
         (bold yes)
         
@@ -11182,7 +11173,7 @@
       
 
   (gr_text "by Aevum Decessus"
-    (at 67.145 39.475 0)
+    (at 67.145 39.856 10)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11196,7 +11187,7 @@
   )
       
   (gr_text "by Aevum Decessus"
-    (at 67.145 39.475 0)
+    (at 67.145 39.856 10)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11270,7 +11261,7 @@
       
 
   (gr_text "R4"
-    (at 47 136 0)
+    (at 46 136 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11284,7 +11275,7 @@
   )
       
   (gr_text "R4"
-    (at 47 136 0)
+    (at 46 136 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11299,7 +11290,7 @@
       
 
   (gr_text "R3"
-    (at 47 117 0)
+    (at 46 117 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11313,7 +11304,7 @@
   )
       
   (gr_text "R3"
-    (at 47 117 0)
+    (at 46 117 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11328,7 +11319,7 @@
       
 
   (gr_text "R2"
-    (at 47 98 0)
+    (at 46 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11342,7 +11333,7 @@
   )
       
   (gr_text "R2"
-    (at 47 98 0)
+    (at 46 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11357,7 +11348,7 @@
       
 
   (gr_text "R1"
-    (at 47 79 0)
+    (at 46 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11371,7 +11362,7 @@
   )
       
   (gr_text "R1"
-    (at 47 79 0)
+    (at 46 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11386,7 +11377,7 @@
       
 
   (gr_text "R0"
-    (at 47 60 0)
+    (at 46 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11400,152 +11391,7 @@
   )
       
   (gr_text "R0"
-    (at 47 60 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R4"
-    (at 66 136 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R4"
-    (at 66 136 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R3"
-    (at 66 117 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R3"
-    (at 66 117 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R2"
-    (at 66 98 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R2"
-    (at 66 98 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R1"
-    (at 66 79 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R1"
-    (at 66 79 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R0"
-    (at 66 60 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R0"
-    (at 66 60 0)
+    (at 46 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11560,7 +11406,7 @@
       
 
   (gr_text "R4"
-    (at 85 131 0)
+    (at 65 136 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11574,7 +11420,7 @@
   )
       
   (gr_text "R4"
-    (at 85 131 0)
+    (at 65 136 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11589,7 +11435,7 @@
       
 
   (gr_text "R3"
-    (at 85 112 0)
+    (at 65 117 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11603,7 +11449,7 @@
   )
       
   (gr_text "R3"
-    (at 85 112 0)
+    (at 65 117 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11618,7 +11464,7 @@
       
 
   (gr_text "R2"
-    (at 85 93 0)
+    (at 65 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11632,7 +11478,7 @@
   )
       
   (gr_text "R2"
-    (at 85 93 0)
+    (at 65 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11647,7 +11493,7 @@
       
 
   (gr_text "R1"
-    (at 85 74 0)
+    (at 65 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11661,7 +11507,7 @@
   )
       
   (gr_text "R1"
-    (at 85 74 0)
+    (at 65 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11676,7 +11522,7 @@
       
 
   (gr_text "R0"
-    (at 85 55 0)
+    (at 65 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11690,152 +11536,7 @@
   )
       
   (gr_text "R0"
-    (at 85 55 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R4"
-    (at 104 126 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R4"
-    (at 104 126 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R3"
-    (at 104 107 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R3"
-    (at 104 107 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R2"
-    (at 104 88 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R2"
-    (at 104 88 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R1"
-    (at 104 69 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R1"
-    (at 104 69 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R0"
-    (at 104 50 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R0"
-    (at 104 50 0)
+    (at 65 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11850,7 +11551,7 @@
       
 
   (gr_text "R4"
-    (at 123 131 0)
+    (at 84 131 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11864,7 +11565,7 @@
   )
       
   (gr_text "R4"
-    (at 123 131 0)
+    (at 84 131 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11879,7 +11580,7 @@
       
 
   (gr_text "R3"
-    (at 123 112 0)
+    (at 84 112 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11893,7 +11594,7 @@
   )
       
   (gr_text "R3"
-    (at 123 112 0)
+    (at 84 112 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11908,7 +11609,7 @@
       
 
   (gr_text "R2"
-    (at 123 93 0)
+    (at 84 93 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11922,7 +11623,7 @@
   )
       
   (gr_text "R2"
-    (at 123 93 0)
+    (at 84 93 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11937,7 +11638,7 @@
       
 
   (gr_text "R1"
-    (at 123 74 0)
+    (at 84 74 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11951,7 +11652,7 @@
   )
       
   (gr_text "R1"
-    (at 123 74 0)
+    (at 84 74 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -11966,7 +11667,7 @@
       
 
   (gr_text "R0"
-    (at 123 55 0)
+    (at 84 55 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -11980,268 +11681,7 @@
   )
       
   (gr_text "R0"
-    (at 123 55 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R3"
-    (at 142 117 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R3"
-    (at 142 117 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R2"
-    (at 142 98 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R2"
-    (at 142 98 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R1"
-    (at 142 79 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R1"
-    (at 142 79 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R0"
-    (at 142 60 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R0"
-    (at 142 60 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R3"
-    (at 161 117 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R3"
-    (at 161 117 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R2"
-    (at 161 98 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R2"
-    (at 161 98 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R1"
-    (at 161 79 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R1"
-    (at 161 79 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R0"
-    (at 161 60 0)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R0"
-    (at 161 60 0)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R0"
-    (at 132.4667216 142.46247839999998 -50)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R0"
-    (at 132.4667216 142.46247839999998 -50)
+    (at 84 55 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -12256,7 +11696,7 @@
       
 
   (gr_text "R4"
-    (at 137.4152523 163.178177 -50)
+    (at 103 126 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -12270,36 +11710,7 @@
   )
       
   (gr_text "R4"
-    (at 137.4152523 163.178177 -50)
-    (layer "B.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      (justify  mirror)
-    )
-  )
-      
-
-  (gr_text "R1"
-    (at 151.9700967 150.9652124 -50)
-    (layer "F.SilkS" )
-    (effects
-      (font 
-        (size 1 1)
-        (thickness 0.15)
-        
-        
-      )
-      
-    )
-  )
-      
-  (gr_text "R1"
-    (at 151.9700967 150.9652124 -50)
+    (at 103 126 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -12314,7 +11725,7 @@
       
 
   (gr_text "R3"
-    (at 149.6603562 177.77132369999998 -50)
+    (at 103 107 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -12328,7 +11739,7 @@
   )
       
   (gr_text "R3"
-    (at 149.6603562 177.77132369999998 -50)
+    (at 103 107 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -12343,7 +11754,7 @@
       
 
   (gr_text "R2"
-    (at 164.2152006 165.5583591 -50)
+    (at 103 88 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -12357,7 +11768,587 @@
   )
       
   (gr_text "R2"
-    (at 164.2152006 165.5583591 -50)
+    (at 103 88 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 103 69 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 103 69 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 103 50 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 103 50 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 122 131 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 122 131 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 122 112 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 122 112 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 122 93 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 122 93 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 122 74 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 122 74 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 122 55 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 122 55 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 141 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 141 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 141 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 141 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 141 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 141 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 141 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 141 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 160 117 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 160 117 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 160 98 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 160 98 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 160 79 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 160 79 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 160 60 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 160 60 0)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R0"
+    (at 131.823934 141.6964339 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R0"
+    (at 131.823934 141.6964339 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R4"
+    (at 136.7724647 162.4121325 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R4"
+    (at 136.7724647 162.4121325 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R1"
+    (at 151.3273091 150.19916790000002 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R1"
+    (at 151.3273091 150.19916790000002 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R3"
+    (at 149.0175686 177.0052792 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R3"
+    (at 149.0175686 177.0052792 -50)
+    (layer "B.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "R2"
+    (at 163.572413 164.7923146 -50)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
+  (gr_text "R2"
+    (at 163.572413 164.7923146 -50)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13474,7 +13465,7 @@
       
 
   (gr_text "outer_mod"
-    (at 53 117 0)
+    (at 54 117 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13488,7 +13479,7 @@
   )
       
   (gr_text "outer_mod"
-    (at 53 117 0)
+    (at 54 117 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13503,7 +13494,7 @@
       
 
   (gr_text "outer_bottom"
-    (at 53 98 0)
+    (at 54 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13517,7 +13508,7 @@
   )
       
   (gr_text "outer_bottom"
-    (at 53 98 0)
+    (at 54 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13532,7 +13523,7 @@
       
 
   (gr_text "outer_home"
-    (at 53 79 0)
+    (at 54 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13546,7 +13537,7 @@
   )
       
   (gr_text "outer_home"
-    (at 53 79 0)
+    (at 54 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13561,7 +13552,7 @@
       
 
   (gr_text "outer_top"
-    (at 53 60 0)
+    (at 54 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13575,7 +13566,7 @@
   )
       
   (gr_text "outer_top"
-    (at 53 60 0)
+    (at 54 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13590,7 +13581,7 @@
       
 
   (gr_text "outer_num"
-    (at 53 41 0)
+    (at 54 41 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13604,7 +13595,7 @@
   )
       
   (gr_text "outer_num"
-    (at 53 41 0)
+    (at 54 41 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13619,7 +13610,7 @@
       
 
   (gr_text "pinky_mod"
-    (at 72 117 0)
+    (at 73 117 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13633,7 +13624,7 @@
   )
       
   (gr_text "pinky_mod"
-    (at 72 117 0)
+    (at 73 117 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13648,7 +13639,7 @@
       
 
   (gr_text "pinky_bottom"
-    (at 72 98 0)
+    (at 73 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13662,7 +13653,7 @@
   )
       
   (gr_text "pinky_bottom"
-    (at 72 98 0)
+    (at 73 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13677,7 +13668,7 @@
       
 
   (gr_text "pinky_home"
-    (at 72 79 0)
+    (at 73 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13691,7 +13682,7 @@
   )
       
   (gr_text "pinky_home"
-    (at 72 79 0)
+    (at 73 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13706,7 +13697,7 @@
       
 
   (gr_text "pinky_top"
-    (at 72 60 0)
+    (at 73 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13720,7 +13711,7 @@
   )
       
   (gr_text "pinky_top"
-    (at 72 60 0)
+    (at 73 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13735,7 +13726,7 @@
       
 
   (gr_text "pinky_num"
-    (at 72 41 0)
+    (at 73 41 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13749,7 +13740,7 @@
   )
       
   (gr_text "pinky_num"
-    (at 72 41 0)
+    (at 73 41 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13764,7 +13755,7 @@
       
 
   (gr_text "ring_mod"
-    (at 91 112 0)
+    (at 92 112 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13778,7 +13769,7 @@
   )
       
   (gr_text "ring_mod"
-    (at 91 112 0)
+    (at 92 112 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13793,7 +13784,7 @@
       
 
   (gr_text "ring_bottom"
-    (at 91 93 0)
+    (at 92 93 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13807,7 +13798,7 @@
   )
       
   (gr_text "ring_bottom"
-    (at 91 93 0)
+    (at 92 93 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13822,7 +13813,7 @@
       
 
   (gr_text "ring_home"
-    (at 91 74 0)
+    (at 92 74 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13836,7 +13827,7 @@
   )
       
   (gr_text "ring_home"
-    (at 91 74 0)
+    (at 92 74 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13851,7 +13842,7 @@
       
 
   (gr_text "ring_top"
-    (at 91 55 0)
+    (at 92 55 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13865,7 +13856,7 @@
   )
       
   (gr_text "ring_top"
-    (at 91 55 0)
+    (at 92 55 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13880,7 +13871,7 @@
       
 
   (gr_text "ring_num"
-    (at 91 36 0)
+    (at 92 36 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13894,7 +13885,7 @@
   )
       
   (gr_text "ring_num"
-    (at 91 36 0)
+    (at 92 36 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13909,7 +13900,7 @@
       
 
   (gr_text "middle_mod"
-    (at 110 107 0)
+    (at 111 107 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13923,7 +13914,7 @@
   )
       
   (gr_text "middle_mod"
-    (at 110 107 0)
+    (at 111 107 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13938,7 +13929,7 @@
       
 
   (gr_text "middle_bottom"
-    (at 110 88 0)
+    (at 111 88 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13952,7 +13943,7 @@
   )
       
   (gr_text "middle_bottom"
-    (at 110 88 0)
+    (at 111 88 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13967,7 +13958,7 @@
       
 
   (gr_text "middle_home"
-    (at 110 69 0)
+    (at 111 69 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -13981,7 +13972,7 @@
   )
       
   (gr_text "middle_home"
-    (at 110 69 0)
+    (at 111 69 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -13996,7 +13987,7 @@
       
 
   (gr_text "middle_top"
-    (at 110 50 0)
+    (at 111 50 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14010,7 +14001,7 @@
   )
       
   (gr_text "middle_top"
-    (at 110 50 0)
+    (at 111 50 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14025,7 +14016,7 @@
       
 
   (gr_text "middle_num"
-    (at 110 31 0)
+    (at 111 31 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14039,7 +14030,7 @@
   )
       
   (gr_text "middle_num"
-    (at 110 31 0)
+    (at 111 31 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14054,7 +14045,7 @@
       
 
   (gr_text "index_mod"
-    (at 129 112 0)
+    (at 130 112 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14068,7 +14059,7 @@
   )
       
   (gr_text "index_mod"
-    (at 129 112 0)
+    (at 130 112 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14083,7 +14074,7 @@
       
 
   (gr_text "index_bottom"
-    (at 129 93 0)
+    (at 130 93 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14097,7 +14088,7 @@
   )
       
   (gr_text "index_bottom"
-    (at 129 93 0)
+    (at 130 93 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14112,7 +14103,7 @@
       
 
   (gr_text "index_home"
-    (at 129 74 0)
+    (at 130 74 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14126,7 +14117,7 @@
   )
       
   (gr_text "index_home"
-    (at 129 74 0)
+    (at 130 74 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14141,7 +14132,7 @@
       
 
   (gr_text "index_top"
-    (at 129 55 0)
+    (at 130 55 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14155,7 +14146,7 @@
   )
       
   (gr_text "index_top"
-    (at 129 55 0)
+    (at 130 55 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14170,7 +14161,7 @@
       
 
   (gr_text "index_num"
-    (at 129 36 0)
+    (at 130 36 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14184,7 +14175,7 @@
   )
       
   (gr_text "index_num"
-    (at 129 36 0)
+    (at 130 36 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14199,7 +14190,7 @@
       
 
   (gr_text "inner_bottom"
-    (at 148 98 0)
+    (at 149 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14213,7 +14204,7 @@
   )
       
   (gr_text "inner_bottom"
-    (at 148 98 0)
+    (at 149 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14228,7 +14219,7 @@
       
 
   (gr_text "inner_home"
-    (at 148 79 0)
+    (at 149 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14242,7 +14233,7 @@
   )
       
   (gr_text "inner_home"
-    (at 148 79 0)
+    (at 149 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14257,7 +14248,7 @@
       
 
   (gr_text "inner_top"
-    (at 148 60 0)
+    (at 149 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14271,7 +14262,7 @@
   )
       
   (gr_text "inner_top"
-    (at 148 60 0)
+    (at 149 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14286,7 +14277,7 @@
       
 
   (gr_text "inner_num"
-    (at 148 41 0)
+    (at 149 41 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14300,7 +14291,7 @@
   )
       
   (gr_text "inner_num"
-    (at 148 41 0)
+    (at 149 41 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14315,7 +14306,7 @@
       
 
   (gr_text "innermod_bottom"
-    (at 167 98 0)
+    (at 168 98 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14329,7 +14320,7 @@
   )
       
   (gr_text "innermod_bottom"
-    (at 167 98 0)
+    (at 168 98 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14344,7 +14335,7 @@
       
 
   (gr_text "innermod_home"
-    (at 167 79 0)
+    (at 168 79 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14358,7 +14349,7 @@
   )
       
   (gr_text "innermod_home"
-    (at 167 79 0)
+    (at 168 79 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14373,7 +14364,7 @@
       
 
   (gr_text "innermod_top"
-    (at 167 60 0)
+    (at 168 60 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14387,7 +14378,7 @@
   )
       
   (gr_text "innermod_top"
-    (at 167 60 0)
+    (at 168 60 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14402,7 +14393,7 @@
       
 
   (gr_text "innermod_num"
-    (at 167 41 0)
+    (at 168 41 0)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14416,7 +14407,7 @@
   )
       
   (gr_text "innermod_num"
-    (at 167 41 0)
+    (at 168 41 0)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14431,7 +14422,7 @@
       
 
   (gr_text "t_col0_near"
-    (at 150.8782917 134.8457805 -50)
+    (at 151.5210793 135.6118249 -50)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14445,7 +14436,7 @@
   )
       
   (gr_text "t_col0_near"
-    (at 150.8782917 134.8457805 -50)
+    (at 151.5210793 135.6118249 -50)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14460,7 +14451,7 @@
       
 
   (gr_text "t_col1_near"
-    (at 155.8268224 155.5614791 -50)
+    (at 156.46961 156.3275235 -50)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14474,7 +14465,7 @@
   )
       
   (gr_text "t_col1_near"
-    (at 155.8268224 155.5614791 -50)
+    (at 156.46961 156.3275235 -50)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14489,7 +14480,7 @@
       
 
   (gr_text "t_col1_far"
-    (at 170.3816668 143.34851450000002 -50)
+    (at 171.02445440000002 144.11455890000002 -50)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14503,7 +14494,7 @@
   )
       
   (gr_text "t_col1_far"
-    (at 170.3816668 143.34851450000002 -50)
+    (at 171.02445440000002 144.11455890000002 -50)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14518,7 +14509,7 @@
       
 
   (gr_text "t_col2_near"
-    (at 168.0719263 170.1546258 -50)
+    (at 168.7147139 170.9206702 -50)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14532,7 +14523,7 @@
   )
       
   (gr_text "t_col2_near"
-    (at 168.0719263 170.1546258 -50)
+    (at 168.7147139 170.9206702 -50)
     (layer "B.SilkS" )
     (effects
       (font 
@@ -14547,7 +14538,7 @@
       
 
   (gr_text "t_col2_far"
-    (at 182.6267707 157.9416612 -50)
+    (at 183.26955830000003 158.7077056 -50)
     (layer "F.SilkS" )
     (effects
       (font 
@@ -14561,7 +14552,7 @@
   )
       
   (gr_text "t_col2_far"
-    (at 182.6267707 157.9416612 -50)
+    (at 183.26955830000003 158.7077056 -50)
     (layer "B.SilkS" )
     (effects
       (font 
