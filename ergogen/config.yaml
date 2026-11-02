@@ -735,6 +735,27 @@ pcbs:
           signal_trace_width: signal_trace_width
           invert_jumpers_position: true
           include_courtyard: false
+      led_array_resistor:
+        what: aevumdecessus/resistor_tht_1206
+        where:
+          ref: matrix_innermod_num
+          shift: [10,-1.5]
+          rotate: 90
+        params:
+          include_tht: true
+          reversible: true
+          include_traces_vias: true
+          from: LED_JUMPER
+          to: LED
+      led_array_resistor_text:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [12, -1.5]
+          rotate: 90
+        params:
+          text: R1 LED 470ohm
+          reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
