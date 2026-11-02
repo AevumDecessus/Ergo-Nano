@@ -668,7 +668,15 @@ pcbs:
       per_key_led_RL_GND:
         what: ceoloide/utility_router
         where: meta.key.led_dir ~ RL
-          
+        params:
+          net: GND
+          route: "f(1,1)(3,3)(3,4)"
+      per_key_led_LR_GND:
+        what: ceoloide/utility_router
+        where: meta.key.led_dir ~ LR
+        params:
+          net: GND
+          route: "b(-1,1)(-3,3)(-3,4)"
       diode:
         what: ceoloide/diode_tht_sod123
         where: [keyswitch_diode]
