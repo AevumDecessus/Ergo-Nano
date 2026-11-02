@@ -37,13 +37,11 @@ custom_rules = """(version 1)
  (layer "?.Silkscreen")
  (condition "A.Type == 'Text' || A.Type == 'Text Box'")
  (constraint text_thickness (min 0.2mm))
- (constraint text_height (min 1mm))
-)
+ (constraint text_height (min 1mm)))
 (rule "JLCPCB Pad to Silkscreen"
  (layer outer)
  (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
- (constraint silk_clearance (min 0.15mm))
-)
+ (constraint silk_clearance (min 0.15mm)))
 (rule "JLCPCB PTH to copper"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
  (constraint hole_clearance (min 0.28mm)))
@@ -61,7 +59,7 @@ custom_rules = """(version 1)
  (constraint hole_size (min 0.5mm)))
 (rule "JLCPCB minimum free drill"
   (condition" "A.Type == 'Pad')
-  (constraint hole_size (min 0.3mm))))
+  (constraint hole_size (min 0.3mm)))
 """
 rules = board.with_suffix(".kicad_dru")
 if rules.exists():
