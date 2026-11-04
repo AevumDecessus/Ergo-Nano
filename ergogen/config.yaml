@@ -53,6 +53,7 @@ units:
   led_pos_x: 0
   led_pos_y: -4.75
   led_rotation: 180
+  underglow_vert_shift: -10
   # kicad shifts
   kicad_shift_x: 50
   kicad_shift_y: -125
@@ -322,6 +323,70 @@ points:
         ref: matrix_innermod_bottom
         shift: [1.25kx, 0.65ky]
         rotate: 40
+    underglow_led_1:
+      key:
+        tags: [helper, underglow]
+        din: LED_39
+        dout: ULED_1
+      anchor:
+        ref: matrix_outer_mod
+        shift: [0, underglow_vert_shift]
+    underglow_led_2:
+      key:
+        tags: [helper, underglow]
+        din: ULED_1
+        dout: ULED_2
+      anchor:
+        ref: matrix_ring_mod
+        shift: [0, underglow_vert_shift]
+    underglow_led_3:
+      key:
+        tags: [helper, underglow]
+        din: ULED2
+        dout: ULED3
+      anchor:
+        ref: matrix_index_mod
+        shift: [0, underglow_vert_shift]
+    underglow_led_4:
+      key:
+        tags: [helper, underglow]
+        din: ULED3
+        dout: ULED4
+      anchor:
+        ref: matrix_innermod_bottom
+        shift: [0, underglow_vert_shift]
+    underglow_led_5:
+      key:
+        tags: [helper, underglow]
+        din: ULED4
+        dout: ULED5
+      anchor:
+        ref: matrix_innermod_num
+        shift: [0, underglow_vert_shift]
+    underglow_led_6:
+      key:
+        tags: [helper, underglow]
+        din: ULED5
+        dout: ULED6
+      anchor:
+        ref: matrix_index_num
+        shift: [0, underglow_vert_shift]
+    underglow_led_7:
+      key:
+        tags: [helper, underglow]
+        din: ULED6
+        dout: ULED7
+      anchor:
+        ref: matrix_ring_num
+        shift: [0, underglow_vert_shift]
+    underglow_led_8:
+      key:
+        tags: [helper, underglow]
+        din: ULED7
+        dout: ULED8
+      anchor:
+        ref: matrix_outer_num
+        shift: [0, underglow_vert_shift]
     screw_top_left:
       key.tags: [helper, screws]
       anchor:
@@ -488,6 +553,12 @@ outlines:
     - what: circle
       radius: screw_head / 2
       where: /^screws/
+  ## Underglow LEDs ##
+  _underglow_holes:
+    - what: rectangle
+      size: 6.5
+      where: [underglow]
+      fillet: fillet_radius
   ## Switch Plate ##
   _switch_cutouts: # Switch cutouts to form the switch plate
     - what: rectangle
@@ -514,11 +585,17 @@ outlines:
   _backplate_base:
     - what: outline
       name: _pcb_outline
+    - what: outline
+      name: _underglow_holes
+      operation: subtract
   backplate:
     - what: outline
       name: _backplate_base
     - what: outline
       name: _screw_holes
+      operation: subtract
+    - what: outline
+      name: _underglow_holes
       operation: subtract
   ## Keycaps
   _keycap_outlines:
@@ -677,6 +754,29 @@ pcbs:
         params:
           net: GND
           route: "b(-1,1)(-3,3)(-3,4)"
+      underglow_leds:
+        what: ceoloide/led_sk6812mini-e
+        where: [underglow]
+        params:
+          P1: VCC
+          P2: "{{zone.key.dout}}"
+          P3: GND
+          P4: "{{zone.key.din}}"
+          reversible: true
+          reverse_mount: true
+          include_traces_vias: true
+          include_keepout: false
+          include_courtyard: false
+          signal_trace_width: signal_trace_width
+          gnd_trace_width: gnd_trace_width
+          vcc_trace_width: pwr_trace_width
+      underglow_text:
+        what: ceoloide/utility_text
+        where: [underglow]
+        adjust:
+          shift: [0,2.5]
+        params:
+          text: ULED
       diode:
         what: ceoloide/diode_tht_sod123
         where: [keyswitch_diode]
@@ -756,6 +856,7 @@ pcbs:
         params:
           text: R1 LED 470ohm
           reversible: true
+      # Jumpers and labels - choose between LEDs or Encoder
       led_jumper:
         what: aevumdecessus/jumper
         where:
@@ -941,7 +1042,7 @@ pcbs:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust:
-          shift: [-4, -11]
+          shift: [-8.5, -12.5]
         params:
           reversible: true
           text: "{{row_net}}"
@@ -953,14 +1054,6 @@ pcbs:
         params:
           reversible: true
           text: "{{column_net}}"
-      switch_name_label:
-        what: ceoloide/utility_text
-        where: [keyswitch]
-        adjust: 
-          shift: [4,8]
-        params:
-          reversible: true
-          text: "{{colrow}}"
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
@@ -1035,6 +1128,9 @@ cases:
   _wall_deep:
     - name: _case_wall
       extrude: wall_height_deep
+  _case_underglow_holes:
+    - name: _underglow_holes
+      extrude: plate_thickness
   _case_standoffs_heatset:
     - name: _standoffs
       extrude: heatset_height
@@ -1052,6 +1148,9 @@ cases:
       name: _xl_bottom
       operation: add
     - what: case
+      name: _case_underglow_holes
+      operation: subtract
+    - what: case
       name: _case_standoffs_heatset
       operation: add
     - what: case
@@ -1061,6 +1160,9 @@ cases:
     - what: case
       name: _xl_bottom
       operation: add
+    - what: case
+      name: _case_underglow_holes
+      operation: subtract
     - what: case
       name: _case_standoffs_deep
       operation: add
@@ -1074,6 +1176,9 @@ cases:
       operation: add
     - what: case
       name: _pcb_plate_holes
+      operation: subtract
+    - what: case
+      name: _case_underglow_holes
       operation: subtract
   bottom_case_deep:
     - what: case

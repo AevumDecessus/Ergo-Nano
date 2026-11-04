@@ -22,6 +22,26 @@ function _screw_holes_extrude_1_5_outline_fn(){
 }
 
 
+function _underglow_holes_extrude_1_5_outline_fn(){
+    return new CSG.Path2D([[47.25,-62.25],[52.75,-62.25]]).appendArc([53.25,-61.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([53.25,-56.25]).appendArc([52.75,-55.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([47.25,-55.75]).appendArc([46.75,-56.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([46.75,-61.75]).appendArc([47.25,-62.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+.union(
+    new CSG.Path2D([[85.25,-57.25],[90.75,-57.25]]).appendArc([91.25,-56.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([91.25,-51.25]).appendArc([90.75,-50.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([85.25,-50.75]).appendArc([84.75,-51.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([84.75,-56.75]).appendArc([85.25,-57.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[123.25,-57.25],[128.75,-57.25]]).appendArc([129.25,-56.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([129.25,-51.25]).appendArc([128.75,-50.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([123.25,-50.75]).appendArc([122.75,-51.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([122.75,-56.75]).appendArc([123.25,-57.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[161.25,-62.25],[166.75,-62.25]]).appendArc([167.25,-61.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([167.25,-56.25]).appendArc([166.75,-55.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([161.25,-55.75]).appendArc([160.75,-56.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([160.75,-61.75]).appendArc([161.25,-62.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[161.25,-119.25],[166.75,-119.25]]).appendArc([167.25,-118.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([167.25,-113.25]).appendArc([166.75,-112.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([161.25,-112.75]).appendArc([160.75,-113.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([160.75,-118.75]).appendArc([161.25,-119.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[123.25,-133.25],[128.75,-133.25]]).appendArc([129.25,-132.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([129.25,-127.25]).appendArc([128.75,-126.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([123.25,-126.75]).appendArc([122.75,-127.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([122.75,-132.75]).appendArc([123.25,-133.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[85.25,-133.25],[90.75,-133.25]]).appendArc([91.25,-132.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([91.25,-127.25]).appendArc([90.75,-126.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([85.25,-126.75]).appendArc([84.75,-127.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([84.75,-132.75]).appendArc([85.25,-133.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[47.25,-138.25],[52.75,-138.25]]).appendArc([53.25,-137.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([53.25,-132.25]).appendArc([52.75,-131.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([47.25,-131.75]).appendArc([46.75,-132.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([46.75,-137.75]).appendArc([47.25,-138.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).extrude({ offset: [0, 0, 1.5] });
+}
+
+
 
 
                 function _pcb_bottom_case_fn() {
@@ -70,6 +90,29 @@ function _screw_holes_extrude_1_5_outline_fn(){
             
             
 
+                function _case_underglow_holes_case_fn() {
+                    
+
+                // creating part 0 of case _case_underglow_holes
+                let _case_underglow_holes__part_0 = _underglow_holes_extrude_1_5_outline_fn();
+
+                // make sure that rotations are relative
+                let _case_underglow_holes__part_0_bounds = _case_underglow_holes__part_0.getBounds();
+                let _case_underglow_holes__part_0_x = _case_underglow_holes__part_0_bounds[0].x + (_case_underglow_holes__part_0_bounds[1].x - _case_underglow_holes__part_0_bounds[0].x) / 2
+                let _case_underglow_holes__part_0_y = _case_underglow_holes__part_0_bounds[0].y + (_case_underglow_holes__part_0_bounds[1].y - _case_underglow_holes__part_0_bounds[0].y) / 2
+                _case_underglow_holes__part_0 = translate([-_case_underglow_holes__part_0_x, -_case_underglow_holes__part_0_y, 0], _case_underglow_holes__part_0);
+                _case_underglow_holes__part_0 = rotate([0,0,0], _case_underglow_holes__part_0);
+                _case_underglow_holes__part_0 = translate([_case_underglow_holes__part_0_x, _case_underglow_holes__part_0_y, 0], _case_underglow_holes__part_0);
+
+                _case_underglow_holes__part_0 = translate([0,0,0], _case_underglow_holes__part_0);
+                let result = _case_underglow_holes__part_0;
+                
+            
+                    return result;
+                }
+            
+            
+
                 function bottom_plate_case_fn() {
                     
 
@@ -102,6 +145,22 @@ function _screw_holes_extrude_1_5_outline_fn(){
 
                 bottom_plate__part_1 = translate([0,0,0], bottom_plate__part_1);
                 result = result.subtract(bottom_plate__part_1);
+                
+            
+
+                // creating part 2 of case bottom_plate
+                let bottom_plate__part_2 = _case_underglow_holes_case_fn();
+
+                // make sure that rotations are relative
+                let bottom_plate__part_2_bounds = bottom_plate__part_2.getBounds();
+                let bottom_plate__part_2_x = bottom_plate__part_2_bounds[0].x + (bottom_plate__part_2_bounds[1].x - bottom_plate__part_2_bounds[0].x) / 2
+                let bottom_plate__part_2_y = bottom_plate__part_2_bounds[0].y + (bottom_plate__part_2_bounds[1].y - bottom_plate__part_2_bounds[0].y) / 2
+                bottom_plate__part_2 = translate([-bottom_plate__part_2_x, -bottom_plate__part_2_y, 0], bottom_plate__part_2);
+                bottom_plate__part_2 = rotate([0,0,0], bottom_plate__part_2);
+                bottom_plate__part_2 = translate([bottom_plate__part_2_x, bottom_plate__part_2_y, 0], bottom_plate__part_2);
+
+                bottom_plate__part_2 = translate([0,0,0], bottom_plate__part_2);
+                result = result.subtract(bottom_plate__part_2);
                 
             
                     return result;
