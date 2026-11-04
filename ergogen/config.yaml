@@ -745,7 +745,7 @@ pcbs:
           include_tht: true
           reversible: true
           include_traces_vias: true
-          from: LED_JUMPER
+          from: J_LED
           to: LED
       led_array_resistor_text:
         what: ceoloide/utility_text
@@ -756,6 +756,49 @@ pcbs:
         params:
           text: R1 LED 470ohm
           reversible: true
+      led_jumper:
+        what: aevumdecessus/jumper
+        where:
+          ref: matrix_innermod_num
+          shift: [10.5,5.5]
+          rotate: 270
+        params:
+          side: F
+          from: P0
+          to: J_LED
+      led_jumper_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [10.5,8]
+          rotate: 90
+        params:
+          text: LED
+      encoder_jumper:
+        what: aevumdecessus/jumper
+        where:
+          ref: matrix_innermod_num
+          shift: [13,5.5]
+          rotate: 270
+        params:
+          side: F
+          from: P0
+          to: E1
+      encoder_jumper_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [13,8]
+          rotate: 90
+        params:
+          text: ENC
+      choose_one_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [9,11]
+        params:
+          text: LED OR ENC
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
