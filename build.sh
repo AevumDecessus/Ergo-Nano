@@ -49,7 +49,7 @@ cleanup() {
 }
 trap 'cleanup' 0
 trap 'exit 1' HUP INT TERM
-for saved in pcbs/*.kicad_dru pcbs/*_manually_routed*; do
+for saved in pcbs/*_manually_routed*; do
     [ -e "$saved" ] || continue
     cp -a "$saved" "$project_backup/" || exit 1
 done
