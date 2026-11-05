@@ -233,7 +233,7 @@ points:
             prev_key_stagger: st_inner
           rows:
             num.key:
-              led_prev: LED
+              led_prev: LED_0
               led_next: LED_1
             top.key:
               led_prev: LED_14
@@ -846,7 +846,7 @@ pcbs:
           reversible: true
           include_traces_vias: true
           from: J_LED
-          to: LED
+          to: LED_0
       led_array_resistor_text:
         what: ceoloide/utility_text
         where:
@@ -854,7 +854,38 @@ pcbs:
           shift: [12, -1.5]
           rotate: 90
         params:
-          text: R1 LED 470ohm
+          text: R1 LED 470Ω
+          reversible: true
+      led_mosfet:
+        what: aevumdecessus/sot-23
+        where:
+          ref: matrix_innermod_top
+          shift: [11, 8]
+        params:
+          side: F
+          P1: LED_MFET_GATE
+          P2: RAW
+          P3: LED_VCC
+      mosfet_pullup_resistor:
+        what: aevumdecessus/resistor_tht_1206
+        where:
+          ref: matrix_innermod_top
+          shift: [10,-1.5]
+          rotate: 90
+        params:
+          include_tht: true
+          reversible: true
+          include_traces_vias: true
+          from: RAW
+          to: LED_MFET_GATE
+      mosfet_pullup_resistor_text:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_top
+          shift: [12, -1.5]
+          rotate: 90
+        params:
+          text: R2 pullup 10kΩ
           reversible: true
       # Jumpers and labels - choose between LEDs or Encoder
       led_data_jumper:
@@ -876,7 +907,7 @@ pcbs:
         params:
           side: F
           from: P4
-          to: MFET_CONTROL
+          to: LED_MFET_GATE
       led_data_jumper_label:
         what: ceoloide/utility_text
         where:
