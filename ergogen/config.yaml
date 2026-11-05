@@ -823,6 +823,7 @@ pcbs:
           signal_trace_width: signal_trace_width
           invert_jumpers_position: true
           include_courtyard: false
+          MOSI: MOS
       led_array_resistor:
         what: aevumdecessus/resistor_tht_1206
         where:
