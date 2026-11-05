@@ -1100,9 +1100,9 @@ pcbs:
           text: mount battery connector\ntop side if under mcu\nbottom side if larger
       switch_row_label:
         what: ceoloide/utility_text
-        where: [keyswitch && !thumb_cluster]
+        where: [keyswitch]
         adjust:
-          shift: [-8.5, -12.5]
+          shift: [-8.5, -7]
         params:
           reversible: true
           text: "{{row_net}}"
@@ -1141,7 +1141,7 @@ pcbs:
         what: ceoloide/utility_router
         where: /^thumbs_(?!t_col0).*_near/
         params:
-          net: "{{col_net}}"
+          net: "{{column_net}}"
           route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
           locked: false
 cases:
