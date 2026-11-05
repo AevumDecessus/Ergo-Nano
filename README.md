@@ -42,7 +42,9 @@ Built with MX keysizes be default.
 * Lights
     * 38 [Per Key LED][LED] SK-6812 MINI-E
     * 8 [Underglow LED][LED] SK-6812 MINI-E
-    * 470 ohm 1206 SMD or THT resistor
+    * 470 ohm 1206 SMD or THT resistor (protect LED data line)
+    * 10k ohm 1206 SMD or THT resistor (pull up resistor to make sure LEDs are powered off unless specifically requested)
+    * AO3401 SOT-23 P-type mosfet (makes sures LEDs have no phantom power draw)
 * EC11 Encoder
 
 ## Contents
