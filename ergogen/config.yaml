@@ -2,7 +2,7 @@ meta:
   engine: 4.1.0
   name: ergo-nano
   version: 0.2
-  ref: &kb_ref "Ergo Nano v0.2"
+  ref: &kb_ref "Ergo Nano v0.3"
   author: aevumdecessus
   url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
 units:
@@ -685,9 +685,9 @@ pcbs:
           include_silkscreen: true
           include_corner_marks: true
           include_keycap: false
-          include_plated_holes: true
-          include_centerhole_net: true
-          include_stabilizer_nets: true
+          include_plated_holes: false
+          include_centerhole_net: false
+          include_stabilizer_nets: false
           outer_pad_width_front: 2
           outer_pad_width_back: 2
           outer_pad_height: 2
@@ -742,18 +742,6 @@ pcbs:
         adjust:
           shift: [led_pos_x, led_pos_y]
           rotate: led_rotation + 180
-      per_key_led_RL_GND:
-        what: ceoloide/utility_router
-        where: meta.key.led_dir ~ RL
-        params:
-          net: GND
-          route: "f(1,1)(3,3)(3,4)"
-      per_key_led_LR_GND:
-        what: ceoloide/utility_router
-        where: meta.key.led_dir ~ LR
-        params:
-          net: GND
-          route: "b(-1,1)(-3,3)(-3,4)"
       underglow_leds:
         what: ceoloide/led_sk6812mini-e
         where: [underglow]
@@ -864,9 +852,9 @@ pcbs:
         params:
           side: F
           P1: LED_MFET_GATE
-          P2: RAW
-          P3: LED_VCC
-      mosfet_pullup_resistor:
+          P2: RAW # Source - battery power
+          P3: LED_VCC # Drain - LED power net
+      led_mosfet_pullup_resistor:
         what: aevumdecessus/resistor_tht_1206
         where:
           ref: matrix_innermod_top
@@ -878,7 +866,7 @@ pcbs:
           include_traces_vias: true
           from: RAW
           to: LED_MFET_GATE
-      mosfet_pullup_resistor_text:
+      led_mosfet_pullup_resistor_text:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_top
@@ -912,7 +900,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_num
-          shift: [10.5,8]
+          shift: [10.5,8.5]
           rotate: 90
         params:
           text: LEDd
@@ -920,7 +908,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_num
-          shift: [13,8]
+          shift: [13,8.5]
           rotate: 90
         params:
           text: LEDp
@@ -953,6 +941,7 @@ pcbs:
         params:
           side: B
           text: ENC1
+          mirrored: true
       encoder_E2_jumper_label:
         what: ceoloide/utility_text
         where:
@@ -962,6 +951,7 @@ pcbs:
         params:
           side: B
           text: ENC2
+          mirrored: true
       choose_one_label:
         what: ceoloide/utility_text
         where:
@@ -1061,7 +1051,7 @@ pcbs:
           bold: true
           height: 3
           width: 3
-          text: "V0.2"
+          text: "V0.3"
       author:
         what: ceoloide/utility_text
         where:
@@ -1133,40 +1123,12 @@ pcbs:
           hole_drill: screw_hole
           designator: 'MH'
       ## Static trace routes ##
-      key_colrow_trace_net_f:
+      key_colrow_trace_net:
         what: ceoloide/utility_router
         where: [keyswitch]
         params:
           net: "{{colrow}}"
-          route: "f(-7,-5)(-7,-1)(-5,1)"
-          locked: false
-      key_colrow_trace_net_b:
-        what: ceoloide/utility_router
-        where: [keyswitch]
-        params:
-          net: "{{colrow}}"
-          route: "b(-7,-2)(-7,-1)(-5,1)"
-          locked: false
-      key_colrow_diode_route_f:
-        what: ceoloide/utility_router
-        where: [keyswitch]
-        params:
-          net: "{{colrow}}"
-          route: "f(-5,1)(-7,3)"
-          locked: false
-      key_col_trace_net_f:
-        what: ceoloide/utility_router
-        where: [keyswitch]
-        params:
-          net: "{{column_net}}"
-          route: "f(7,-2)(7,-1)(5,1)"
-          locked: false
-      key_col_trace_net_b:
-        what: ceoloide/utility_router
-        where: [keyswitch]
-        params:
-          net: "{{column_net}}"
-          route: "b(7,-5)(7,-1)(5,1)"
+          route: "f(-6.5,-5)(-6.5,3)"
           locked: false
       col_routes:
         what: ceoloide/utility_router
