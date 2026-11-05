@@ -45,12 +45,12 @@ custom_rules = """(version 1)
 (rule "JLCPCB PTH to copper && Annular ring"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
  (constraint hole_clearance (min 0.28mm))
- (constraint annular_width (min 0.18mm)))
+ (constraint annular_width (min 0.15mm)))
 (rule "JLCPCB PTH pad hole spacing"
- (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'PTH' && B.Pad_Type == 'PTH'")
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'Through-hole' && B.Pad_Type == 'Through-hole'")
  (constraint hole_to_hole (min 0.45mm)))
 (rule "JLCPCB PTH to NPTH pad hole spacing"
- (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'PTH' && B.Pad_Type == 'NPTH'")
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'Through-hole' && B.Pad_Type == 'NPTH, mechanical'")
  (constraint hole_to_hole (min 0.45mm)))
 (rule "JLCPCB NPTH minimum drill"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'")
