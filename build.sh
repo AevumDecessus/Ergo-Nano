@@ -112,7 +112,7 @@ build_board() {
         --user_data_path=./freerouting --gui.enabled=false \
         --router.autorouter.max_passes=25 --router.fanout.enabled=false \
         --router.max_threads=1 --router.optimizer.max_threads=1 \
-        --router.job_timeout="${FREEROUTING_JOB_TIMEOUT:-00:20:00}" \
+        --router.job_timeout="${FREEROUTING_JOB_TIMEOUT:-00:30:00}" \
         --router.automatic_neckdown="$freerouting_automatic_neckdown" \
         --router.neck_width_um="$freerouting_neck_width_um" \
         -dct 0 --profile.email=aevum@decess.us
