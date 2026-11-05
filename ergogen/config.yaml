@@ -1,7 +1,7 @@
 meta:
   engine: 4.1.0
   name: ergo-nano
-  version: 0.2
+  version: 0.3
   ref: &kb_ref "Ergo Nano v0.3"
   author: aevumdecessus
   url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
@@ -110,14 +110,14 @@ points:
               led_prev: LED_7
               led_next: LED_8
             home.key:
+              led_prev: LED_20
+              led_next: LED_21
+            bottom.key:
               led_prev: LED_21
               led_next: LED_22
-            bottom.key:
-              led_prev: LED_22
-              led_next: LED_23
             mod.key:
-              led_prev: LED_38
-              led_next: LED_39
+              led_prev: LED_37
+              led_next: ULED_1
         pinky:
           key:
             column_net: C1
@@ -132,14 +132,14 @@ points:
               led_prev: LED_8
               led_next: LED_9
             home.key:
-              led_prev: LED_20
-              led_next: LED_21
+              led_prev: LED_19
+              led_next: LED_20
             bottom.key:
-              led_prev: LED_23
-              led_next: LED_24
+              led_prev: LED_22
+              led_next: LED_23
             mod.key:
-              led_prev: LED_37
-              led_next: LED_38
+              led_prev: LED_36
+              led_next: LED_37
         ring:
           key:
             column_net: C2
@@ -151,17 +151,17 @@ points:
               led_prev: LED_4
               led_next: LED_5
             top.key:
-              led_prev: LED_10
-              led_next: LED_11
+              led_prev: LED_9
+              led_next: LED_10
             home.key:
-              led_prev: LED_19
-              led_next: LED_20
+              led_prev: LED_18
+              led_next: LED_19
             bottom.key:
-              led_prev: LED_24
-              led_next: LED_25
+              led_prev: LED_23
+              led_next: LED_24
             mod.key:
-              led_prev: LED_36
-              led_next: LED_37
+              led_prev: LED_35
+              led_next: LED_36
         middle:
           key:
             column_net: C3
@@ -173,17 +173,17 @@ points:
               led_prev: LED_3
               led_next: LED_4
             top.key:
-              led_prev: LED_11
-              led_next: LED_12
+              led_prev: LED_10
+              led_next: LED_11
             home.key:
-              led_prev: LED_18
-              led_next: LED_19
+              led_prev: LED_17
+              led_next: LED_18
             bottom.key:
-              led_prev: LED_25
-              led_next: LED_26
+              led_prev: LED_24
+              led_next: LED_25
             mod.key:
-              led_prev: LED_35
-              led_next: LED_36
+              led_prev: LED_34
+              led_next: LED_35
         index:
           key:
             column_net: C4
@@ -195,17 +195,17 @@ points:
               led_prev: LED_2
               led_next: LED_3
             top.key:
-              led_prev: LED_12
-              led_next: LED_13
+              led_prev: LED_11
+              led_next: LED_12
             home.key:
-              led_prev: LED_17
-              led_next: LED_18
+              led_prev: LED_16
+              led_next: LED_17
             bottom.key:
-              led_prev: LED_26
-              led_next: LED_27
+              led_prev: LED_25
+              led_next: LED_26
             mod.key:
-              led_prev: LED_34
-              led_next: LED_35
+              led_prev: LED_33
+              led_next: LED_34
         inner:
           key:
             column_net: C5
@@ -217,14 +217,14 @@ points:
               led_prev: LED_1
               led_next: LED_2
             top.key:
-              led_prev: LED_13
-              led_next: LED_14
+              led_prev: LED_12
+              led_next: LED_13
             home.key:
-              led_prev: LED_16
-              led_next: LED_17
+              led_prev: LED_15
+              led_next: LED_16
             bottom.key:
-              led_prev: LED_27
-              led_next: LED_28
+              led_prev: LED_26
+              led_next: LED_27
           rows.mod.skip: true
         innermod:
           key: 
@@ -236,14 +236,14 @@ points:
               led_prev: LED_0
               led_next: LED_1
             top.key:
+              led_prev: LED_13
+              led_next: LED_14
+            home.key:
               led_prev: LED_14
               led_next: LED_15
-            home.key:
-              led_prev: LED_15
-              led_next: LED_16
             bottom.key:
-              led_prev: LED_28
-              led_next: LED_29
+              led_prev: LED_27
+              led_next: LED_28
           rows.mod.skip: true
       rows:
         mod:
@@ -279,8 +279,8 @@ points:
             shift: [0, half_ky]
           rows:
             near.key:
-              led_prev: LED_33
-              led_next: LED_34
+              led_prev: LED_32
+              led_next: LED_33
           rows.far.skip: true
           rows.near.row_net: R0
         t_col1:
@@ -288,11 +288,11 @@ points:
             column_net: C7
           rows:
             near.key:
-              led_prev: LED_32
-              led_next: LED_33
+              led_prev: LED_31
+              led_next: LED_32
             far.key:
-              led_prev: LED_29
-              led_next: LED_30
+              led_prev: LED_28
+              led_next: LED_29
           rows.near.row_net: R4
           rows.far.row_net: R1
         t_col2:
@@ -300,11 +300,11 @@ points:
             column_net: C7
           rows:
             near.key:
-              led_prev: LED_31
-              led_next: LED_32
-            far.key:
               led_prev: LED_30
               led_next: LED_31
+            far.key:
+              led_prev: LED_29
+              led_next: LED_30
           rows.near.row_net: R3
           rows.far.row_net: R2
       rows:
@@ -326,64 +326,64 @@ points:
     underglow_led_1:
       key:
         tags: [helper, underglow]
-        din: LED_39
-        dout: ULED_1
+        din: ULED_1
+        dout: ULED_2
       anchor:
         ref: matrix_outer_mod
         shift: [0, underglow_vert_shift]
     underglow_led_2:
       key:
         tags: [helper, underglow]
-        din: ULED_1
-        dout: ULED_2
+        din: ULED_2
+        dout: ULED_3
       anchor:
         ref: matrix_ring_mod
         shift: [0, underglow_vert_shift]
     underglow_led_3:
       key:
         tags: [helper, underglow]
-        din: ULED2
-        dout: ULED3
+        din: ULED_3
+        dout: ULED_4
       anchor:
         ref: matrix_index_mod
         shift: [0, underglow_vert_shift]
     underglow_led_4:
       key:
         tags: [helper, underglow]
-        din: ULED3
-        dout: ULED4
+        din: ULED_4
+        dout: ULED_5
       anchor:
         ref: matrix_innermod_bottom
         shift: [0, underglow_vert_shift]
     underglow_led_5:
       key:
         tags: [helper, underglow]
-        din: ULED4
-        dout: ULED5
+        din: ULED_5
+        dout: ULED_6
       anchor:
         ref: matrix_innermod_num
         shift: [0, underglow_vert_shift]
     underglow_led_6:
       key:
         tags: [helper, underglow]
-        din: ULED5
-        dout: ULED6
+        din: ULED_6
+        dout: ULED_7
       anchor:
         ref: matrix_index_num
         shift: [0, underglow_vert_shift]
     underglow_led_7:
       key:
         tags: [helper, underglow]
-        din: ULED6
-        dout: ULED7
+        din: ULED_7
+        dout: ULED_8
       anchor:
         ref: matrix_ring_num
         shift: [0, underglow_vert_shift]
     underglow_led_8:
       key:
         tags: [helper, underglow]
-        din: ULED7
-        dout: ULED8
+        din: ULED_8
+        dout: ULED_9
       anchor:
         ref: matrix_outer_num
         shift: [0, underglow_vert_shift]
@@ -1025,7 +1025,7 @@ pcbs:
         what: ceoloide/utility_router
         where: [encoder]
         params:
-          net: "{{col_net}}"
+          net: "{{colrow}}"
           route: "b(-2.5,7)(0,4)"
           locked: false
       ## Silkscreen Text ##
@@ -1100,7 +1100,7 @@ pcbs:
           text: mount battery connector\ntop side if under mcu\nbottom side if larger
       switch_row_label:
         what: ceoloide/utility_text
-        where: [keyswitch]
+        where: [keyswitch && !thumb_cluster]
         adjust:
           shift: [-8.5, -12.5]
         params:
