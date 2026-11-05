@@ -704,7 +704,7 @@ pcbs:
         what: ceoloide/led_sk6812mini-e
         where: meta.key.led_dir ~ RL
         params:
-          P1: VCC
+          P1: LED_VCC
           P2: "{{key.led_next}}" #DOUT
           P3: GND
           P4: "{{key.led_prev}}" #DIN
@@ -725,7 +725,7 @@ pcbs:
         what: ceoloide/led_sk6812mini-e
         where: meta.key.led_dir ~ LR
         params:
-          P1: VCC
+          P1: LED_VCC
           P2: "{{key.led_next}}" #DOUT
           P3: GND
           P4: "{{key.led_prev}}" #DIN
@@ -758,7 +758,7 @@ pcbs:
         what: ceoloide/led_sk6812mini-e
         where: [underglow]
         params:
-          P1: VCC
+          P1: LED_VCC
           P2: "{{zone.key.dout}}"
           P3: GND
           P4: "{{zone.key.din}}"
@@ -806,7 +806,7 @@ pcbs:
           P1: CS
           P2: MOS
           P3: SCK
-          P4: E2
+          P4: P4
           P5: R0
           P6: R1
           P7: R2
@@ -857,7 +857,7 @@ pcbs:
           text: R1 LED 470ohm
           reversible: true
       # Jumpers and labels - choose between LEDs or Encoder
-      led_jumper:
+      led_data_jumper:
         what: aevumdecessus/jumper
         where:
           ref: matrix_innermod_num
@@ -867,15 +867,7 @@ pcbs:
           side: F
           from: P0
           to: J_LED
-      led_jumper_label:
-        what: ceoloide/utility_text
-        where:
-          ref: matrix_innermod_num
-          shift: [10.5,8]
-          rotate: 90
-        params:
-          text: LED
-      encoder_jumper:
+      led_mostfet_jumper:
         what: aevumdecessus/jumper
         where:
           ref: matrix_innermod_num
@@ -883,16 +875,62 @@ pcbs:
           rotate: 270
         params:
           side: F
-          from: P0
-          to: E1
-      encoder_jumper_label:
+          from: P4
+          to: MFET_CONTROL
+      led_data_jumper_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [10.5,8]
+          rotate: 90
+        params:
+          text: LEDd
+      led_mostfet_jumper_label:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_num
           shift: [13,8]
           rotate: 90
         params:
-          text: ENC
+          text: LEDp
+      encoder_E1_jumper:
+        what: aevumdecessus/jumper
+        where:
+          ref: matrix_innermod_num
+          shift: [10.5,5.5]
+          rotate: 270
+        params:
+          side: B
+          from: P0
+          to: E1
+      encoder_E2_jumper:
+        what: aevumdecessus/jumper
+        where:
+          ref: matrix_innermod_num
+          shift: [13,5.5]
+          rotate: 270
+        params:
+          side: B
+          from: P4
+          to: E2
+      encoder_E1_jumper_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [10.5,8.5]
+          rotate: 90
+        params:
+          side: B
+          text: ENC1
+      encoder_E2_jumper_label:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_num
+          shift: [13,8.5]
+          rotate: 90
+        params:
+          side: B
+          text: ENC2
       choose_one_label:
         what: ceoloide/utility_text
         where:
@@ -900,6 +938,7 @@ pcbs:
           shift: [9,11]
         params:
           text: LED OR ENC
+          reversible: true
       battery_jst:
         what: ceoloide/battery_connector_jst_ph_2
         where:
@@ -921,7 +960,7 @@ pcbs:
           reversible: true
           include_courtyard: true
           from: BAT_P
-          to: VCC
+          to: RAW
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where:
