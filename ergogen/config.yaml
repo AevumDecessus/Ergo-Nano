@@ -691,6 +691,7 @@ pcbs:
           outer_pad_width_front: 2
           outer_pad_width_back: 2
           outer_pad_height: 2
+          trace_width: signal_trace_width
           via_drill: via_drill
           via_size: via_size
           keycap_width: keycw
@@ -758,6 +759,8 @@ pcbs:
           signal_trace_width: signal_trace_width
           gnd_trace_width: gnd_trace_width
           vcc_trace_width: pwr_trace_width
+          via_size: via_size
+          via_drill: via_drill
       underglow_text:
         what: ceoloide/utility_text
         where: [underglow]
@@ -772,6 +775,7 @@ pcbs:
           reversible: true
           include_tht: true
           include_traces_vias: true
+          trace_width: signal_trace_width
           via_size: via_size
           via_drill: via_drill
           from: "{{colrow}}"
@@ -834,6 +838,7 @@ pcbs:
           include_tht: true
           reversible: true
           include_traces_vias: true
+          trace_width: signal_trace_width
           from: J_LED
           to: LED_0
       led_array_resistor_text:
@@ -865,6 +870,7 @@ pcbs:
           include_tht: true
           reversible: true
           include_traces_vias: true
+          trace_width: signal_trace_width
           from: RAW
           to: LED_MFET_GATE
       led_mosfet_pullup_resistor_text:
@@ -972,6 +978,7 @@ pcbs:
           reversible: true
           include_traces: true
           use_rectangular_jumpers: true
+          trace_width: pwr_trace_width
       ## Power and Reset Switches ##
       power_switch:
         what: ceoloide/power_switch_smd_side
@@ -1131,20 +1138,23 @@ pcbs:
           net: "{{colrow}}"
           route: "f(-6.5,-5)(-6.5,3)"
           locked: false
+          width: signal_trace_width
       col_routes:
         what: ceoloide/utility_router
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{column_net}}"
-          route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
+          route: "b(6,-6)(6,-17)(7,-18)(7,-20)(6,-21)(6,-24)"
           locked: false
+          width: signal_trace_width
       thumb_col_routes:
         what: ceoloide/utility_router
         where: /^thumbs_(?!t_col0).*_near/
         params:
           net: "{{column_net}}"
-          route: "b(6,-6)(6,-17)(7,-18)(7,-24)"
+          route: "b(6,-6)(6,-17)(7,-18)(7,-20)(6,-21)(6,-24)"
           locked: false
+          width: signal_trace_width
 cases:
   _xl_bottom:
     - name: _outer_wall
