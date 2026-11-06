@@ -73,7 +73,7 @@ units:
   standoff_height_deep: 8
   standoff_size: screw_hole + (padding / 2)
   # Board Settings
-  via_size: 0.56 # JLCPCB min 0.56 | KiCad default 0.8
+  via_size: 0.6 # JLCPCB min 0.56 | KiCad default 0.8
   via_drill: 0.3 # JLCPCB min 0.3 | KiCad default 0.4
   pwr_trace_width: 0.25
   gnd_trace_width: 0.25
@@ -825,7 +825,7 @@ pcbs:
           reversible: true
           gnd_trace_width: gnd_trace_width
           signal_trace_width: signal_trace_width
-          invert_jumpers_position: true
+          invert_jumpers_position: true # Jumpers below MCU and headers
           include_courtyard: false
           MOSI: MOS
       led_array_resistor:
