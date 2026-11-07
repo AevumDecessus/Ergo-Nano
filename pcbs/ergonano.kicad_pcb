@@ -13483,10 +13483,10 @@
             (effects (font (size 1 1) (thickness 0.15)))
         )
         
-      (fp_line (start -2.4 0.75) (end 2.4 0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -2.4 -0.75) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -2.4 0.75) (end -2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 2.4 0.75) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 0.8) (end 2.4 0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 -0.8) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 0.8) (end -2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 2.4 0.8) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.75 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 70 "LED_0"))
       (pad "2" smd rect (at 1.75 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 141 "J_LED"))
@@ -13612,10 +13612,10 @@
             (effects (font (size 1 1) (thickness 0.15)))
         )
         
-      (fp_line (start -2.4 0.75) (end 2.4 0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -2.4 -0.75) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start -2.4 0.75) (end -2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
-      (fp_line (start 2.4 0.75) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 0.8) (end 2.4 0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 -0.8) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start -2.4 0.8) (end -2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
+      (fp_line (start 2.4 0.8) (end 2.4 -0.8) (layer "F.SilkS") (stroke (width 0.1) (type solid)))
         
       (pad "1" smd rect (at -1.75 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 142 "LED_MFET_GATE"))
       (pad "2" smd rect (at 1.75 0 90) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (net 102 "RAW"))
