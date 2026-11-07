@@ -2,7 +2,7 @@ meta:
   engine: 4.1.0
   name: &kb_name Ergo-Nano
   version: &version 0.3
-  author: aevumdecessus
+  author: &kb_author Aevum Decessus
   url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
 units:
   # Web View Resizing
@@ -89,8 +89,9 @@ units:
   # Extrudes the walls to be level with the top of the PCB
 points:
   key:
-    version: *version
+    kb_author: *kb_author
     kb_name: *kb_name
+    version: *version
   zones:
     matrix:
       key:
@@ -1083,7 +1084,7 @@ pcbs:
           bold: false
           height: 1
           width: 1
-          text: "by Aevum Decessus"
+          text: "by {{kb_author}}"
       left_hand:
         what: ceoloide/utility_text
         where:
