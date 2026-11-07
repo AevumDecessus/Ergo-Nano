@@ -77,7 +77,7 @@ Plates:
 
 [battery-small]: https://typeractive.xyz/products/lithium-battery-110mah
 [ergogen]: https://github.com/ergogen/ergogen
-[hotswap-socket]: [https://typeractive.xyz/products/hotswap-sockets]
+[hotswap-socket]: https://typeractive.xyz/products/hotswap-sockets
 [jst]: https://typeractive.xyz/products/battery-jack
 [LED]: https://keeb.io/products/sk-6812-mini-e-rgb-leds-12-pack
 [nice-nano]: https://nicekeyboards.com/nice-nano/
