@@ -2,7 +2,9 @@
 
 A ergodox/moonlander inspired wireless-first split keyboard design, defined in code with [Ergogen][ergogen].
 
-Utilizes the [nice!nano][nice-nano] for a wireless-first methodology. The wireless firmware is built on [ZMK][zmk]].
+Utilizes the [nice!nano][nice-nano] for a wireless-first methodology. The wireless firmware is built on [ZMK][zmk].
+
+[Changelog](./CHANGELOG.md)
 
 ## Important notes
 
@@ -24,44 +26,44 @@ Built with MX keysizes be default.
 
 #### Required hardware (per side)
 
-* [nice!nano][nice-nano]
-* 38 MX comaptible switches per side
-* 38 [Kailh hotswap sockets][hotswap-socket]
-* 38-39 SOD-123 (SMD) or 1N4148 (THT) Diodes (1 extra for optional encoder)
-* 37-39 1U MX compatible keycaps
-    * optional 1.5U vertical keycap for the top of the thumb cluster
-    * optional 1U switch in place of optional encoder
-* [JST-PH socket][jst]
-* [Power Switch][power]
-* Battery
-    * [Fits under MCU][battery-small] - not recommended with LEDs
-    * Larger 3.7V batteries
+- [nice!nano][nice-nano]
+- 38 MX comaptible switches per side
+- 38 [Kailh hotswap sockets][hotswap-socket]
+- 38-39 SOD-123 (SMD) or 1N4148 (THT) Diodes (1 extra for optional encoder)
+- 37-39 1U MX compatible keycaps
+  - optional 1.5U vertical keycap for the top of the thumb cluster
+  - optional 1U switch in place of optional encoder
+- [JST-PH socket][jst]
+- [Power Switch][power]
+- Battery
+  - [Fits under MCU][battery-small] - not recommended with LEDs
+  - Larger 3.7V batteries
 
 #### Optional Hardware (per side)
 
-* [nice!view][nice-view]
-* Lights
-    * 38 [Per Key LED][LED] SK-6812 MINI-E
-    * 9 [Underglow LED][LED] SK-6812 MINI-E
-    * 470 ohm 1206 SMD or THT resistor (protect LED data line)
-    * 10k ohm 1206 SMD or THT resistor (pull up resistor to make sure LEDs are powered off unless specifically requested)
-    * AO3401 SOT-23 P-type mosfet (makes sures LEDs have no phantom power draw)
-* EC11 Encoder
+- [nice!view][nice-view]
+- Lights
+  - 38 [Per Key LED][LED] SK-6812 MINI-E
+  - 9 [Underglow LED][LED] SK-6812 MINI-E
+  - 470 ohm 1206 SMD or THT resistor (protect LED data line)
+  - 10k ohm 1206 SMD or THT resistor (pull up resistor to make sure LEDs are powered off unless specifically requested)
+  - AO3401 SOT-23 P-type mosfet (makes sures LEDs have no phantom power draw)
+- EC11 Encoder
 
 ## Contents
 
 Case STLs:
 
-* [Bottom Case PCB](cases/bottom_case_pcb.stl) 3d Printable case with walls that sit flush with the top of the PCB
-* [Bottom Case Switch](cases/bottom_case_switch.stl) 3D Printable case that sits flush with the top of the switchplate
-* [Deep Bottom Case](cases/bottom_case_Deep.stl) Deep bottom case to accomodate larger batteries for longer lifetime
+- [Bottom Case PCB](cases/bottom_case_pcb.stl) 3d Printable case with walls that sit flush with the top of the PCB
+- [Bottom Case Switch](cases/bottom_case_switch.stl) 3D Printable case that sits flush with the top of the switchplate
+- [Deep Bottom Case](cases/bottom_case_Deep.stl) Deep bottom case to accomodate larger batteries for longer lifetime
 
 Plates:
 
-* [Backplate](outlines/backplate.dxf) DXF to cut your own backplate out of acrylic/wood/etc
-* [Backplate PCB](gerbers/backplate.zip) Gerber release to get a backplate manufactured out of PCB
-* [Switchplate](outlines/switchplate.dxf) DXF to cut your own switchplate out of acrylic/wood/etc
-* [Switchplate PCB](gerbers/switchplate.zip) Gerber release to get a switchplate manufactured out of PCB
+- [Backplate](outlines/backplate.dxf) DXF to cut your own backplate out of acrylic/wood/etc
+- [Backplate PCB](gerbers/backplate.zip) Gerber release to get a backplate manufactured out of PCB
+- [Switchplate](outlines/switchplate.dxf) DXF to cut your own switchplate out of acrylic/wood/etc
+- [Switchplate PCB](gerbers/switchplate.zip) Gerber release to get a switchplate manufactured out of PCB
 
 ## Images
 
