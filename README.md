@@ -27,9 +27,10 @@ Built with MX keysizes be default.
 * [nice!nano][nice-nano]
 * 38 MX comaptible switches per side
 * 38 [Kailh hotswap sockets][hotswap-socket]
-* 38 SOD-123 (SMD) or 1N4148 (THT) Diodes
-* 37-38 1U MX compatible keycaps
+* 38-39 SOD-123 (SMD) or 1N4148 (THT) Diodes (1 extra for optional encoder)
+* 37-39 1U MX compatible keycaps
     * optional 1.5U vertical keycap for the top of the thumb cluster
+    * optional 1U switch in place of optional encoder
 * [JST-PH socket][jst]
 * [Power Switch][power]
 * Battery
@@ -41,7 +42,7 @@ Built with MX keysizes be default.
 * [nice!view][nice-view]
 * Lights
     * 38 [Per Key LED][LED] SK-6812 MINI-E
-    * 8 [Underglow LED][LED] SK-6812 MINI-E
+    * 9 [Underglow LED][LED] SK-6812 MINI-E
     * 470 ohm 1206 SMD or THT resistor (protect LED data line)
     * 10k ohm 1206 SMD or THT resistor (pull up resistor to make sure LEDs are powered off unless specifically requested)
     * AO3401 SOT-23 P-type mosfet (makes sures LEDs have no phantom power draw)

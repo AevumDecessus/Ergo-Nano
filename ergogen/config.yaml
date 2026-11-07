@@ -353,7 +353,7 @@ points:
         din: ULED_4
         dout: ULED_5
       anchor:
-        ref: matrix_innermod_bottom
+        ref: thumbs_t_col1_far
         shift: [0, underglow_vert_shift]
     underglow_led_5:
       key:
@@ -361,7 +361,7 @@ points:
         din: ULED_5
         dout: ULED_6
       anchor:
-        ref: matrix_innermod_num
+        ref: matrix_innermod_bottom
         shift: [0, underglow_vert_shift]
     underglow_led_6:
       key:
@@ -369,7 +369,7 @@ points:
         din: ULED_6
         dout: ULED_7
       anchor:
-        ref: matrix_index_num
+        ref: matrix_innermod_num
         shift: [0, underglow_vert_shift]
     underglow_led_7:
       key:
@@ -377,13 +377,21 @@ points:
         din: ULED_7
         dout: ULED_8
       anchor:
-        ref: matrix_ring_num
+        ref: matrix_index_num
         shift: [0, underglow_vert_shift]
     underglow_led_8:
       key:
         tags: [helper, underglow]
         din: ULED_8
         dout: ULED_9
+      anchor:
+        ref: matrix_ring_num
+        shift: [0, underglow_vert_shift]
+    underglow_led_9:
+      key:
+        tags: [helper, underglow]
+        din: ULED_9
+        dout: ULED_10
       anchor:
         ref: matrix_outer_num
         shift: [0, underglow_vert_shift]
@@ -767,7 +775,7 @@ pcbs:
         adjust:
           shift: [0,2.5]
         params:
-          text: ULED
+          text: Underglow
       diode:
         what: ceoloide/diode_tht_sod123
         where: [keyswitch_diode]
@@ -789,6 +797,7 @@ pcbs:
           reverse_mount: true
           reversible: true
           include_traces: true
+          invert_jumpers_position: false
           show_silk_labels: true
           show_via_labels: true
           use_rectangular_jumpers: true
@@ -825,6 +834,7 @@ pcbs:
           reversible: true
           gnd_trace_width: gnd_trace_width
           signal_trace_width: signal_trace_width
+          include_silkscreen: true
           invert_jumpers_position: true # Jumpers below MCU and headers
           include_courtyard: false
           MOSI: MOS

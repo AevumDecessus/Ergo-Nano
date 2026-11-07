@@ -38,6 +38,8 @@ function _underglow_holes_extrude_1_5_outline_fn(){
     new CSG.Path2D([[85.25,-133.25],[90.75,-133.25]]).appendArc([91.25,-132.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([91.25,-127.25]).appendArc([90.75,-126.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([85.25,-126.75]).appendArc([84.75,-127.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([84.75,-132.75]).appendArc([85.25,-133.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
 ).union(
     new CSG.Path2D([[47.25,-138.25],[52.75,-138.25]]).appendArc([53.25,-137.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([53.25,-132.25]).appendArc([52.75,-131.75],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([47.25,-131.75]).appendArc([46.75,-132.25],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([46.75,-137.75]).appendArc([47.25,-138.25],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
+).union(
+    new CSG.Path2D([[150.4071936,-152.6029956],[153.9425255,-156.8162401]]).appendArc([154.6469415,-156.8778685],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([158.860186,-153.3425366]).appendArc([158.9218144,-152.6381206],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([155.3864825,-148.4248761]).appendArc([154.6820665,-148.3632477],{"radius":0.5,"clockwise":false,"large":false}).appendPoint([150.468822,-151.8985796]).appendArc([150.4071936,-152.6029956],{"radius":0.5,"clockwise":false,"large":false}).close().innerToCAG()
 ).extrude({ offset: [0, 0, 1.5] });
 }
 
