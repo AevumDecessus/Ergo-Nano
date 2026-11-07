@@ -1,8 +1,7 @@
 meta:
   engine: 4.1.0
-  name: ergo-nano
-  version: 0.3
-  ref: &kb_ref "Ergo Nano v0.3"
+  name: &kb_name Ergo-Nano
+  version: &version 0.3
   author: aevumdecessus
   url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
 units:
@@ -89,6 +88,9 @@ units:
   wall_height_deep: standoff_height_deep + pcb_thickness
   # Extrudes the walls to be level with the top of the PCB
 points:
+  key:
+    version: *version
+    kb_name: *kb_name
   zones:
     matrix:
       key:
@@ -1058,7 +1060,7 @@ pcbs:
           bold: true
           height: 2.5
           width: 2.5
-          text: "Ergo-Nano"
+          text: "{{kb_name}}"
       board_version:
         what: ceoloide/utility_text
         where:
@@ -1069,7 +1071,7 @@ pcbs:
           bold: true
           height: 3
           width: 3
-          text: "V0.3"
+          text: "V{{version}}"
       author:
         what: ceoloide/utility_text
         where:
