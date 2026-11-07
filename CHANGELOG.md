@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Switched the nice!view footprint to my tweaked version - fixes silkscreen to pad clearance violation
+
 ## [0.3.1] - 2026-11-07
 
 ### Changed

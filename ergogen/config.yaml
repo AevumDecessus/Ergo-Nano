@@ -830,7 +830,7 @@ pcbs:
           ref: mcu_top_left
           shift: [(mcu_width / 2), -(mcu_height / 2)]
       nice-view:
-        what: ceoloide/display_nice_view
+        what: aevumdecessus/display_nice_view
         where:
           ref: display_bottom_left
           shift: [display_width / 2, display_height / 2]
