@@ -1,9 +1,9 @@
 meta:
   engine: 4.1.0
   name: &kb_name Ergo-Nano
-  version: &version 0.3
+  version: &version 0.3.1
   author: &kb_author Aevum Decessus
-  url: &kb_url https://github.com/aevumdecessus/Ergo-Nano
+  url: &kb_url https://github.com/AevumDecessus/Ergo-Nano
 units:
   # Web View Resizing
   $default_width: U
@@ -91,6 +91,7 @@ points:
   key:
     kb_author: *kb_author
     kb_name: *kb_name
+    kb_url: *kb_url
     version: *version
   zones:
     matrix:
@@ -1053,9 +1054,8 @@ pcbs:
       board_name:
         what: ceoloide/utility_text
         where:
-          ref: matrix_outer_num
-          shift: [0.9kx, 0.65ky]
-          rotate: 10
+          ref: matrix_innermod_bottom
+          shift: [0, -0.8ky]
         params:
           reversible: true
           bold: true
@@ -1065,20 +1065,30 @@ pcbs:
       board_version:
         what: ceoloide/utility_text
         where:
-          ref: matrix_ring_num
-          shift: [0, 0.6ky]
+          ref: matrix_innermod_bottom
+          shift: [0, -1.15ky]
         params:
           reversible: true
           bold: true
-          height: 3
-          width: 3
+          height: 2
+          width: 2
           text: "V{{version}}"
+      board_url:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_bottom
+          shift: [0, -1.3ky]
+        params:
+          reversible: true
+          bold: true
+          height: 0.8
+          width: 0.8
+          text: "{{kb_url}}"
       author:
         what: ceoloide/utility_text
         where:
-          ref: matrix_outer_num
-          shift: [0.9kx, 0.48ky]
-          rotate: 10
+          ref: matrix_innermod_bottom
+          shift: [0, -0.95ky]
         params:
           reversible: true
           bold: false
@@ -1135,6 +1145,14 @@ pcbs:
         params:
           reversible: true
           text: "{{column_net}}"
+      jlcpcb_order_number_text:
+        what: ceoloide/utility_text
+        where: matrix_innermod_bottom
+        params:
+          text: JLCJLCJLCJLC
+          reversible: true
+        adjust:
+          shift: [0, -1.45ky]
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
