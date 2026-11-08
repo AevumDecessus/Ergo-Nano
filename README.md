@@ -50,6 +50,10 @@ Built with MX keysizes be default.
   - AO3401 SOT-23 P-type mosfet (makes sures LEDs have no phantom power draw)
 - EC11 Encoder
 
+## Firmware
+
+Firmware can be compiled via the [Firmware][firmware] accompanying repo.
+
 ## Contents
 
 Case STLs:
@@ -77,6 +81,7 @@ Plates:
 
 [battery-small]: https://typeractive.xyz/products/lithium-battery-110mah
 [ergogen]: https://github.com/ergogen/ergogen
+[firmware]: https://github.com/AevumDecessus/zmk-keyboard-ergonano
 [hotswap-socket]: https://typeractive.xyz/products/hotswap-sockets
 [jst]: https://typeractive.xyz/products/battery-jack
 [LED]: https://keeb.io/products/sk-6812-mini-e-rgb-leds-12-pack
