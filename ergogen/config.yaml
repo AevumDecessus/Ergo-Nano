@@ -1,7 +1,7 @@
 meta:
-  engine: 4.1.0
+  engine: 4.2.0
   name: &kb_name Ergo-Nano
-  version: &version 0.3.1
+  version: &version 0.4.0
   author: &kb_author Aevum Decessus
   url: &kb_url https://github.com/AevumDecessus/Ergo-Nano
 units:
@@ -272,8 +272,8 @@ points:
         tags: [keyswitch, thumb_cluster, keyswitch_diode, keycap_1u]
       anchor:
         ref: matrix_index_mod
-        shift: [half_kx,-1.25ky]
-        rotate: -50
+        shift: [0.9kx,-1.1ky]
+        rotate: -40
       columns:
         t_col0:
           key:
@@ -414,11 +414,6 @@ points:
       anchor:
         ref: matrix_outer_mod
         shift: [half_kx, half_ky]
-    screw_center_bottom:
-      key.tags: [helper, screws]
-      anchor:
-        ref: matrix_index_mod
-        shift: [half_kx, -half_ky]
     screw_thumbs_right_center:
       key.tags: [helper, screws]
       anchor:
@@ -1093,33 +1088,22 @@ pcbs:
           route: "b(-2.5,7)(0,4)"
           locked: false
       ## Silkscreen Text ##
-      board_name:
+      board_name_version:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_bottom
-          shift: [0, -0.8ky]
+          shift: [-0.5kx, -0.8ky]
         params:
           reversible: true
           bold: true
           height: 2.5
           width: 2.5
-          text: "{{kb_name}}"
-      board_version:
-        what: ceoloide/utility_text
-        where:
-          ref: matrix_innermod_bottom
-          shift: [0, -1.15ky]
-        params:
-          reversible: true
-          bold: true
-          height: 2
-          width: 2
-          text: "V{{version}}"
+          text: "{{kb_name}} V{{version}}"
       board_url:
         what: ceoloide/utility_text
         where:
-          ref: matrix_innermod_bottom
-          shift: [0, -1.3ky]
+          ref: thumbs_t_col0_near
+          shift: [-0.45kx, -1.05ky]
         params:
           reversible: true
           bold: true
@@ -1187,14 +1171,6 @@ pcbs:
         params:
           reversible: true
           text: "{{column_net}}"
-      jlcpcb_order_number_text:
-        what: ceoloide/utility_text
-        where: matrix_innermod_bottom
-        params:
-          text: JLCJLCJLCJLC
-          reversible: true
-        adjust:
-          shift: [0, -1.45ky]
       ## Screw Holes ##
       board_mounting_holes:
         what: ceoloide/mounting_hole_npth
@@ -1317,6 +1293,6 @@ cases:
     - what: case
       name: _wall_pcb
       operation: add
-  switch_test_plate:
-    - name: _switch_test_plate
-      extrude: 2
+  #switch_test_plate:
+  #  - name: _switch_test_plate
+  #    extrude: 2

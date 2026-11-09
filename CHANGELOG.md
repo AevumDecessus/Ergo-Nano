@@ -9,6 +9,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 ### Changed
 
 - Switched the nice!view footprint to my tweaked version - fixes silkscreen to pad clearance violation
+- Moved the thumb cluster position and changed it's angle slightly
+- Moved silkscreen labels to accomodate new thumb cluster position
+
+### Removed
+
+- Removed JLCJLC silkscreen label - no longer required by manufacturer
 
 ## [0.3.1] - 2026-11-07
 
@@ -22,7 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 ## Fixed
 
 - Battery switch now routes to `RAW` instead of incorrectly to `VCC`.
-- Fixed broken LED data chain between LED_9 and LED_10 nets.
+- Fixed broken LED data chain between `LED_9` and `LED_10` nets.
 - Static switch routes from switch to diode now correctly use `{{colrow}}` instead of `{{col_net}}`.
 - Display now correctly uses `MOS` net for both the display and the MCU pin connected to the same net.
 - Column static route for thumb cluster corrected to `{{column_net}}` instead of invalid `{{col_net}}`
