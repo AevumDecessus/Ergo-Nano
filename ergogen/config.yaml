@@ -593,6 +593,48 @@ outlines:
     - what: outline
       name: _screw_holes
       operation: subtract
+  ## Switch Specific
+  _mx_reversible_circles:
+    - what: circle             # centre post
+      where: [keyswitch]
+      radius: 2
+    - what: circle             # side‑peg A (left)
+      where: [keyswitch]
+      radius: 0.95
+      adjust:
+        shift: [ 5.08, 0 ]
+    - what: circle            # side‑peg B (right)
+      where: [keyswitch]
+      radius: 0.95
+      adjust:
+        shift: [  -5.08, 0 ]
+    - what: circle
+      where: [keyswitch]
+      radius: 1.5
+      adjust:
+        shift: [-2.54, 5.08]
+    - what: circle
+      where: [keyswitch]
+      radius: 1.5
+      adjust:
+        shift: [2.54, 5.08]
+    - what: circle
+      where: [keyswitch]
+      radius: 1.5
+      adjust:
+        shift: [-3.81, 2.54]
+    - what: circle
+      where: [keyswitch]
+      radius: 1.5
+      adjust:
+        shift: [3.81, 2.54]
+  _switch_test_plate:
+    - what: outline
+      name: _pcb_outline
+      operation: add
+    - what: outline
+      name: _mx_reversible_circles
+      operation: subtract 
   ## Back Plate
   _backplate_base:
     - what: outline
@@ -1275,3 +1317,6 @@ cases:
     - what: case
       name: _wall_pcb
       operation: add
+  switch_test_plate:
+    - name: _switch_test_plate
+      extrude: 2

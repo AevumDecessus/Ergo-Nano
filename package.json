@@ -4,7 +4,8 @@
         "_case_pcb": "npx @jscad/cli cases/bottom_case_pcb.jscad",
         "_case_switch_plate": "npx @jscad/cli cases/bottom_case_switch.jscad",
         "_case_deep": "npx @jscad/cli cases/bottom_case_deep.jscad",
-        "process_stls": "npm run _bottom_plate && npm run _case_pcb && npm run _case_switch_plate && npm run _case_deep",
+        "_switch_test_plate": "npx @jscad/cli cases/switch_test_plate.jscad",
+        "process_stls": "npm run _bottom_plate && npm run _case_pcb && npm run _case_switch_plate && npm run _case_deep && npm run _switch_test_plate",
         "gen": "ergogen ./ergogen/ --output ./ --clear && npm run process_stls",
         "debug": "ergogen ./ergogen/ --output ./ --clear --debug && npm run process_stls"
     },
