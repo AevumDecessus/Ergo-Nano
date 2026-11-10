@@ -1293,6 +1293,6 @@ cases:
     - what: case
       name: _wall_pcb
       operation: add
-  #switch_test_plate:
-  #  - name: _switch_test_plate
-  #    extrude: 2
+  switch_test_plate:
+    - name: _switch_test_plate
+      extrude: 2
