@@ -643,9 +643,6 @@ outlines:
     - what: outline
       name: _screw_holes
       operation: subtract
-    - what: outline
-      name: _underglow_holes
-      operation: subtract
   ## Keycaps
   _keycap_outlines:
     - what: rectangle
