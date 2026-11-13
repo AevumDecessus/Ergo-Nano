@@ -814,9 +814,11 @@ pcbs:
         what: ceoloide/utility_text
         where: [underglow]
         adjust:
-          shift: [0,2.5]
+          shift: [0, 2.65]
         params:
-          text: Underglow
+          text: ↓ Underglow ↓
+          height: 0.8
+          width: 0.8
       diode:
         what: ceoloide/diode_tht_sod123
         where: [keyswitch_diode]
