@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+### Changed
+
+- Flipped `mx` switches `180°` to a north-facing (top-lit) orientation and moved per-key `SK6812MINI-E` LEDs to the top of each switch (`led_pos_y: 4.75`) for better shine-through keycap illumination.
+- Moved switch diodes (`diode_x: 6.5`, `diode_y: -6`, `rotate: 270`), static `utility_router` routes, row/column silkscreen labels, `D40`, `LED OR ENC`, and hand labels to match the north-facing switch layout.
+
 ## [0.5.1] - 2026-11-13
 
 ### Changed

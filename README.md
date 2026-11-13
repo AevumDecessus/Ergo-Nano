@@ -16,7 +16,7 @@ Replaced all the 1.5U keys with 1U keys on the farthest outside rows, moved the 
 
 Each half is a 5x7 matrix (with the modifier keys removed from the innermost 2 columns, for 33 main keys) plus 5 thumb keys (38 keys total per side).
 
-Built with MX keysizes by default.
+Built with MX keysizes by default. Switches are oriented **north-facing (top-lit)** for better shine-through keycap legend illumination; uniform/non-Cherry profiles (such as XDA, DSA, OEM, SA, or MT3) are recommended, as standard Cherry-profile keycaps can interfere with standard-pole MX housings in a north-facing orientation.
 
 ### Optional Jumpers
 

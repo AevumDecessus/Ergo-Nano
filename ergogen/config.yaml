@@ -45,12 +45,12 @@ units:
   st_inner: -5
   st_innermod: 0
   # pre-evaluate target traces between column staggers
-  diode_x: -6.5
-  diode_y: 7 #Negative to place the diode, positive for routing position
+  diode_x: 6.5
+  diode_y: -6 #Negative to place the diode, positive for routing position
   diode_length: 4
   # led settings
   led_pos_x: 0
-  led_pos_y: -4.75
+  led_pos_y: 4.75
   led_rotation: 180
   underglow_vert_shift: -10
   # kicad shifts
@@ -724,6 +724,8 @@ pcbs:
       mx:
         what: ceoloide/switch_mx
         where: [keyswitch]
+        adjust:
+          rotate: 180
         params:
           hotswap: true
           hotswap_pads_same_side: true
@@ -830,7 +832,7 @@ pcbs:
           to: "{{row_net}}"
         adjust:
           shift: [diode_x, -diode_y]
-          rotate: 90
+          rotate: 270
       nice-nano:
         what: ceoloide/mcu_nice_nano
         params:
@@ -1022,7 +1024,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_num
-          shift: [9,11]
+          shift: [4,11.5]
         params:
           text: LED OR ENC
           reversible: true
@@ -1099,7 +1101,7 @@ pcbs:
         what: ceoloide/diode_tht_sod123
         where:
           ref: matrix_innermod_home
-          shift: [10, 4]
+          shift: [11.5, 4]
           rotate: 90
         params:
           reversible: true
@@ -1114,7 +1116,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: matrix_innermod_home
-          shift: [12, 4]
+          shift: [13.5, 4]
           rotate: 90
         params:
           text: D40 gate 1N4148
@@ -1157,7 +1159,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: [matrix_inner_num]
-          shift: [0.25kx, 0.6ky]
+          shift: [0.25kx, 0.72ky]
         params:
           side: F
           mirrored: false
@@ -1169,7 +1171,7 @@ pcbs:
         what: ceoloide/utility_text
         where:
           ref: [matrix_inner_num]
-          shift: [0.25kx, 0.6ky]
+          shift: [0.25kx, 0.72ky]
         params:
           side: B
           mirrored: true
@@ -1191,7 +1193,7 @@ pcbs:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust:
-          shift: [-8.5, -7]
+          shift: [8.5, 7]
         params:
           reversible: true
           text: "{{row_net}}"
@@ -1199,7 +1201,7 @@ pcbs:
         what: ceoloide/utility_text
         where: [keyswitch]
         adjust:
-          shift: [8.5,4.5]
+          shift: [-8.5, -4.5]
         params:
           reversible: true
           text: "{{column_net}}"
@@ -1217,7 +1219,7 @@ pcbs:
         where: [keyswitch]
         params:
           net: "{{colrow}}"
-          route: "f(-6.5,-5)(-6.5,3)"
+          route: "f(6.5,5)(6.5,-4)"
           locked: false
           width: signal_trace_width
       col_routes:
@@ -1225,7 +1227,7 @@ pcbs:
         where: /^matrix_.*_(?!num)/
         params:
           net: "{{column_net}}"
-          route: "b(6,-6)(6,-17)(7,-18)(7,-20)(6,-21)(6,-24)"
+          route: "b(-6,5)(-6,2)(-7,1)(-7,-1)(-6,-2)(-6,-14)"
           locked: false
           width: signal_trace_width
       thumb_col_routes:
@@ -1233,7 +1235,7 @@ pcbs:
         where: /^thumbs_(?!t_col0).*_near/
         params:
           net: "{{column_net}}"
-          route: "b(6,-6)(6,-17)(7,-18)(7,-20)(6,-21)(6,-24)"
+          route: "b(-6,5)(-6,2)(-7,1)(-7,-1)(-6,-2)(-6,-14)"
           locked: false
           width: signal_trace_width
 cases:
