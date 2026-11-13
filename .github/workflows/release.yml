@@ -1,0 +1,133 @@
+name: Create release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (e.g. 0.5.0 or 0.6.0)"
+        required: true
+        type: string
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      version: ${{ steps.prep.outputs.version }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Update version, changelog, commit, and tag
+        id: prep
+        run: |
+          version="${{ inputs.version }}"
+          version="${version#v}"
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+([.-][0-9A-Za-z.-]+)?$ ]]; then
+            echo "Invalid semver version: $version" >&2
+            exit 1
+          fi
+          tag="v$version"
+          if git rev-parse "$tag" >/dev/null 2>&1; then
+            echo "Tag $tag already exists." >&2
+            exit 1
+          fi
+
+          python3 - "$version" "${{ github.repository }}" <<'PY'
+          import datetime, pathlib, re, subprocess, sys
+
+          version, repo = sys.argv[1], sys.argv[2]
+          today = datetime.date.today().isoformat()
+
+          def parse_semver(v: str):
+              m = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)(?:-([0-9A-Za-z.-]+))?", v)
+              if not m:
+                  return None
+              major, minor, patch = int(m.group(1)), int(m.group(2)), int(m.group(3))
+              pre = m.group(4)
+              if pre is None:
+                  return (major, minor, patch, 1, ())
+              parts = tuple((0, int(p)) if p.isdigit() else (1, p) for p in pre.split("."))
+              return (major, minor, patch, 0, parts)
+
+          new_sv = parse_semver(version)
+          if new_sv is None:
+              raise SystemExit(f"Invalid semver version: {version}")
+
+          tags = subprocess.check_output(["git", "tag", "--list", "v*"], text=True).splitlines()
+          existing = []
+          for t in tags:
+              sv = parse_semver(t.removeprefix("v"))
+              if sv is not None:
+                  existing.append((sv, t))
+          if existing:
+              latest_sv, latest_tag = max(existing, key=lambda x: x[0])
+              if new_sv <= latest_sv:
+                  raise SystemExit(
+                      f"Version {version} must be greater than latest tag {latest_tag}."
+                  )
+
+          # 1. Update ergogen/config.yaml version
+          cfg_path = pathlib.Path("ergogen/config.yaml")
+          cfg = cfg_path.read_text(encoding="utf-8")
+          new_cfg, n = re.subn(
+              r"^(\s*version:\s*&version\s+)\S+",
+              rf"\g<1>{version}",
+              cfg,
+              count=1,
+              flags=re.MULTILINE,
+          )
+          if n != 1:
+              raise SystemExit("Could not find 'version: &version ...' in ergogen/config.yaml")
+          cfg_path.write_text(new_cfg, encoding="utf-8")
+
+          # 2. Update CHANGELOG.md if ## [<version>] does not already exist
+          cl_path = pathlib.Path("CHANGELOG.md")
+          cl = cl_path.read_text(encoding="utf-8")
+          if not re.search(rf"^## \[{re.escape(version)}\]", cl, flags=re.MULTILINE):
+              m_unrel = re.search(r"^## \[Unreleased\]\s*$", cl, flags=re.MULTILINE)
+              if not m_unrel:
+                  raise SystemExit("Could not find '## [Unreleased]' in CHANGELOG.md")
+              cl = (
+                  cl[: m_unrel.end()]
+                  + f"\n\n## [{version}] - {today}"
+                  + cl[m_unrel.end() :]
+              )
+
+              m_link = re.search(
+                  r"^\[Unreleased\]:\s*https://github\.com/([^/]+/[^/]+)/compare/v([^\s.]+(?:\.[^\s.]+)*)\.\.\.main\s*$",
+                  cl,
+                  flags=re.MULTILINE,
+              )
+              if not m_link:
+                  raise SystemExit("Could not find [Unreleased] compare link in CHANGELOG.md")
+              prev_ver = m_link.group(2)
+              replacement = (
+                  f"[Unreleased]: https://github.com/{repo}/compare/v{version}...main\n"
+                  f"[{version}]: https://github.com/{repo}/compare/v{prev_ver}...v{version}"
+              )
+              cl = cl[: m_link.start()] + replacement + cl[m_link.end() :]
+              cl_path.write_text(cl, encoding="utf-8")
+          PY
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add ergogen/config.yaml CHANGELOG.md
+            git commit -m "chore: release $tag"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+
+          git tag "$tag"
+          git push origin "$tag"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: prepare
+    permissions:
+      contents: write
+    uses: ./.github/workflows/build.yml
+    with:
+      release_tag: v${{ needs.prepare.outputs.version }}
