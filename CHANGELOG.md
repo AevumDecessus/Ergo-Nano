@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 - Fixed lowercase `'pad'` condition in `kibot/configure_jlcpcb.py` `"JLCPCB Pad to Silkscreen"` rule.
 - Updated `README.md` (`0.4.0` version reference, 5x7 + 5 thumb matrix description, jumper and diode counts, and `cases/bottom_case_deep.stl` link casing).
 - Updated `build.sh` to exit nonzero when any plate or board fails.
+- Updated `kibot/import_ses.py` to remove sub-micron (`<= 0.001 mm`) dangling track stubs left by Specctra SES import.
 
 ## [0.4.0] - 2026-11-09
 
