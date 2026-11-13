@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 - Updated `build.sh` to exit nonzero when any plate or board fails.
 - Updated `kibot/import_ses.py` to remove sub-micron (`<= 0.001 mm`) dangling track stubs left by Specctra SES import.
 - Added a scoped `hole_to_hole` ignore rule in `kibot/configure_jlcpcb.py` for intra-footprint reversible switch NPTH overlaps.
+- Ignored `lib_footprint_issues` in `kibot/configure_jlcpcb.py` (`.kicad_pro` `rule_severities`) since Ergogen embeds footprints directly from JS rather than a KiCad library table.
 
 ## [0.4.0] - 2026-11-09
 

@@ -22,6 +22,7 @@ settings.setdefault("rules", {}).update({
     "min_silk_clearance": 0.15, "min_text_height": 1.0,
     "min_text_thickness": 0.15, "solder_mask_to_copper_clearance": 0.09,
 })
+settings.setdefault("rule_severities", {})["lib_footprint_issues"] = "ignore"
 net_settings = data.setdefault("net_settings", {})
 net_settings.setdefault("meta", {})["version"] = 4
 classes = net_settings.setdefault("classes", [{"name": "Default"}])
