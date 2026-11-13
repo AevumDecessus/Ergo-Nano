@@ -9,7 +9,7 @@
  (constraint text_height (min 0.8mm)))
 (rule "JLCPCB Pad to Silkscreen"
  (layer outer)
- (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+ (condition "A.Type == 'Pad' && B.Layer == '?.Silkscreen'")
  (constraint silk_clearance (min 0.15mm)))
 (rule "JLCPCB PTH to copper && Annular ring"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
@@ -27,3 +27,7 @@
 (rule "JLCPCB minimum free drill"
  (condition "A.Type == 'Pad'")
  (constraint hole_size (min 0.3mm)))
+(rule "Reversible switch NPTH overlap"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && B.Pad_Type == 'NPTH, mechanical' && A.Parent == B.Parent")
+ (constraint hole_to_hole (min 0mm))
+ (severity ignore))

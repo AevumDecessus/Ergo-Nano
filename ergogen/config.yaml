@@ -1,7 +1,7 @@
 meta:
   engine: 4.2.0
   name: &kb_name Ergo-Nano
-  version: &version 0.5.0
+  version: &version 0.5.1
   author: &kb_author Aevum Decessus
   url: &kb_url https://github.com/AevumDecessus/Ergo-Nano
 units:

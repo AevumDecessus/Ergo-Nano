@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-11-13
+
 ### Changed
 
 - Release workflow now also commits the build artifacts in addition to attaching them to the release.
@@ -80,7 +82,8 @@ Initial release of board with LEDs added. Suffers from numerous fatal flaws and 
 
 Initial release with initial version of the board - suffers from fatal flaws and should not be manufactured. Entry is only maintained here for historical purposes.
 
-[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.0...main
+[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.1...main
+[0.5.1]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.3.0...v0.3.1
