@@ -40,7 +40,7 @@ custom_rules = """(version 1)
  (constraint text_height (min 0.8mm)))
 (rule "JLCPCB Pad to Silkscreen"
  (layer outer)
- (condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+ (condition "A.Type == 'Pad' && B.Layer == '?.Silkscreen'")
  (constraint silk_clearance (min 0.15mm)))
 (rule "JLCPCB PTH to copper && Annular ring"
  (condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
