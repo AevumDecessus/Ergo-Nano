@@ -142,6 +142,6 @@ for board in $boards; do
 done
 if [ -n "$failed_boards" ]; then
     echo "Boards requiring attention:$failed_boards" >&2
+    exit 1
 fi
-# Validation failures are reported, not a failure of the whole batch.
 exit 0

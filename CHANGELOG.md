@@ -12,7 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ### Fixed
 
-- Fixed net names in freerouting.rules to match the actual PCB nets.
+- Updated `freerouting/freerouting.rules` net names (`index_num`, `encoder_encoder`, `t_col*`, `R0`–`R4`, `RS`, `E1`, `E2`, `P0`, `P4`, `J_LED`, `J_MFET_GATE`, `LED_MFET_GATE`, and explicit `LED_0`–`LED_37` / `ULED_1`–`ULED_10`) to match the actual PCB nets.
+- Adjusted `underglow_text` position (`[0, 2.65]`) and size (`0.8` mm) in `ergogen/config.yaml` to eliminate `silk_edge_clearance` warnings.
+- Fixed lowercase `'pad'` condition in `kibot/configure_jlcpcb.py` `"JLCPCB Pad to Silkscreen"` rule.
+- Updated `README.md` (`0.4.0` version reference, 5x7 + 5 thumb matrix description, jumper and diode counts, and `cases/bottom_case_deep.stl` link casing).
+- Updated `build.sh` to exit nonzero when any plate or board fails.
 
 ## [0.4.0] - 2026-11-09
 

@@ -8,28 +8,28 @@ Utilizes the [nice!nano][nice-nano] for a wireless-first methodology. The wirele
 
 ## Important notes
 
-This layout is fully generated, and as of the V0.1 release HAS NOT BEEN BUILT OR TESTED YET. Feel free to use this as a reference, but you are making this at your own risk until it has been build, tested, and vetted.
+This layout is fully generated, and as of the 0.4.0 release HAS NOT BEEN BUILT OR TESTED YET. Feel free to use this as a reference, but you are making this at your own risk until it has been built, tested, and vetted.
 
 ## Layout
 
 Replaced all the 1.5U keys with 1U keys on the farthest outside rows, moved the thumb cluster closer to the natural thumb resting location, a major complaint with the Ergodox.
 
-Each half is a 5x6 matrix with 5 thumb keys, and the modifier keys removed from the innermost 2 columns.
+Each half is a 5x7 matrix (with the modifier keys removed from the innermost 2 columns, for 33 main keys) plus 5 thumb keys (38 keys total per side).
 
-Built with MX keysizes be default.
+Built with MX keysizes by default.
 
 ### Optional Jumpers
 
-2 optional jumpers are located to the left of the MCU to choose between per-key and underglow LEDS, or the rotatry encoder located below the main board. Connect the one you would like with a solder bridge in order to enable pin `P0` to connect to either the led chain `din`, or to one of the encoder's rotary pins (the other is connected to the pin labeled `E2`)
+2 pairs of optional jumpers are located to the left of the MCU (`LEDd`/`LEDp` on the front, `ENC1`/`ENC2` on the back) to choose between per-key and underglow LEDs, or the rotary encoder located below the main board. Connect the pair you would like with solder bridges to route `P0` and `P4` to either the LED data/MOSFET gate (`LEDd`/`LEDp`) or the encoder's rotary pins (`ENC1`/`ENC2`).
 
 ### Hardware requirements
 
 #### Required hardware (per side)
 
 - [nice!nano][nice-nano]
-- 38 MX comaptible switches per side
+- 38 MX compatible switches per side
 - 38 [Kailh hotswap sockets][hotswap-socket]
-- 38-39 SOD-123 (SMD) or 1N4148 (THT) Diodes (1 extra for optional encoder)
+- 38-39 SOD-123 (SMD) or 1N4148 (THT) Diodes (1 extra for optional encoder or LED MOSFET gate protection)
 - 37-39 1U MX compatible keycaps
   - optional 1.5U vertical keycap for the top of the thumb cluster
   - optional 1U switch in place of optional encoder
@@ -60,7 +60,7 @@ Case STLs:
 
 - [Bottom Case PCB](cases/bottom_case_pcb.stl) 3d Printable case with walls that sit flush with the top of the PCB
 - [Bottom Case Switch](cases/bottom_case_switch.stl) 3D Printable case that sits flush with the top of the switchplate
-- [Deep Bottom Case](cases/bottom_case_Deep.stl) Deep bottom case to accomodate larger batteries for longer lifetime
+- [Deep Bottom Case](cases/bottom_case_deep.stl) Deep bottom case to accommodate larger batteries for longer lifetime
 
 Plates:
 
