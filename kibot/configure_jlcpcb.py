@@ -58,6 +58,10 @@ custom_rules = """(version 1)
 (rule "JLCPCB minimum free drill"
  (condition "A.Type == 'Pad'")
  (constraint hole_size (min 0.3mm)))
+(rule "Reversible switch NPTH overlap"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical' && B.Pad_Type == 'NPTH, mechanical' && A.Parent == B.Parent")
+ (constraint hole_to_hole (min 0mm))
+ (severity ignore))
 """
 rules = board.with_suffix(".kicad_dru")
 if rules.exists():
