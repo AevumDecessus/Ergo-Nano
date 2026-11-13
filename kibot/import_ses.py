@@ -31,15 +31,12 @@ def _endpoint_connected(pt, track, tracks, vias, pads):
     os_xy, oe_xy = (os.x, os.y), (oe.x, oe.y)
     if (os_xy == ts_xy and oe_xy == te_xy) or (os_xy == te_xy and oe_xy == ts_xy):
       continue
-    if ((pt_xy[0] - os_xy[0]) ** 2 + (pt_xy[1] - os_xy[1]) ** 2 <= 100
-        or (pt_xy[0] - oe_xy[0]) ** 2 + (pt_xy[1] - oe_xy[1]) ** 2 <= 100):
+    if pt_xy == os_xy or pt_xy == oe_xy:
       return True
   return False
 
 
-def remove_dangling_stubs(board, max_length_mm=0.001):
-  """Iteratively remove short dead-end track stubs left by SES import."""
-  max_len = pcbnew.FromMM(max_length_mm)
+def _collect_board_connectivity(board):
   pads = {}
   for fp in board.GetFootprints():
     for pad in fp.Pads():
@@ -47,19 +44,33 @@ def remove_dangling_stubs(board, max_length_mm=0.001):
       for layer in (pcbnew.F_Cu, pcbnew.B_Cu):
         if pad.IsOnLayer(layer):
           pads.setdefault((net, layer), []).append(pad)
+  return pads
+
+
+def _collect_tracks_vias(board):
+  tracks, vias = {}, {}
+  for item in board.GetTracks():
+    if isinstance(item, pcbnew.PCB_VIA):
+      vias.setdefault(item.GetNetCode(), []).append(item)
+    elif not isinstance(item, pcbnew.PCB_ARC):
+      tracks.setdefault((item.GetNetCode(), item.GetLayer()), []).append(item)
+  return tracks, vias
+
+
+def remove_dangling_stubs(board, max_length_mm=0.001):
+  """Iteratively remove zero-length and sub-micron dead-end track stubs."""
+  max_len = pcbnew.FromMM(max_length_mm)
+  pads = _collect_board_connectivity(board)
 
   removed = 0
   while True:
-    tracks, vias = {}, {}
-    for item in board.GetTracks():
-      if isinstance(item, pcbnew.PCB_VIA):
-        vias.setdefault(item.GetNetCode(), []).append(item)
-      elif not isinstance(item, pcbnew.PCB_ARC):
-        tracks.setdefault((item.GetNetCode(), item.GetLayer()), []).append(item)
-
+    tracks, vias = _collect_tracks_vias(board)
     to_remove = []
     for segs in tracks.values():
       for seg in segs:
+        if seg.GetLength() == 0:
+          to_remove.append(seg)
+          continue
         if seg.GetLength() > max_len:
           continue
         if not (_endpoint_connected(seg.GetStart(), seg, tracks, vias, pads)
@@ -72,6 +83,61 @@ def remove_dangling_stubs(board, max_length_mm=0.001):
       board.Delete(seg)
       removed += 1
   return removed
+
+
+def split_t_junctions(board, tol_nm=1000):
+  """Split tracks where another track's endpoint lands on their interior."""
+  pads = _collect_board_connectivity(board)
+  splits = 0
+  while True:
+    tracks, vias = _collect_tracks_vias(board)
+    split_target = None
+    for segs in tracks.values():
+      for seg in segs:
+        for pt in (seg.GetStart(), seg.GetEnd()):
+          if _endpoint_connected(pt, seg, tracks, vias, pads):
+            continue
+          for other in segs:
+            if other is seg:
+              continue
+            os, oe = other.GetStart(), other.GetEnd()
+            if (pt.x, pt.y) == (os.x, os.y) or (pt.x, pt.y) == (oe.x, oe.y):
+              continue
+            dx, dy = oe.x - os.x, oe.y - os.y
+            lsq = dx * dx + dy * dy
+            if lsq == 0:
+              continue
+            u = ((pt.x - os.x) * dx + (pt.y - os.y) * dy) / lsq
+            if not (0.0 < u < 1.0):
+              continue
+            px, py = os.x + u * dx, os.y + u * dy
+            if (pt.x - px) ** 2 + (pt.y - py) ** 2 <= tol_nm * tol_nm:
+              split_target = (other, pt)
+              break
+          if split_target:
+            break
+        if split_target:
+          break
+      if split_target:
+        break
+
+    if not split_target:
+      break
+    other, pt = split_target
+    for a, b in ((other.GetStart(), pt), (pt, other.GetEnd())):
+      if (a.x, a.y) == (b.x, b.y):
+        continue
+      part = pcbnew.PCB_TRACK(board)
+      part.SetStart(a)
+      part.SetEnd(b)
+      part.SetWidth(other.GetWidth())
+      part.SetLayer(other.GetLayer())
+      part.SetNet(other.GetNet())
+      part.SetLocked(other.IsLocked())
+      board.Add(part)
+    board.Delete(other)
+    splits += 1
+  return splits
 
 
 def main(argv):
@@ -100,6 +166,9 @@ def main(argv):
   removed = remove_dangling_stubs(board)
   if removed:
     print('Removed dangling track stubs:', removed)
+  splits = split_t_junctions(board)
+  if splits:
+    print('Split T-junction tracks:', splits)
   success = pcbnew.SaveBoard(output_file, board, True)
   if success:
     print('Saved output to ', output_file)
