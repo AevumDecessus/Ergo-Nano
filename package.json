@@ -7,7 +7,8 @@
         "_switch_test_plate": "npx @jscad/cli cases/switch_test_plate.jscad",
         "process_stls": "npm run _bottom_plate && npm run _case_pcb && npm run _case_switch_plate && npm run _case_deep && npm run _switch_test_plate",
         "gen": "ergogen ./ergogen/ --output ./ --clear && npm run process_stls",
-        "debug": "ergogen ./ergogen/ --output ./ --clear --debug && npm run process_stls"
+        "debug": "ergogen ./ergogen/ --output ./ --clear --debug && npm run process_stls",
+        "reset": "git checkout -- cases docs/images gerbers outlines pcbs"
     },
     "dependencies": {
         "ergogen": "github:ergogen/ergogen#develop",
