@@ -7,6 +7,11 @@ on:
         description: "Release version (e.g. 0.5.0 or 0.6.0)"
         required: true
         type: string
+      dry_run:
+        description: "Validate and show diff without committing, tagging, or publishing"
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   prepare:
@@ -112,20 +117,26 @@ jobs:
               cl_path.write_text(cl, encoding="utf-8")
           PY
 
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add ergogen/config.yaml CHANGELOG.md
-            git commit -m "chore: release $tag"
-            git push origin "HEAD:${{ github.ref_name }}"
-          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "Dry run enabled; skipping commit, push, and tag. Diff:"
+            git diff ergogen/config.yaml CHANGELOG.md
+          else
+            if [ -n "$(git status --porcelain)" ]; then
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git add ergogen/config.yaml CHANGELOG.md
+              git commit -m "chore: release $tag"
+              git push origin "HEAD:${{ github.ref_name }}"
+            fi
 
-          git tag "$tag"
-          git push origin "$tag"
+            git tag "$tag"
+            git push origin "$tag"
+          fi
           echo "version=$version" >> "$GITHUB_OUTPUT"
 
   build:
     needs: prepare
+    if: ${{ !inputs.dry_run }}
     permissions:
       contents: write
     uses: ./.github/workflows/build.yml
