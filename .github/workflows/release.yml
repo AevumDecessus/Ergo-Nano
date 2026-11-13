@@ -92,12 +92,12 @@ jobs:
           cl_path = pathlib.Path("CHANGELOG.md")
           cl = cl_path.read_text(encoding="utf-8")
           if not re.search(rf"^## \[{re.escape(version)}\]", cl, flags=re.MULTILINE):
-              m_unrel = re.search(r"^## \[Unreleased\]\s*$", cl, flags=re.MULTILINE)
+              m_unrel = re.search(r"^## \[Unreleased\][ \t]*\n+", cl, flags=re.MULTILINE)
               if not m_unrel:
                   raise SystemExit("Could not find '## [Unreleased]' in CHANGELOG.md")
               cl = (
-                  cl[: m_unrel.end()]
-                  + f"\n\n## [{version}] - {today}"
+                  cl[: m_unrel.start()]
+                  + f"## [Unreleased]\n\n## [{version}] - {today}\n\n"
                   + cl[m_unrel.end() :]
               )
 
