@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-11-13
+
 ### Added
 
 - Added series `1N4148` gate protection diode (`D40`, `led_mosfet_gate_diode`) between `J2` (`J_MFET_GATE`) and `LED_MFET_GATE` to isolate `P4` (3.3 V) from `RAW` (up to 4.2 V) when LEDs are off, preventing ESD-diode clamping and idle leakage.
@@ -74,7 +76,8 @@ Initial release of board with LEDs added. Suffers from numerous fatal flaws and 
 
 Initial release with initial version of the board - suffers from fatal flaws and should not be manufactured. Entry is only maintained here for historical purposes.
 
-[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.4.0...main
+[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.0...main
+[0.5.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.2.0...v0.3.0
