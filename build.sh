@@ -100,7 +100,7 @@ build_board() {
     run_container "$kicad_auto_image" python3 kibot/configure_jlcpcb.py "pcbs/$board.kicad_pcb"
     # Unrouted connections are expected; retain the full pre-route report.
     run_container "$kicad_auto_image" kicad-cli pcb drc --format json --severity-all -o "reports/routing/$board-unrouted.json" "pcbs/$board.kicad_pcb"
-    run_container "$kicad_auto_image" kibot/export_dsn.py -b "pcbs/$board.kicad_pcb" -o "pcbs/$board.dsn"
+    run_container "$kicad_auto_image" python3 kibot/export_dsn.py -b "pcbs/$board.kicad_pcb" -o "pcbs/$board.dsn"
     run_container "$kicad_auto_image" kibot -b "pcbs/$board.kicad_pcb" -c kibot/default.kibot.yaml
 
     # A failed run must not reuse an earlier routing result.
@@ -116,7 +116,7 @@ build_board() {
         --router.automatic_neckdown="$freerouting_automatic_neckdown" \
         --router.neck_width_um="$freerouting_neck_width_um" \
         -dct 0 --profile.email=aevum@decess.us
-    run_container "$kicad_auto_image" kibot/import_ses.py -b "pcbs/$board.kicad_pcb" -s "pcbs/$board.ses" -o "pcbs/${board}_autorouted.kicad_pcb"
+    run_container "$kicad_auto_image" python3 kibot/import_ses.py -b "pcbs/$board.kicad_pcb" -s "pcbs/$board.ses" -o "pcbs/${board}_autorouted.kicad_pcb"
     cp "pcbs/$board.kicad_pro" "pcbs/${board}_autorouted.kicad_pro"
     cp "pcbs/$board.kicad_dru" "pcbs/${board}_autorouted.kicad_dru"
     run_container "$kicad_auto_image" kicad-cli pcb drc --format json --severity-all -o "reports/routing/$board-autorouted.json" "pcbs/${board}_autorouted.kicad_pcb"
