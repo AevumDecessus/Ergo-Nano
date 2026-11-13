@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+### Added
+
+- Added series `1N4148` gate protection diode (`D40`, `led_mosfet_gate_diode`) between `J2` (`J_MFET_GATE`) and `LED_MFET_GATE` to isolate `P4` (3.3 V) from `RAW` (up to 4.2 V) when LEDs are off, preventing ESD-diode clamping and idle leakage.
+
 ## [0.4.0] - 2026-11-09
 
 ### Changed

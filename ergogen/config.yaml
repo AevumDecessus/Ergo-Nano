@@ -953,7 +953,7 @@ pcbs:
         params:
           side: F
           from: P4
-          to: LED_MFET_GATE
+          to: J_MFET_GATE
       led_data_jumper_label:
         what: ceoloide/utility_text
         where:
@@ -1087,6 +1087,30 @@ pcbs:
           net: "{{colrow}}"
           route: "b(-2.5,7)(0,4)"
           locked: false
+      led_mosfet_gate_diode:
+        what: ceoloide/diode_tht_sod123
+        where:
+          ref: matrix_innermod_home
+          shift: [10, 4]
+          rotate: 90
+        params:
+          reversible: true
+          include_tht: true
+          include_traces_vias: true
+          trace_width: signal_trace_width
+          via_size: via_size
+          via_drill: via_drill
+          from: LED_MFET_GATE
+          to: J_MFET_GATE
+      led_mosfet_gate_diode_text:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_home
+          shift: [12, 4]
+          rotate: 90
+        params:
+          text: D40 gate 1N4148
+          reversible: true
       ## Silkscreen Text ##
       board_name_version:
         what: ceoloide/utility_text
