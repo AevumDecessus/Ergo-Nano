@@ -1,6 +1,6 @@
 #!/bin/sh
 # A failed board is reported and skipped; remaining boards still build.
-container_cmd=podman
+container_cmd="${CONTAINER_CMD:-podman}"
 boards="${*:-ergonano}"
 plates="backplate switchplate"
 export MSYS_NO_PATHCONV=1
