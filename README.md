@@ -8,7 +8,7 @@ Utilizes the [nice!nano][nice-nano] for a wireless-first methodology. The wirele
 
 ## Important notes
 
-This layout is fully generated, and as of the 0.4.0 release HAS NOT BEEN BUILT OR TESTED YET. Feel free to use this as a reference, but you are making this at your own risk until it has been built, tested, and vetted.
+This layout is fully generated, and as of the 0.5.0 release HAS NOT BEEN BUILT OR TESTED YET. Feel free to use this as a reference, but you are making this at your own risk until it has been built, tested, and vetted.
 
 ## Layout
 

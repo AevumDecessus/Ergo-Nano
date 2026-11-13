@@ -1,7 +1,7 @@
 meta:
   engine: 4.2.0
   name: &kb_name Ergo-Nano
-  version: &version 0.4.0
+  version: &version 0.5.0
   author: &kb_author Aevum Decessus
   url: &kb_url https://github.com/AevumDecessus/Ergo-Nano
 units:
@@ -910,6 +910,15 @@ pcbs:
           P1: LED_MFET_GATE
           P2: RAW # Source - battery power
           P3: LED_VCC # Drain - LED power net
+      led_mosfet_text:
+        what: ceoloide/utility_text
+        where:
+          ref: matrix_innermod_top
+          shift: [13.5, 8]
+          rotate: 90
+        params:
+          side: F
+          text: Q1 AO3401
       led_mosfet_pullup_resistor:
         what: aevumdecessus/resistor_tht_1206
         where:
