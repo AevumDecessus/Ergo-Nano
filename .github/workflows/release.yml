@@ -8,24 +8,26 @@ on:
         required: true
         type: string
       dry_run:
-        description: "Validate and show diff without committing, tagging, or publishing"
+        description: "Validate and show diff without building, committing, tagging, or publishing"
         required: false
         default: false
         type: boolean
 
 jobs:
-  prepare:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    outputs:
-      version: ${{ steps.prep.outputs.version }}
     steps:
+      - name: Rewrite submodule SSH URLs to HTTPS
+        run: git config --global url."https://github.com/".insteadOf "git@github.com:"
+
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          submodules: recursive
 
-      - name: Update version, changelog, commit, and tag
+      - name: Validate version and update config and changelog
         id: prep
         run: |
           version="${{ inputs.version }}"
@@ -118,27 +120,72 @@ jobs:
           PY
 
           if [ "${{ inputs.dry_run }}" = "true" ]; then
-            echo "Dry run enabled; skipping commit, push, and tag. Diff:"
+            echo "Dry run enabled; skipping build, commit, push, and tag. Diff:"
             git diff ergogen/config.yaml CHANGELOG.md
-          else
-            if [ -n "$(git status --porcelain)" ]; then
-              git config user.name "github-actions[bot]"
-              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git add ergogen/config.yaml CHANGELOG.md
-              git commit -m "chore: release $tag"
-              git push origin "HEAD:${{ github.ref_name }}"
-            fi
-
-            git tag "$tag"
-            git push origin "$tag"
           fi
           echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
 
-  build:
-    needs: prepare
-    if: ${{ !inputs.dry_run }}
-    permissions:
-      contents: write
-    uses: ./.github/workflows/build.yml
-    with:
-      release_tag: v${{ needs.prepare.outputs.version }}
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        if: ${{ !inputs.dry_run }}
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - if: ${{ !inputs.dry_run }}
+        run: npm ci
+
+      - name: Run build
+        if: ${{ !inputs.dry_run }}
+        env:
+          CONTAINER_CMD: docker
+          ERGOGEN_DOCKER_IMAGE: ${{ vars.ERGOGEN_DOCKER_IMAGE }}
+        run: sh ./build.sh
+
+      - name: Commit build artifacts and tag release
+        if: ${{ !inputs.dry_run }}
+        run: |
+          tag="${{ steps.prep.outputs.tag }}"
+          git add ergogen/config.yaml CHANGELOG.md cases docs/images gerbers outlines pcbs
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: release $tag"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+          git tag "$tag"
+          git push origin "$tag"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: ${{ !inputs.dry_run }}
+        with:
+          name: ergonano-build
+          path: |
+            gerbers/
+            docs/images/
+            cases/*.stl
+            outlines/*.dxf
+            !**/_*
+            !**/_*/**
+
+      - name: Create GitHub Release
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${{ steps.prep.outputs.version }}"
+          tag="${{ steps.prep.outputs.tag }}"
+          mapfile -t files < <(find gerbers docs/images cases outlines -maxdepth 1 -type f ! -name '_*' \( -name '*.zip' -o -name '*.stl' -o -name '*.png' -o -name '*.dxf' \) | sort)
+          awk -v ver="$version" '
+            $0 ~ "^## \\[" ver "\\]" { found=1; next }
+            found && /^## \[/ { exit }
+            found { print }
+          ' CHANGELOG.md > /tmp/release-notes.md
+
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "${files[@]}" --clobber
+          elif [ -s /tmp/release-notes.md ]; then
+            gh release create "$tag" "${files[@]}" --notes-file /tmp/release-notes.md
+          else
+            gh release create "$tag" "${files[@]}" --generate-notes
+          fi
