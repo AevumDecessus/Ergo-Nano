@@ -1,0 +1,61 @@
+name: Build PCBs and Plates
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      docker_image:
+        description: "Override ERGOGEN_DOCKER_IMAGE (defaults to repository variable)"
+        required: false
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Rewrite submodule SSH URLs to HTTPS
+        run: git config --global url."https://github.com/".insteadOf "git@github.com:"
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Run build
+        env:
+          CONTAINER_CMD: docker
+          ERGOGEN_DOCKER_IMAGE: ${{ inputs.docker_image || vars.ERGOGEN_DOCKER_IMAGE }}
+        run: ./build.sh
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: ergonano-build
+          path: |
+            gerbers/
+            docs/images/
+            cases/*.stl
+            outlines/*.dxf
+            !**/_*
+            !**/_*/**
+
+      - name: Attach artifacts to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mapfile -t files < <(find gerbers docs/images cases outlines -maxdepth 1 -type f ! -name '_*' \( -name '*.zip' -o -name '*.stl' -o -name '*.png' -o -name '*.dxf' \) | sort)
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "${files[@]}" --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" "${files[@]}" --generate-notes
+          fi
