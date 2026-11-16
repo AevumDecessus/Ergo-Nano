@@ -10,6 +10,8 @@ Utilizes the [nice!nano][nice-nano] for a wireless-first methodology. The wirele
 
 This layout is fully generated, and as of the 0.5.0 release HAS NOT BEEN BUILT OR TESTED YET. Feel free to use this as a reference, but you are making this at your own risk until it has been built, tested, and vetted.
 
+`v0.5.1` PCBs have been ordered, build guide and validation results to be added when received/vetted.
+
 ## Layout
 
 Replaced all the 1.5U keys with 1U keys on the farthest outside rows, moved the thumb cluster closer to the natural thumb resting location, a major complaint with the Ergodox.
