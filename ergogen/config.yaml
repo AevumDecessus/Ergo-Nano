@@ -107,19 +107,19 @@ points:
             column_net: C0
             stagger: st_outer
           rows:
-            num.key:
+            num:
               led_prev: LED_6
               led_next: LED_7
-            top.key:
+            top:
               led_prev: LED_7
               led_next: LED_8
-            home.key:
+            home:
               led_prev: LED_20
               led_next: LED_21
-            bottom.key:
+            bottom:
               led_prev: LED_21
               led_next: LED_22
-            mod.key:
+            mod:
               led_prev: LED_37
               led_next: ULED_1
         pinky:
@@ -129,19 +129,19 @@ points:
             next_col_stagger: st_ring
             prev_col_stagger: st_pinky
           rows:
-            num.key:
+            num:
               led_prev: LED_5
               led_next: LED_6
-            top.key:
+            top:
               led_prev: LED_8
               led_next: LED_9
-            home.key:
+            home:
               led_prev: LED_19
               led_next: LED_20
-            bottom.key:
+            bottom:
               led_prev: LED_22
               led_next: LED_23
-            mod.key:
+            mod:
               led_prev: LED_36
               led_next: LED_37
         ring:
@@ -151,19 +151,19 @@ points:
             next_col_stagger: st_middle
             prev_col_stagger: st_pinky
           rows:
-            num.key:
+            num:
               led_prev: LED_4
               led_next: LED_5
-            top.key:
+            top:
               led_prev: LED_9
               led_next: LED_10
-            home.key:
+            home:
               led_prev: LED_18
               led_next: LED_19
-            bottom.key:
+            bottom:
               led_prev: LED_23
               led_next: LED_24
-            mod.key:
+            mod:
               led_prev: LED_35
               led_next: LED_36
         middle:
@@ -173,19 +173,19 @@ points:
             next_col_stagger: st_index
             prev_col_stagger: st_ring
           rows:
-            num.key:
+            num:
               led_prev: LED_3
               led_next: LED_4
-            top.key:
+            top:
               led_prev: LED_10
               led_next: LED_11
-            home.key:
+            home:
               led_prev: LED_17
               led_next: LED_18
-            bottom.key:
+            bottom:
               led_prev: LED_24
               led_next: LED_25
-            mod.key:
+            mod:
               led_prev: LED_34
               led_next: LED_35
         index:
@@ -195,19 +195,19 @@ points:
             next_col_stagger: st_inner
             prev_col_stagger: st_middle
           rows:
-            num.key:
+            num:
               led_prev: LED_2
               led_next: LED_3
-            top.key:
+            top:
               led_prev: LED_11
               led_next: LED_12
-            home.key:
+            home:
               led_prev: LED_16
               led_next: LED_17
-            bottom.key:
+            bottom:
               led_prev: LED_25
               led_next: LED_26
-            mod.key:
+            mod:
               led_prev: LED_33
               led_next: LED_34
         inner:
@@ -217,16 +217,16 @@ points:
             next_col_stagger: st_innermod
             prev_col_stagger: st_index
           rows:
-            num.key:
+            num:
               led_prev: LED_1
               led_next: LED_2
-            top.key:
+            top:
               led_prev: LED_12
               led_next: LED_13
-            home.key:
+            home:
               led_prev: LED_15
               led_next: LED_16
-            bottom.key:
+            bottom:
               led_prev: LED_26
               led_next: LED_27
           rows.mod.skip: true
@@ -236,34 +236,34 @@ points:
             stagger: st_innermod
             prev_key_stagger: st_inner
           rows:
-            num.key:
+            num:
               led_prev: LED_0
               led_next: LED_1
-            top.key:
+            top:
               led_prev: LED_13
               led_next: LED_14
-            home.key:
+            home:
               led_prev: LED_14
               led_next: LED_15
-            bottom.key:
+            bottom:
               led_prev: LED_27
               led_next: LED_28
           rows.mod.skip: true
       rows:
         mod:
-          key.led_dir: RL
+          led_dir: RL
           row_net: R4
         bottom:
-          key.led_dir: LR
+          led_dir: LR
           row_net: R3
         home:
-          key.led_dir: RL
+          led_dir: RL
           row_net: R2
         top:
-          key.led_dir: LR
+          led_dir: LR
           row_net: R1
         num:
-          key.led_dir: RL
+          led_dir: RL
           row_net: R0
     thumbs:
       key:
@@ -282,7 +282,7 @@ points:
             height: 1.5ky
             shift: [0, half_ky]
           rows:
-            near.key:
+            near:
               led_prev: LED_32
               led_next: LED_33
           rows.far.skip: true
@@ -291,10 +291,10 @@ points:
           key:
             column_net: C7
           rows:
-            near.key:
+            near:
               led_prev: LED_31
               led_next: LED_32
-            far.key:
+            far:
               led_prev: LED_28
               led_next: LED_29
           rows.near.row_net: R4
@@ -303,19 +303,19 @@ points:
           key:
             column_net: C7
           rows:
-            near.key:
+            near:
               led_prev: LED_30
               led_next: LED_31
-            far.key:
+            far:
               led_prev: LED_29
               led_next: LED_30
           rows.near.row_net: R3
           rows.far.row_net: R2
       rows:
         near:
-          key.led_dir: RL
+          led_dir: RL
         far:
-          key.led_dir: LR
+          led_dir: LR
     encoder_mcu:
       columns:
         encoder:
@@ -751,12 +751,12 @@ pcbs:
           to: "{{colrow}}"
       per_key_leds_RL:
         what: ceoloide/led_sk6812mini-e
-        where: meta.key.led_dir ~ RL
+        where: meta.led_dir ~ RL
         params:
           P1: LED_VCC
-          P2: "{{key.led_next}}" #DOUT
+          P2: "{{led_next}}" #DOUT
           P3: GND
-          P4: "{{key.led_prev}}" #DIN
+          P4: "{{led_prev}}" #DIN
           reversible: true
           reverse_mount: true
           include_traces_vias: true
@@ -772,12 +772,12 @@ pcbs:
           rotate: led_rotation
       per_key_leds_LR:
         what: ceoloide/led_sk6812mini-e
-        where: meta.key.led_dir ~ LR
+        where: meta.led_dir ~ LR
         params:
           P1: LED_VCC
-          P2: "{{key.led_next}}" #DOUT
+          P2: "{{led_next}}" #DOUT
           P3: GND
-          P4: "{{key.led_prev}}" #DIN
+          P4: "{{led_prev}}" #DIN
           reversible: true
           reverse_mount: true
           include_traces_vias: true
