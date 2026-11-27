@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-11-27
+
 ### Changed
 
 - Flipped `mx` switches `180°` to a north-facing (top-lit) orientation and moved per-key `SK6812MINI-E` LEDs to the top of each switch (`led_pos_y: 4.75`) for better shine-through keycap illumination.
@@ -87,7 +89,8 @@ Initial release of board with LEDs added. Suffers from numerous fatal flaws and 
 
 Initial release with initial version of the board - suffers from fatal flaws and should not be manufactured. Entry is only maintained here for historical purposes.
 
-[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.1...main
+[Unreleased]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.6.0...main
+[0.6.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.1...v0.6.0
 [0.5.1]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/AevumDecessus/Ergo-Nano/compare/v0.3.1...v0.4.0
