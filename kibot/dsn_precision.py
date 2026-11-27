@@ -151,7 +151,11 @@ class SourceGeometry:
                 index.add(xy(item.GetStart()))
                 index.add(xy(item.GetEnd()))
         outlines = pcbnew.SHAPE_POLY_SET()
-        if not board.GetBoardPolygonOutlines(outlines):
+        try:
+            ok = board.GetBoardPolygonOutlines(outlines, False)
+        except TypeError:
+            ok = board.GetBoardPolygonOutlines(outlines)
+        if not ok:
             raise PrecisionError('Malformed board outline; run KiCad DRC before DSN export')
         for i in range(outlines.OutlineCount()):
             chains = [outlines.COutline(i)]

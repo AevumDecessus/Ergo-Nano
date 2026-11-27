@@ -5,7 +5,7 @@ boards="${*:-ergonano}"
 plates="backplate switchplate"
 export MSYS_NO_PATHCONV=1
 # Development toolchain shared with CI; override to test a specific image.
-kicad_auto_image="${ERGOGEN_DOCKER_IMAGE:-ceoloide/ergogen-freerouting:dev}"
+kicad_auto_image="${ERGOGEN_DOCKER_IMAGE:-ceoloide/ergogen-freerouting:stable}"
 freerouting_cli_image="$kicad_auto_image"
 # JLCPCB two-layer, 1 oz FR-4 minimum: 0.10 mm (100 um).
 # https://jlcpcb.com/help/article/jlcpcb-copper-weight
@@ -19,7 +19,12 @@ esac
 
 run_container() {
     # Keep generated boards editable on the host. KiCad/KiBot need a writable home.
-    "$container_cmd" run --user "$(id -u):$(id -g)" -e HOME=/tmp \
+    cgroups_arg=""
+    if [ "$container_cmd" = "podman" ]; then
+        cgroups_arg="--cgroups=disabled"
+    fi
+    # shellcheck disable=SC2086
+    "$container_cmd" run $cgroups_arg --user "$(id -u):$(id -g)" -e HOME=/tmp \
         -w /board -v "$(pwd):/board" --rm "$@"
 }
 
